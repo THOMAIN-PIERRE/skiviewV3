@@ -1,0 +1,130 @@
+<!--
+RadSideDrawer is a UI component part of the Progress NativeScript UI set of components.
+Learn more about the RadSideDrawer UI component and how it can be customized in this documentation article:
+https://docs.nativescript.org/angular/ui/professional-ui-components/ng-SideDrawer/getting-started
+-->
+<RadSideDrawer [drawerTransition]="sideDrawerTransition">
+    <GridLayout tkDrawerContent rows="auto, *" class="nt-drawer__content">
+        <StackLayout row="0" class="nt-drawer__header">
+            <Image class="nt-drawer__header-image fas t-26" src="font://&#xf2bd;"></Image>
+            <!-- <Label class="nt-drawer__header-brand" text="User Name"></Label> -->
+            <Label class="nt-drawer__header-footnote" text="prenom.nom@gmail.com"></Label>
+        </StackLayout>
+    
+        <ScrollView row="1" class="nt-drawer__body">
+            <StackLayout>
+                <GridLayout columns="auto, *" class="nt-drawer__list-item"  (tap)="onNavItemTap('/home')">
+                    <Label col="0" text="&#xf015;" class="nt-icon fas"></Label>
+                    <Label col="1" text="Accueil" class="p-r-10"></Label>
+                </GridLayout>
+
+                <StackLayout class="hr"></StackLayout>
+
+                <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/browse')">
+                    <Label col="0" text="&#xf05a;" class="nt-icon fas"></Label>
+                    <Label col="1" text="Informations" class="p-r-10"></Label>
+                </GridLayout>
+
+
+                <StackLayout class="hr"></StackLayout>
+
+                <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/search')">
+                    <Label col="0" text="&#xf041;" class="nt-icon fas"></Label>
+                    <Label col="1" text="Signaler un danger" class="p-r-10"></Label>
+                </GridLayout>
+
+                <StackLayout class="hr"></StackLayout>
+
+                <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/featured')">
+                    <Label col="0" text="&#xf3c5;" class="nt-icon fas"></Label>
+                    <Label col="1" text="Appeller les secours" class="p-r-10"></Label>
+                </GridLayout>
+
+                <StackLayout class="hr"></StackLayout>
+
+                <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/signalement')">
+                    <Label col="0" text="&#xf573;" class="nt-icon fas"></Label>
+                    <Label col="1" text="Mes signalements" class="p-r-10"></Label>
+                </GridLayout>
+
+                <StackLayout class="hr"></StackLayout>
+
+                <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/settings')">
+                    <Label col="0" text="&#xf477;" class="nt-icon fas"></Label>
+                    <Label col="1" text="Carnet de santé" class="p-r-10"></Label>
+                </GridLayout>
+
+                <StackLayout class="hr"></StackLayout>
+
+                <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/bienvenue')">
+                    <Label col="0" text="&#xf477;" class="nt-icon fas"></Label>
+                    <Label col="1" text="Bienvenue" class="p-r-10"></Label>
+                </GridLayout>
+
+                <StackLayout class="hr"></StackLayout>
+
+                <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/form-carnet')">
+                    <Label col="0" text="&#xf477;" class="nt-icon fas"></Label>
+                    <Label col="1" text="Form-carnet" class="p-r-10"></Label>
+                </GridLayout>
+
+                <StackLayout class="hr"></StackLayout>
+
+                <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/formulaire')">
+                    <Label col="0" text="&#xf477;" class="nt-icon fas"></Label>
+                    <Label col="1" text="Formulaire" class="p-r-10"></Label>
+                </GridLayout>
+
+                <StackLayout class="hr"></StackLayout>
+
+                <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/media')">
+                    <Label col="0" text="&#xf477;" class="nt-icon fas"></Label>
+                    <Label col="1" text="Media" class="p-r-10"></Label>
+                </GridLayout>
+
+                <StackLayout class="hr"></StackLayout>
+
+                <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/media2')">
+                    <Label col="0" text="&#xf477;" class="nt-icon fas"></Label>
+                    <Label col="1" text="Media2" class="p-r-10"></Label>
+                </GridLayout>
+
+                <StackLayout class="hr"></StackLayout>
+
+                <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/signaler')">
+                    <Label col="0" text="&#xf477;" class="nt-icon fas"></Label>
+                    <Label col="1" text="Signaler" class="p-r-10"></Label>
+                </GridLayout>
+
+                <StackLayout class="hr"></StackLayout>
+
+                <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/confirmation')">
+                    <Label col="0" text="&#xf477;" class="nt-icon fas"></Label>
+                    <Label col="1" text="Confirmation" class="p-r-10"></Label>
+                </GridLayout>
+
+                <StackLayout class="hr"></StackLayout>
+
+                <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/fiche')">
+                    <Label col="0" text="&#xf477;" class="nt-icon fas"></Label>
+                    <Label col="1" text="Fiche" class="p-r-10"></Label>
+                </GridLayout>
+
+                <StackLayout class="hr"></StackLayout>
+
+                <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/informations')">
+                    <Label col="0" text="&#xf477;" class="nt-icon fas"></Label>
+                    <Label col="1" text="Informations" class="p-r-10"></Label>
+                </GridLayout>
+
+                <StackLayout class="hr"></StackLayout>
+
+                <Button text="DECONNEXION" class="btn btn-warning"></Button> 
+
+            </StackLayout>
+        </ScrollView>
+    </GridLayout>
+
+    <page-router-outlet tkMainContent></page-router-outlet>
+</RadSideDrawer>
+

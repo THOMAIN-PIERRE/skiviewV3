@@ -1,0 +1,56 @@
+<ActionBar class="actionBarCarnet">
+    <!-- 
+    Use the NavigationButton as a side-drawer button in Android
+    because ActionItems are shown on the right side of the ActionBar
+    -->
+    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
+    <!-- 
+    Use the ActionItem for IOS with position set to left. Using the
+    NavigationButton as a side-drawer button in iOS is not possible,
+    because its function is to always navigate back in the application.
+    -->
+    <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
+        ios.position="left" >
+    </ActionItem>
+    <Label class="blackPage" text="CARNET DE SANTE"></Label>
+</ActionBar>
+
+
+       
+<StackLayout class="form">
+    <StackLayout class="input-field">
+    <TextField class="input" hint="Prénom"></TextField>
+    <TextField class="input" hint="Nom"></TextField>
+    <TextField class="input" hint="Age" keyboardType="integer"></TextField>
+    <TextField class="input" hint="Groupe sanguin"></TextField>
+    <TextField class="input" hint="Taille (en cm)" keyboardType="integer"></TextField>
+    <TextField class="input" hint="Poids (en kg)" keyboardType="integer"></TextField>
+    <TextField class="input" hint="Donneur d'organe"></TextField>
+    <TextField class="input" hint="Allergie(s)"></TextField>
+    <TextField class="input" hint="Pathologie(s)"></TextField>
+    <TextField class="input" hint="Traitement(s)"></TextField>
+    <TextField class="input" hint="Personne à contacter"></TextField>
+    <TextField class="input" hint="Numéro de la personne à contacter" keyboardType="phone" autocorrect="false" autocapitalizationType="none"></TextField>
+    <FlexboxLayout flexDirection="row" flexWrap="wrap" justifyContent="space-around">   
+        <Button text="VALIDER" class="valider_carnet"></Button> 
+        <Button text="SUPPRIMER" class="supprimer_carnet"></Button>
+    </FlexboxLayout>
+</StackLayout>
+<StackLayout>
+    <BottomNavigation height="1900px">
+        <TabStrip>
+            <TabStripItem>
+                <Label col="0" text="&#xf05a;" class="nt-icon fas"></Label>
+            </TabStripItem>
+            <TabStripItem>
+                <Label col="1" text="&#xf041;" class="nt-icon fas"></Label>
+            </TabStripItem>
+            <TabStripItem>
+                <Label col="2" text="&#xf3c5;" class="nt-icon fas"></Label>
+            </TabStripItem>
+        </TabStrip>
+    </BottomNavigation>
+</StackLayout>
+        
+     
+      

@@ -1,0 +1,480 @@
+@import "~@nativescript/theme/core";
+@import "~@nativescript/theme/lemon";
+
+// Place any CSS rules you want to apply on both iOS and Android here.
+// This is where the vast majority of your CSS code goes.
+
+// Font icon class
+.fab {
+    font-family: "Font Awesome 5 Brands", "fa-brands-400";
+    font-weight: 700;
+}
+
+.fas {
+    font-family: "Font Awesome 5 Free", "fa-solid-900";
+    font-weight: 900;  
+}
+
+.far {
+    font-family: "Font Awesome 5 Free", "fa-regular-400";
+    font-weight: 400;
+}
+
+
+// Common page class
+.page__content {
+    background-color: yellow;
+    &-icon,
+    &-placeholder {
+        color: const(grey);
+        font-size: 20;
+        vertical-align: center;
+        // horizontal-align: center;
+    }
+
+    &-icon {
+        font-size: 72;
+        vertical-align: top;
+        margin-top: 20%;
+    }
+}
+.search__page__content {
+    background-color:#3E3F32;
+}
+.settings__page__content {
+    background-color:#000000;
+}
+// Drawer navigation custom styles
+
+.nt-drawer__header-image {
+    color: white;
+}
+.nt-drawer__header-footnote {
+    color: black;
+    font-weight: bold;
+}
+.nt-icon {
+    color: yellow;  
+    font-size: 50;
+}
+.p-r-10 {
+    color: white;
+    font-size: 18;
+}
+.nt-drawer__body {
+    background-color: black;
+}
+TabStripItem {
+    color: yellow;
+    background-color: black;
+    margin-bottom: 5;
+}
+Button {
+    background-color: yellow;
+    font-weight: bold;
+    font-size: 18;
+    margin-top: 30;
+    border-radius: 15;
+}
+#button_health_book {
+    background-color: white;
+    font-weight: bold;
+    font-size: 18;
+    border-radius: 15;
+    margin-bottom: 100;
+}
+.pageLabel {
+    font-size: 23;
+}
+.greyPage {
+    font-size: 23;
+    color: white;
+}
+.blackPage {
+    font-size: 23;
+    color: black;
+}
+.actionBarDanger {
+    background-color:#3E3F32;
+}
+.actionBarSos {
+    background-color:#3E3F32;
+}
+.actionBarCarnet {
+    background-color:#FFFFFF;
+}
+.actionBarSignalement {
+    background-color:#FFFFFF;
+}
+.danger_button {
+    border-radius: 100;
+}
+.photo_carnet{
+    border-radius: 200;
+    margin-top: 30;
+    margin-right: 20;
+}
+#vousEtes {
+    margin-left: 130;
+    margin-top: 150;
+}
+#redVictime {
+    margin-right: 170;
+    border-radius: 100;
+}
+#greenTemoin {
+    margin-left: 170;
+    border-radius: 100;
+}
+#victime {
+    margin-left: 50;
+    margin-top: 290;
+}
+#temoin {
+    margin-left: 220;
+    margin-top: 290;
+}
+#myView {
+    border-radius: 100%;
+    background-color: #DCCBCB;
+    margin-top: 15;
+    margin-left: 20;
+    margin-right: 20;
+    margin-bottom: 15;
+}
+#myDanger1 {
+    border-radius: 100%;
+    background-color: #EC4621;
+    margin-top: 15;
+    margin-left: 20;
+    margin-right: 20;
+    margin-bottom: 15;
+}
+#myDanger2 {
+    border-radius: 100%;
+    background-color: #E6D005;
+    margin-top: 15;
+    margin-left: 20;
+    margin-right: 20;
+    margin-bottom: 15;
+}
+.danger_button {
+    border-radius: 100%;
+    background-color: #DCCBCB;
+    margin-top: 15;
+    margin-bottom: 15;
+    
+}
+.nomPrenom_carnet {
+    color: yellow;
+    font-size: 18;
+    margin-top: 40;
+}
+.age_carnet {
+    color: yellow;
+    font-size: 18;
+    margin-top: 70;
+}
+.groupe_sanguin{
+    color: yellow;
+    font-size: 18;
+    margin-left: 20;
+    margin-top: 20;
+    margin-right: 20;
+}
+#champs_choix_station{
+    background-color: #FFFFFF;
+    color : black;
+    border-radius: 25;
+    position: relative;
+    top: 50;
+}
+.entete{
+    color: white;
+    font-size: 23;
+    margin-top: 362;
+    margin-left: 67;
+}
+.mes_signalements{
+    color: black;
+    font-size: 18;
+}
+.date_heure{
+   margin-left: 85; 
+   text-align: right;
+}
+.numero_fiche{
+    text-align: left;
+}
+.declaration{
+    color: black;
+    font-size: 15;
+    font-weight: bold;
+    margin-top: 30;
+}
+.categorie{
+    color: black;
+    font-size: 15;
+    font-weight: bold;
+    margin-top: 50;
+}
+.statut{
+    color: black;
+    font-size: 15;
+    font-weight: bold;
+    margin-top: 70;
+}
+#ouverture{
+    background-color: grey;
+    color :white;
+    border-radius: 25;
+    position: relative;
+    top: 50;
+}
+.SEVERE{
+    width: 200;
+    height: 200;
+    background-color: red;
+    color: black;
+    font-size: 30;
+    font-weight: bold;
+    border-radius: 25;
+    margin-top: 30;
+
+}
+.SERIEUSE{
+    width: 200;
+    height: 200;
+    background-color: orange;
+    color: black;
+    font-size: 30;
+    font-weight: bold;
+    border-radius: 25;
+    margin-top: 30;
+
+}
+.MODEREE{
+    width: 200;
+    height: 200;
+    background-color: yellow;
+    color: black;
+    font-size: 30;
+    font-weight: bold;
+    border-radius: 25;
+    margin-top: 30;
+
+}
+.LEGERE{
+    width: 200;
+    height: 200;
+    background-color: green;
+    color: black;
+    font-size: 30;
+    font-weight: bold;
+    border-radius: 25;
+    margin-top: 30;
+
+}
+.cadre_choix{
+    border: 5 solid black;
+
+}
+.coverImage {
+    background-image: url('https://thomascapelli.fr/wp-content/uploads/2015/02/2-sapins_chartreuse_neige-1024x576.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#message_accueil{
+    background-color: grey;
+    color:white;
+    border-radius: 25;
+}
+.btn_creer_un_compte{
+    background-color: white;
+    color: black;
+    border-radius: 25;
+    margin-left: 50;
+    margin-right: 50; 
+    margin-top: 100;
+}
+// .introduction{
+//     color: white;
+//     font-size: 18;
+//     margin-top: 70;
+//     margin-left: 31;
+// }
+.entete2{
+    color: white;
+    font-size: 18;
+    margin-top: 336;
+    margin-left: 135;
+}
+.entete3{
+    color: white;
+    font-size: 18;
+    margin-top: 362;
+    margin-left: 23;
+}
+#photo{
+    border: 3 solid #C4C4C4;
+
+}
+#slider{
+    color: white;
+    font-size: 14;
+}
+#camera{
+    color: white;
+    font-size: 130;
+    font-weight: bold;
+    text-align: center;
+    
+}
+#camera2{
+    color: white;
+    font-size: 25;
+    font-weight: bold;
+    // margin-left: 50;
+    text-align: center;
+    
+}
+.numberPictures{
+    color: yellow;
+    font-size: 30;
+    font-weight:"bold";
+    margin-top: 10;
+}
+.valider_carnet{
+    padding-left: 20;
+    padding-right: 20;
+    background-color: green;
+    color: white;
+    margin-bottom: 15;
+}
+.supprimer_carnet{
+    background-color: red;
+    color: white;
+    margin-bottom: 15;
+}
+#goutte_de_sang{
+    color: red;
+    font-size: 75;
+}
+#Avalanche{
+    background-image: url("https://image.flaticon.com/icons/svg/100/100244.svg");
+}
+.bandeau_photo{
+    margin-bottom: 25;
+}
+.photo_danger{
+    margin-bottom: 25;
+}
+#bin{
+    font-size: 40;
+    margin-top: 13;
+    margin-left: 282;
+    z-index: 2;
+}
+#circle{
+    border-radius: 100%;
+    background-color: black;
+    margin-left: 240;
+    margin-bottom: 385;
+}
+#circle_sending{
+    border-radius: 50%;
+    background-color: black;
+}
+#fleche_envoi{
+     color: yellow;
+     font-size: 100; 
+     text-align: center;  
+     margin-top: -230;
+}
+#envoyer{
+    color: yellow;
+     font-size: 30;
+     text-align: center;
+    margin-top: -110;
+    // margin-bottom: 50;
+}
+.message_confirmation{
+    font-size: 26;
+    color: black;
+    text-align: justify;
+    border: 2 solid grey;
+}
+.galerie{
+    margin-top: 20;
+    margin-bottom: 20;
+}
+.galerie_end{
+    margin-top: 20;
+    margin-bottom: 90;
+}
+#Etat_piste{
+    padding-top: 98;
+    padding-left: 25;
+    font-size: 13;
+    font-weight: bold;
+
+}
+#Meteorologie{
+    padding-top: 100;
+    padding-left: 45;
+    font-size: 13;
+    font-weight: bold;
+}
+#Avalanche{
+    padding-top: 100;
+    padding-left: 37;
+    font-size: 13;
+    font-weight: bold;
+}
+#Crevasse{
+    padding-top: 100;
+    padding-left: 38;
+    font-size: 13;
+    font-weight: bold;
+}
+#Obstacle{
+    padding-top: 100;
+    padding-left: 40;
+    font-size: 13;
+    font-weight: bold;
+}
+#Signaletique{
+    padding-top: 100;
+    padding-left: 31;
+    font-size: 13;
+    font-weight: bold;
+}
+#Animaux{
+    padding-top: 100;
+    padding-left: 40;
+    font-size: 13;
+    font-weight: bold;
+}
+#Autres{
+    padding-top: 100;
+    padding-left: 45;
+    font-size: 13;
+    font-weight: bold;
+}
+#domaine{
+    border-radius: 100%;
+    padding-top: 70;
+    padding-left: 10;
+}
+#status_open{
+    background-color: green;
+    color: white;
+}
+#status_closed{
+    background-color: red;
+    color: white;
+}
+.espacement{
+    margin-bottom: 160px;
+}

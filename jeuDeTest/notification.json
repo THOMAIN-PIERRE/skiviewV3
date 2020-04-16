@@ -1,0 +1,22 @@
+[
+    {
+        "date":"20/01/2019 13:25:45",
+        "message":"En raison de vents violents sur le haut du domaine skiable, le télésiège du SoumCouy a été fermé !",
+        "photo":"https://image.flaticon.com/icons/svg/615/615579.svg"
+    },
+    {
+        "date":"25/01/2019 15:25:12",
+        "message":"Ce soir la station vous propose d'assister à la descente aux flambeaux. Début de l'évènement à 21h00.",
+        "photo":"https://image.flaticon.com/icons/svg/785/785116.svg"
+    },
+    {
+        "date":"03/02/2019 10:45:01",
+        "message":"Incident technique sur le télésiège du Braca. Merci d'emprunter le boulevard des pyrénées pour retourner à la station à partir du pieds de piste du Mahiné",
+        "photo":"https://image.flaticon.com/icons/svg/535/535624.svg"
+    },
+    {
+        "date":"20/02/2019 11:30:56",
+        "message":"Profitez de 10% de réduction sur la boisson de votre choix réduction d'altitude Le montagnard sur présentation de votre carte N'Py",
+        "photo":"https://image.flaticon.com/icons/svg/1642/1642407.svg"
+    } 
+]

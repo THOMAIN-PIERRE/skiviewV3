@@ -1,0 +1,44 @@
+<ActionBar>
+
+    <!-- Use the NavigationButton as a side-drawer button in Android -->
+    <!-- because ActionItems are shown on the right side of the ActionBar -->
+
+    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
+    <!-- 
+    Use the ActionItem for IOS with position set to left. Using the
+    NavigationButton as a side-drawer button in iOS is not possible,
+    because its function is to always navigate back in the application.
+    -->
+    <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()" -->
+        ios.position="left" >
+    </ActionItem>
+    <Label class="pageLabel" text="ACCUEIL"></Label>
+</ActionBar>
+<GridLayout class="page__content">
+    <GridLayout rows="400">
+        <image row="0" src="https://pngimage.net/wp-content/uploads/2018/06/mountain-silhouette-png-3.png"></image>
+    </GridLayout>
+    <GridLayout rows="700">
+        <Image row="0" src="https://colorate.azurewebsites.net/SwatchColor/000000"></image>
+    </GridLayout>
+    <GridLayout rows="1000">
+        <image row="0" src="https://colorate.azurewebsites.net/SwatchColor/000000"></image>
+    </GridLayout>
+</GridLayout>
+<StackLayout class="hr" height="1480px"></StackLayout>
+<StackLayout>
+    <BottomNavigation height="1900px">
+        <TabStrip>
+            <TabStripItem>
+                <Label col="0" text="&#xf05a;" class="nt-icon fas"></Label>
+            </TabStripItem>
+            <TabStripItem>
+                <Label col="1" text="&#xf041;" class="nt-icon fas"></Label>
+            </TabStripItem>
+            <TabStripItem>
+                <Label col="2" text="&#xf3c5;" class="nt-icon fas"></Label>
+            </TabStripItem>
+        </TabStrip>
+    </BottomNavigation>
+</StackLayout>
+

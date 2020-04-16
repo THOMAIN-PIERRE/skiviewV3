@@ -1,0 +1,184 @@
+<ActionBar class="actionBarSignalement">
+    <!-- 
+    Use the NavigationButton as a side-drawer button in Android
+    because ActionItems are shown on the right side of the ActionBar
+    -->
+    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
+    <!-- 
+    Use the ActionItem for IOS with position set to left. Using the
+    NavigationButton as a side-drawer button in iOS is not possible,
+    because its function is to always navigate back in the application.
+    -->
+    <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
+        ios.position="left" >
+    </ActionItem>
+    <Label class="blackPage" text="PISTES ET REMONTEES"></Label>
+</ActionBar>
+<!-- <ScrollView> -->
+    <!-- <FlexboxLayout columns="auto,*,*,120,120,120,120" flexDirection="column" flexWrap="wrap" justifyContent="space-around">
+            <Label row="0"text="Ouverture des pistes" fontSize="20"></Label>
+            <StackLayout row="1" class="hr"></StackLayout>
+            <ContentView row="2" text="DOMAINE 70%" id="myDanger1" width="600px" height="600px" backgroundColor="#5A57E0" textAlign="center"></ContentView>
+            <Label row="3" text="3/6" backgroundColor="#087A06" color="#FFFFFF" fontSize="30px" textAlign="center"></Label>
+            <Label row="4" text="5/8" backgroundColor="#5A57E0" color="#FFFFFF" fontSize="30px" textAlign="center"></Label>
+            <Label row="5" text="3/5" backgroundColor="#F10D0D" color="#FFFFFF" fontSize="30px" textAlign="center"></Label>
+            <Label row="6" text="5/5" backgroundColor="#000000" color="#FFFFFF" fontSize="30px" textAlign="center"></Label>
+    </FlexboxLayout>
+    <flexboxLayout flexDirection="column" flexWrap="wrap" justifyContent="space-around">
+    <FlexboxLayout rows="auto,*,200,200,200,200" flexDirection="row" flexWrap="wrap" justifyContent="space-around">
+        <Label row="0"text="Ouverture des pistes" fontSize="20"></Label>
+        <StackLayout row="1" class="hr"></StackLayout>
+        <Image row="1" class="galerie" src="https://www.telegraph.co.uk/content/dam/Travel/ski/Crans-Montana-avalanche-skiers-KEYSTONE-ANTHONY%20ANEX.jpg?imwidth=450"  width="800px" stretch="aspectFit"></Image>
+        <Image row="2" class="galerie" src="https://www.telegraph.co.uk/content/dam/Travel/ski/Crans-Montana-avalanche-skiers-KEYSTONE-ANTHONY%20ANEX.jpg?imwidth=450"  width="800px" stretch="aspectFit"></Image>
+        <Image row="3" class="galerie" src="https://www.telegraph.co.uk/content/dam/Travel/ski/Crans-Montana-avalanche-skiers-KEYSTONE-ANTHONY%20ANEX.jpg?imwidth=450"  width="800px" stretch="aspectFit"></Image>
+        <Image row="4" class="galerie" src="https://www.telegraph.co.uk/content/dam/Travel/ski/Crans-Montana-avalanche-skiers-KEYSTONE-ANTHONY%20ANEX.jpg?imwidth=450"  width="800px" stretch="aspectFit"></Image>
+    </FlexboxLayout>
+    <FlexboxLayout rows="200,200,200,200" flexDirection="row" flexWrap="wrap" justifyContent="space-around">
+        <Label row="0"text="2/2" fontSize="25"></Label>
+        <Label row="0"text="7/7" fontSize="25"></Label>
+        <Label row="0"text="14/15" fontSize="25"></Label>
+        <Label row="0"text="2/3" fontSize="25"></Label>
+    </FlexboxLayout>
+    </flexboxLayout> -->
+
+
+    <!-- <FlexboxLayout columns="400,*,120,120,120,120" flexDirection="column" flexWrap="wrap" justifyContent="space-around">
+        <Label row="0"text="Ouverture des remontées" fontSize="20"></Label>
+        <StackLayout row="1" class="hr"></StackLayout>
+        <ContentView row="2" text="DOMAINE 70%" id="myDanger1" width="400px" height="400px" backgroundColor="#5A57E0" textAlign="center"></ContentView>
+        <Label row="3" text="3/6" width="600px" height="120px" backgroundColor="#087A06" color="#FFFFFF" fontSize="30px"></Label>
+        <Label row="4" text="5/8" width="600px" height="120px" backgroundColor="#5A57E0" color="#FFFFFF" fontSize="30px"></Label>
+        <Label row="5" text="3/5" width="600px" height="120px" backgroundColor="#F10D0D" color="#FFFFFF" fontSize="30px"></Label>
+        <Label row="6" text="5/5" width="600px" height="120px" backgroundColor="#000000" color="#FFFFFF" fontSize="30px"></Label>
+    </FlexboxLayout> -->
+
+    <!-- <FlexboxLayout class="search__page__content" rows="600" flexDirection="col" flexWrap="wrap" justifyContent="space-around"> 
+        <Label col="0"text="Ouverture des remontées"></Label>
+        <StackLayout col="1" class="hr"></StackLayout>
+        <ContentView col="2" id="myDanger1" width="600px" height="600px"></ContentView>
+        <Label col="3" text="3/6" backgroundColor="#087A06" color="#FFFFFF" fontSize="30px"></Label>
+        <Label col="4" text="5/8" backgroundColor="#5A57E0" color="#FFFFFF" fontSize="30px"></Label>
+        <Label col="5" text="3/5" backgroundColor="#F10D0D" color="#FFFFFF" fontSize="30px"></Label>
+        <Label col="6" text="5/5" backgroundColor="#000000" color="#FFFFFF" fontSize="30px"></Label>
+    </FlexboxLayout>
+     -->
+
+    <!-- </ScrollView>
+
+<BottomNavigation height="100%">
+    <TabStrip>
+        <TabStripItem>
+            <Label col="0" text="&#xf05a;" class="nt-icon fas"></Label>
+        </TabStripItem>
+        <TabStripItem>
+            <Label col="1" text="&#xf041;" class="nt-icon fas"></Label>
+        </TabStripItem>
+        <TabStripItem>
+            <Label col="2" text="&#xf3c5;" class="nt-icon fas"></Label>
+        </TabStripItem>
+    </TabStrip>
+</BottomNavigation> -->
+<Image src="res://logo"/> 
+<ScrollView orientation="vertical">
+<StackLayout>
+<GridLayout backgroundColor="white" columns="*,150" rows="50,1,50,50,50,50" >
+    <Label color="black" class="page__content-placeholder" text="Ouverture des pistes" row="0" column="0" colspan="4"
+    fontWeight="Bold" textAlign="center"></Label>
+    <StackLayout class="hr"row="1" colspan="2"></StackLayout>
+
+    <Label backgroundColor="#247DE4"color="white" class="page__content-placeholder" text="70% du domaine" row="2" column="0" rowspan="4"
+    fontWeight="Bold" width="500px" height="500px" id="domaine"></Label>
+    <Label backgroundColor="#087A06"color="white" class="page__content-placeholder" text="3/6" row="2" column="1" 
+    fontWeight="Bold" paddingLeft="100px" paddingRight="100px" marginRight="40px"></Label>
+    <Label backgroundColor="#5A57E0"color="white" class="page__content-placeholder" text="5/8" row="3" column="1" 
+    fontWeight="Bold" paddingLeft="100px" paddingRight="100px" marginRight="40px"></Label>
+    <Label backgroundColor="#F10D0D"color="white" class="page__content-placeholder" text="3/5" row="4" column="1" 
+    fontWeight="Bold" paddingLeft="100px" paddingRight="100px" marginRight="40px"></Label>
+    <Label backgroundColor="black" color="white" class="page__content-placeholder" text="5/5" row="5" column="1" 
+    fontWeight="Bold" paddingLeft="100px" paddingRight="100px" marginRight="40px"></Label>
+    
+</GridLayout>
+<GridLayout backgroundColor="white"columns="*,*,*,*" rows="60,1,15,30,30">
+    <Label color="black" class="page__content-placeholder" text="Ouverture des remontées" row="0" column="0" colspan="4" 
+    fontWeight="Bold" textAlign="center"></Label>
+    <StackLayout class="hr"row="1" colspan="4"></StackLayout>
+    <Image row="2" column="1"  src=""></Image>
+    <Image row="2" column="2"  src=""></Image>
+    <Image row="2" column="3"  src=""></Image>
+    <Image row="2" column="4"  src=""></Image>
+    <Label color="black" class="page__content-placeholder" text="Tapis" row="3" column="0" fontWeight="Bold" fontSize="15"></Label>
+    <Label color="black" class="page__content-placeholder" text="Teleski" row="3" column="1" fontWeight="Bold" fontSize="15"></Label>
+    <Label color="black" class="page__content-placeholder" text="Telesiège" row="3" column="2" fontWeight="Bold" fontSize="15"></Label>
+    <Label color="black" class="page__content-placeholder" text="Télécabine" row="3" column="3" fontWeight="Bold" fontSize="15"></Label>
+
+    <Label color="black" class="page__content-placeholder" text="2/2" row="4" column="0" fontWeight="Bold"></Label>
+    <Label color="black" class="page__content-placeholder" text="7/7" row="4" column="1" fontWeight="Bold"></Label> 
+    <Label color="black" class="page__content-placeholder" text="14/15" row="4" column="2" fontWeight="Bold"></Label> 
+    <Label color="black" class="page__content-placeholder" text="2/3" row="4" column="3" fontWeight="Bold"></Label>   
+</GridLayout>
+<GridLayout backgroundColor="white" rows="30,30,30,30,40,40,40" >
+    <StackLayout class="hr"row="0" ></StackLayout>
+    <Label color="black" class="page__content-placeholder" text="CHOIX DE SECTEUR" backgroundColor="#000000" color="#FFFF00" row="1" fontWeight="Bold"></Label>
+    <StackLayout class="hr"row="2"></StackLayout>
+    <Label color="black" class="page__content-placeholder" text="DEBUTANT" backgroundColor="#000000" color="#FFFF00" row="3" fontWeight="Bold"></Label>
+    <StackLayout class="hr"row="4"></StackLayout>
+    <Label color="black" class="page__content-placeholder" text="CONFIRME" backgroundColor="#000000" color="#FFFFFF" row="5" fontWeight="Bold"></Label>
+    <StackLayout class="hr"row="6"></StackLayout>
+</GridLayout>
+<GridLayout backgroundColor="white" rows="30,30,30,30,40,40,40,40,40,40,40" >
+    <StackLayout class="hr"row="0" ></StackLayout>
+    <ContentView color="black" class="page__content-placeholder" text="TYPE DE REMONTEES" backgroundColor="#000000" color="#FFFF00" row="1" fontWeight="Bold"></ContentView>
+    <StackLayout class="hr"row="2"></StackLayout>
+    <Label color="black" class="page__content-placeholder" text="TAPIS" row="3" backgroundColor="#000000" color="#FFFF00" fontWeight="Bold"></Label>
+    <StackLayout class="hr"row="4"></StackLayout>
+    <Label color="black" class="page__content-placeholder" text="TELESKI(TK)" row="5" backgroundColor="#000000" color="#FFFF00" fontWeight="Bold"></Label>
+    <StackLayout class="hr"row="6"></StackLayout>
+    <Label color="black" class="page__content-placeholder" text="TELESIEGE (TSD)" row="7" backgroundColor="#000000" color="#FFFFFF" fontWeight="Bold"></Label>
+    <StackLayout class="hr"row="8"></StackLayout>
+    <Label color="black" class="page__content-placeholder" text="TELESIEGE (TSF)" row="9" backgroundColor="#000000" color="#FFFF00" fontWeight="Bold"></Label>
+    <StackLayout class="hr"row="10"></StackLayout>
+</GridLayout>
+<GridLayout class="espacement" backgroundColor="#C4C4C4" rows="50,50,70,50,50,50" columns="*,*,*">
+    <Label color="black" class="page__content-placeholder" text="BEARNAIS" row="0" column="0" fontWeight="Bold"></Label>
+    <Label class="page__content-placeholder" id="status_open" text="Ouvert" row="0" column="1" fontWeight="Bold" paddingLeft="60px" paddingRight="60px"></Label>
+    <Label color="black" class="page__content-placeholder" text="9:00" row="0" column="2" fontWeight="Bold"></Label>
+    <Label class="page__content-placeholder" text="Maintenon  |" color="#008000" row="1" column="0" fontWeight="Bold"></Label>
+    <Label class="page__content-placeholder" text="Bearnais  |" color="#0000FF" row="1" column="1" fontWeight="Bold"></Label>
+    <Label class="page__content-placeholder" text="Grenouilles" color="#0000FF" row="1" column="2"  fontWeight="Bold"></Label>
+    <Label color="black" class="page__content-placeholder" text="SAPIN" row="2" column="0" fontWeight="Bold"></Label>
+    <Label class="page__content-placeholder" id="status_open" text="Ouvert" row="2" column="1" fontWeight="Bold" paddingLeft="60px" paddingRight="60px"></Label>
+    <Label color="black" class="page__content-placeholder" text="9:00" row="2" column="2" fontWeight="Bold"></Label>
+    <Label color="black" class="page__content-placeholder" text="BRACA" row="3" column="0" fontWeight="Bold"></Label>
+    <Label class="page__content-placeholder" id="status_open" text="Ouvert" row="3" column="1" fontWeight="Bold" paddingLeft="60px" paddingRight="60px"></Label>
+    <Label color="black" class="page__content-placeholder" text="9:00" row="3" column="2" fontWeight="Bold"></Label>
+    <Label color="black" class="page__content-placeholder" text="PIQUETTE" row="4" column="0" fontWeight="Bold"></Label>
+    <Label class="page__content-placeholder" id="status_open" text="Ouvert" row="4" column="1" fontWeight="Bold" paddingLeft="60px" paddingRight="60px"></Label>
+    <Label color="black" class="page__content-placeholder" text="9:15" row="4" column="2" fontWeight="Bold"></Label>
+    <Label color="black" class="page__content-placeholder" text="TURON" row="5" column="0" fontWeight="Bold"></Label>
+    <Label class="page__content-placeholder" id="status_closed" text="Fermé" row="5" column="1" fontWeight="Bold" paddingLeft="60px" paddingRight="60px"></Label>
+    <Label color="black" class="page__content-placeholder" text="9:00" row="5" column="2" fontWeight="Bold"></Label>
+</GridLayout>
+</StackLayout>
+</ScrollView>
+<StackLayout>
+    <BottomNavigation height="100%">
+        <TabStrip>
+            <TabStripItem>
+                <Label col="0" text="&#xf05a;" class="nt-icon fas"></Label>
+            </TabStripItem>
+            <TabStripItem>
+                <Label col="1" text="&#xf041;" class="nt-icon fas"></Label>
+            </TabStripItem>
+            <TabStripItem>
+                <Label col="2" text="&#xf3c5;" class="nt-icon fas"></Label>
+            </TabStripItem>
+        </TabStrip>
+    </BottomNavigation>
+</StackLayout>
+
+
+
+
+
+
+
