@@ -5,6 +5,8 @@ import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angul
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { FormCarnetComponent } from './form_carnet/form-carnet/form-carnet.component';
+import { SanteService } from "./services/sante.service";
+import { DataService } from "./services/data.service";
 
 @NgModule({
     bootstrap: [
@@ -19,6 +21,7 @@ import { FormCarnetComponent } from './form_carnet/form-carnet/form-carnet.compo
         AppComponent,
         FormCarnetComponent
     ],
+    providers:[SanteService, DataService],
     schemas: [
         NO_ERRORS_SCHEMA
     ]

@@ -37,8 +37,8 @@
         "Donneur d'organe":"OUI",
         "Allergie(s)":"NON",
         "Pathologie(s)":"Hypertension",
-        "Traitement(s)":"Bêta-bloquants",
-        "Nom personne à contacter":"Julien Roussel",
+        "Traitement(s)":"Beta-bloquants",
+        "personneContact": {"nom":"martin","prenom":"michel"},
         "Téléphone personne à contacter":"0636442108"
     },
     {
