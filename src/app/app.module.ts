@@ -7,6 +7,7 @@ import { AppComponent } from "./app.component";
 import { FormCarnetComponent } from './form_carnet/form-carnet/form-carnet.component';
 import { SanteService } from "./services/sante.service";
 import { DataService } from "./services/data.service";
+import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
 
 @NgModule({
     bootstrap: [
@@ -15,7 +16,8 @@ import { DataService } from "./services/data.service";
     imports: [
         AppRoutingModule,
         NativeScriptModule,
-        NativeScriptUISideDrawerModule
+        NativeScriptUISideDrawerModule,
+        NativeScriptHttpClientModule
     ],
     declarations: [
         AppComponent,
