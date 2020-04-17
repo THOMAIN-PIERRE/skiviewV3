@@ -8,6 +8,10 @@ import { FormCarnetComponent } from './form_carnet/form-carnet/form-carnet.compo
 import { SanteService } from "./services/sante.service";
 import { DataService } from "./services/data.service";
 import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
+import { AccueilCarnetSanteComponent } from './carnetSante/accueil-carnet-sante/accueil-carnet-sante.component';
+import { CguComponent } from './carnetSante/cgu/cgu.component';
+import { FormulaireComponent } from './carnetSante/formulaire/formulaire.component';
+import { CarnetRempliComponent } from './carnetSante/carnet-rempli/carnet-rempli.component';
 
 @NgModule({
     bootstrap: [
@@ -21,7 +25,11 @@ import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
     ],
     declarations: [
         AppComponent,
-        FormCarnetComponent
+        FormCarnetComponent,
+        AccueilCarnetSanteComponent,
+        CguComponent,
+        FormulaireComponent,
+        CarnetRempliComponent
     ],
     providers:[SanteService, DataService],
     schemas: [
