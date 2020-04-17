@@ -9,10 +9,11 @@ import { ConfirmationEnvoiComponent } from './confirmation-envoi/confirmation-en
 import { ServicesComponent } from './services/services.component';
 import { HistoriqueSignalementComponent } from './historique-signalement/historique-signalement.component';
 import { FicheSignalementComponent } from './fiche-signalement/fiche-signalement.component';
+import { Photo2Component } from './photo2/photo2.component';
 
 
 @NgModule({
-  declarations: [CategorieComponent, PhotoComponent, RecapitulatifComponent, ConfirmationEnvoiComponent, ServicesComponent, HistoriqueSignalementComponent, FicheSignalementComponent],
+  declarations: [CategorieComponent, PhotoComponent, RecapitulatifComponent, ConfirmationEnvoiComponent, ServicesComponent, HistoriqueSignalementComponent, FicheSignalementComponent, Photo2Component],
   imports: [
     DangerRoutingModule,
     NativeScriptCommonModule

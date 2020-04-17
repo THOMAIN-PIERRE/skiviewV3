@@ -1,1 +1,83 @@
-<Button text="carnetrempli works!" class="btn btn-primary"></Button>
+<ActionBar class="actionBarSignalement">
+    <!-- 
+    Use the NavigationButton as a side-drawer button in Android
+    because ActionItems are shown on the right side of the ActionBar
+    -->
+    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
+    <!-- 
+    Use the ActionItem for IOS with position set to left. Using the
+    NavigationButton as a side-drawer button in iOS is not possible,
+    because its function is to always navigate back in the application.
+    -->
+    <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
+        ios.position="left">
+    </ActionItem>
+    <Label class="blackPage" text="CARNET DE SANTE"></Label>
+</ActionBar>
+<ScrollView>
+<GridLayout class="settings__page__content">
+        <StackLayout>
+            <GridLayout columns="auto, *">
+                <ContentView col="0" id="myView" width="300px" height="300px" ></ContentView>
+                <Label col="1" text="Pierre THOMAIN" class="nomPrenom_carnet"></Label>
+                <Label col="1" text="39 ans" class="age_carnet"></Label>
+            </GridLayout>
+            <GridLayout columns="auto, *">
+                <Label col="0" class="groupe_sanguin" text="Groupe sanguin :"></Label>
+                <Label col="1" text="&#xf043;" class="nt-icon fas" id="goutte_de_sang"></Label>
+            </GridLayout>
+            <GridLayout columns="auto, *">
+                <Label col="0" class="groupe_sanguin" text="Taille (cm) :"></Label>
+                <Label col="1" text="180" class="groupe_sanguin"></Label>
+            </GridLayout>
+            <GridLayout columns="auto, *">
+                <Label col="0" class="groupe_sanguin" text="Poids (kg) :"></Label>
+                <Label col="1" text="85" class="groupe_sanguin"></Label>
+            </GridLayout>
+            <GridLayout columns="auto, *">
+                <Label col="0" class="groupe_sanguin" text="Donneur d'organe :"></Label>
+                <Label col="1" text="OUI" class="groupe_sanguin"></Label>
+            </GridLayout>
+            <GridLayout columns="auto, *">
+                <Label col="0" class="groupe_sanguin" text="Allergie(s) :"></Label>
+                <Label col="1" text="Aucunes" class="groupe_sanguin"></Label>
+            </GridLayout>
+            <GridLayout columns="auto, *">
+                <Label col="0" class="groupe_sanguin" text="Pathologie(s)(s) :"></Label>
+                <Label col="1" text="Aucunes" class="groupe_sanguin"></Label>
+            </GridLayout>
+            <GridLayout columns="auto, *">
+                <Label col="0" class="groupe_sanguin" text="Traitement(s) :"></Label>
+                <Label col="1" text="Aucuns" class="groupe_sanguin"></Label>
+            </GridLayout>
+            <GridLayout columns="auto, *">
+                <Label col="0" class="groupe_sanguin" text="Personne à contacter :"></Label>
+                <Label col="1" text="Guillaume Thomain" textWrap="true" class="groupe_sanguin"></Label>
+            </GridLayout>
+            <GridLayout columns="auto, *">
+                <Label col="0" class="groupe_sanguin" text="Téléphone contact :"></Label>
+                <Label col="1" text="0673876546" textWrap="true" class="groupe_sanguin"></Label>    
+            </GridLayout>
+            <GridLayout>
+                <Button row="0" text="RENSEIGNER MON CARNET" class="btn btn-warning" id="button_health_book"></Button> 
+            </GridLayout>
+        </StackLayout>
+    </GridLayout>
+ </ScrollView>            
+            
+            <BottomNavigation class="bottomNav" height="100%">
+                <StackLayout class="hr" height="160px"></StackLayout>
+                <TabStrip>
+                    <TabStripItem>
+                        <Label col="0" text="&#xf05a;" class="nt-icon fas"></Label>
+                    </TabStripItem>
+                    <TabStripItem>
+                        <Label col="1" text="&#xf041;" class="nt-icon fas"></Label>
+                    </TabStripItem>
+                    <TabStripItem>
+                        <Label col="2" text="&#xf3c5;" class="nt-icon fas"></Label>
+                    </TabStripItem>
+                </TabStrip>
+            </BottomNavigation>
+ 
+

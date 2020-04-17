@@ -1,1 +1,55 @@
-<Button text="historique-signalement works!" class="btn btn-primary"></Button>
+<ActionBar class="actionBarSignalement">
+    <!-- 
+    Use the NavigationButton as a side-drawer button in Android
+    because ActionItems are shown on the right side of the ActionBar
+    -->
+    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
+    <!-- 
+    Use the ActionItem for IOS with position set to left. Using the
+    NavigationButton as a side-drawer button in iOS is not possible,
+    because its function is to always navigate back in the application.
+    -->
+    <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
+        ios.position="left">
+    </ActionItem>
+    <Label class="blackPage" text="MES SIGNALEMENTS"></Label>
+    </ActionBar>
+
+    <GridLayout>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout class="hr"></StackLayout>
+                <GridLayout columns="auto, *" class="mes_signalements">
+                    <Label col="0" text="FICHE N° 00001" class="numero_fiche"></Label>
+                    <Label col="1" text="20/04/2019 11:35" class="date_heure"></Label>
+                </GridLayout>
+                <GridLayout columns="auto, 200">
+                    <ContentView col="0" id="myDanger1" width="300px" height="300px" ></ContentView>
+                    <Label col="1" text="SIGNALER DANGER" class="declaration"></Label>
+                    <Label col="1" text="Element sur la piste" class="categorie"></Label>
+                    <Label col="1" text="STATUT : PRIS EN COMPTE" class="statut"></Label>
+                </GridLayout>
+                <StackLayout class="hr"></StackLayout>
+                <GridLayout columns="auto, *" class="mes_signalements">
+                    <Label col="0" text="FICHE N° 00002" class="numero_fiche"></Label>
+                    <Label col="1" text="24/09/2019 15:45" class="date_heure"></Label> 
+                </GridLayout>
+                <GridLayout columns="auto, *">
+                    <ContentView col="0" id="myDanger2" width="300px" height="300px" ></ContentView>
+                    <Label col="1" text="SIGNALER DANGER" class="declaration"></Label>
+                    <Label col="1" text="Signalétique" class="categorie"></Label>
+                    <Label col="1" text="STATUT : PRIS EN COMPTE" class="statut"></Label>
+                </GridLayout>
+                <StackLayout class="hr"></StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </GridLayout>
+<!-- <StackLayout>
+    <BottomNavigation height="1900px">
+        <TabStrip>
+            <TabStripItem>
+                <Label col="0" text="&#xf015;" <class="nt-icon fas"> id="goutte_de_sang"></Label>
+            </TabStripItem>
+        </TabStrip>
+    </BottomNavigation>
+</StackLayout> -->

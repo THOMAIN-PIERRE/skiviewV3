@@ -10,10 +10,11 @@ import { NatureComponent } from './nature/nature.component';
 import { ActiviteComponent } from './activite/activite.component';
 import { BlessureComponent } from './blessure/blessure.component';
 import { ServicesComponent } from './services/services.component';
+import { GestesecoursComponent } from './gestesecours/gestesecours.component';
 
 
 @NgModule({
-  declarations: [AccueilSosComponent, EtatComponent, GraviteComponent, AppelComponent, NatureComponent, ActiviteComponent, BlessureComponent, ServicesComponent],
+  declarations: [AccueilSosComponent, EtatComponent, GraviteComponent, AppelComponent, NatureComponent, ActiviteComponent, BlessureComponent, ServicesComponent, GestesecoursComponent],
   imports: [
     SosRoutingModule,
     NativeScriptCommonModule
