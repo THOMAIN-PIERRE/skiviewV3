@@ -1,1 +1,65 @@
-<Button text="activite works!" class="btn btn-primary"></Button>
+<ActionBar class="fond">
+    <!-- 
+    Use the NavigationButton as a side-drawer button in Android
+    because ActionItems are shown on the right side of the ActionBar
+    -->
+    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()" color="Black">
+    </NavigationButton>
+    <!-- 
+    Use the ActionItem for IOS with position set to left. Using the
+    NavigationButton as a side-drawer button in iOS is not possible,
+    because its function is to always navigate back in the application.
+    -->
+    <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()" ios.position="left"
+        color="Black">
+    </ActionItem>
+    <Label text="SOS victime: POSTE DE SECOURS" color="white"></Label>
+
+</ActionBar>
+<ScrollView>
+    <GridLayout class="page__content" backgroundColor="#3E3F32">
+        <FlexboxLayout backgroundColor="#3E3F32" flexDirection="row" flexWrap="wrap" justifyContent="space-around"
+            marginTop="50%">
+          
+        <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="Le bléssé pratique" row="0"
+            color="white" fontSize=25px; fontWeight="Bold" marginbottom="100%" marginLeft="10%"
+            marginRight="10%"></Label>
+        <Label [nsRouterLink]="['/home']"class="position" color="white" paddingTop="100%" paddingLeft="55%" class="bouttonchute" class="pictureA1"
+            text="Skieur" color="white" fontWeight="Bold" width="400px" height="400px"
+            backgroundColor="#FF0000"></Label>
+        <Label [nsRouterLink]="['/home']" class="bouttonchute" color="white" paddingTop="100%" paddingLeft="30%" text="Snowboardeur"
+            class="pictureB1" width="400px" height="400px" fontWeight="Bold" backgroundColor="#FF0000"></Label>
+        <Label [nsRouterLink]="['/home']" class="bouttonchute" color="white" paddingTop="100%" paddingLeft="55%" text="Luge" class="pictureC1"
+            width="400px" height="400px" fontWeight="Bold" backgroundColor="#FF0000"></Label>
+
+        <Label [nsRouterLink]="['/home']" class="bouttonchute" color="white" paddingTop="100%" paddingLeft="35%" text="Randonnée" class="pictureD1"
+            width="400px" height="400px" fontWeight="Bold" backgroundColor="#FF0000"></Label>
+
+        <Button text="Envoyer" [nsRouterLink]="['/home']" backgroundColor="#0DF24D" color="white" (tap)="submit()"
+            fontSize="Large" class="soumission" marginTop="100%"></Button>
+        </FlexboxLayout>
+    </GridLayout>
+
+
+
+</ScrollView>
+
+
+<!-- <GridLayout>
+    <Button text="SOS" fontSize="100" color="white" backgroundColor="#FF0000" class="bouttonsos"></Button>
+</GridLayout> -->
+<!-- <GridLayout class="overlay" rows="50,50,50,50,50,50">
+    <Label class="page__content-placeholder" text="Les secours sont prevenus" color="black" marginTop="0"
+        fontWeight="Bold" fontSize="20px"row="1"></Label>
+    <Label class="page__content-placeholder" text="Ils seront bientot à vos cotés" color="black" marginTop="0"
+        fontWeight="Bold" fontSize="20px" row="2"></Label>
+    <Label class="page__content-placeholder" text="Restez calme" color="black" marginTop="0"fontSize="20px" fontWeight="Bold"
+         row="3"></Label>
+    <Label class="page__content-placeholder" text="Respirez profondement" color="black" marginTop="0" fontSize="20px"fontWeight="Bold"
+        row="4"></Label>
+    <Label class="page__content-placeholder" text="Respirez Calmement" color="black" marginTop="0" fontSize="20px" fontWeight="Bold"
+        row="5"></Label>
+    <GridLayout>
+        <button text="Complements d'Informations"  color="white" backgroundColor="#FF0000"></button>
+    </GridLayout>
+</GridLayout> -->

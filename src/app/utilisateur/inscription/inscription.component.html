@@ -1,1 +1,54 @@
-<Button text="inscription works!" class="btn btn-primary"></Button>
+<ActionBar class="entete">
+    <!-- 
+    Use the NavigationButton as a side-drawer button in Android
+    because ActionItems are shown on the right side of the ActionBar
+    -->
+    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
+    <!-- 
+    Use the ActionItem for IOS with position set to left. Using the
+    NavigationButton as a side-drawer button in iOS is not possible,
+    because its function is to always navigate back in the application.
+    -->
+    <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()" ios.position="left">
+    </ActionItem>
+    <Label text="INSCRIPTION" class="titrecondition"></Label>
+</ActionBar>
+
+<GridLayout class="page__content"rows="50,50,50" columns=*,*,*>
+    <!-- <Label class="page__content-icon fas" text="&#xf002;"></Label> -->
+    <Label class="page__content-placeholder"[nsRouterLink]="['/congeneutilisation']" text="Conditions générales d'utilisations" row="0" colspan="3"color="black"fontWeight="Bold"></Label>
+     
+
+    <!-- <Label text="{{ checkYes ? '&#xf192;' : '&#xf10c;'}}" 
+        class="{{ checkYes ? 'fontawesome' : 'radioBefore'}}" 
+        (tap)="changeAction()"row="1" column="0" >
+    </Label>  -->
+    <Switch checked="true"row="1" column="0"></Switch>
+   <label class="page__content-placeholder" text="Acceptez ces conditions " fontSize="20px" color="black"marginTop="0%"
+   row="1" column="1"colspan="2" fontWeight="Bold" >
+    </label> 
+</GridLayout>
+
+
+ <StackLayout class="form" marginTop="25%">
+    <StackLayout class="input-field">
+      <TextField class="input" hint="entrez votre email" ></TextField>
+    </StackLayout>
+  
+    <StackLayout class="input-field">
+      <TextField class="input"hint="entrez votre mot de passe" ></TextField>
+    </StackLayout>
+  
+    
+    <StackLayout class="input-field">
+      <TextField class="input"hint="entrez N° de téléphone" ></TextField>
+    </StackLayout>
+
+    <Button  backgroundColor="black" color="#F8FD07" text="INSCRIPTION" (tap)="submit()"></Button>
+  </StackLayout> 
+ <!-- < <StackLayout >
+  RadioGroup  [(value)] = "dataBoundVariable" >
+      <RadioButton text = "j'accepte les conditions générales d'utilisations " > </RadioButton >  
+  </RadioGroup> 
+</StackLayout>-->
+  

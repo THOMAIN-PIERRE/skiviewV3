@@ -1,1 +1,51 @@
-<Button text="appel works!" class="btn btn-primary"></Button>
+<ActionBar class="entete">
+    <!-- 
+    Use the NavigationButton as a side-drawer button in Android
+    because ActionItems are shown on the right side of the ActionBar
+    -->
+    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
+    <!-- 
+    Use the ActionItem for IOS with position set to left. Using the
+    NavigationButton as a side-drawer button in iOS is not possible,
+    because its function is to always navigate back in the application.
+    -->
+    <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()" ios.position="left">
+    </ActionItem>
+    <Label text="SOS VICTIME" color="black"></Label>
+
+</ActionBar>
+<GridLayout class="overlay" rows="50,50,50,50,50,50,120,50">
+    <Label class="page__content-placeholder" text="Les secours sont prevenus" color="black" marginTop="0"
+        fontWeight="Bold" fontSize="20px" row="1"></Label>
+    <Label class="page__content-placeholder" text="Ils seront bientot à vos cotés" color="black" marginTop="0"
+        fontWeight="Bold" fontSize="20px" row="2"></Label>
+    <Label class="page__content-placeholder" text="Restez calme" color="black" marginTop="0" fontSize="18px"
+        fontWeight="Bold" row="3"></Label>
+    <Label class="page__content-placeholder" text="Respirez profondement" color="black" marginTop="0" fontSize="18px"
+        fontWeight="Bold" row="4"></Label>
+    <Label class="page__content-placeholder" text="Respirez Calmement" color="black" marginTop="0" fontSize="18px"
+        fontWeight="Bold" row="5"></Label>
+    <Label class="page__content-placeholder" text="" color="black" marginTop="0"
+        fontSize="18px" fontWeight="Bold" row="6"></Label>
+    <Label class="page__content-placeholder"  width="90%" textAlign="center" paddingTop="10%" paddingLeft="47%"height="10%"text=" Gestes de Premiers secours"[nsRouterLink]="['/gestes']" backgroundColor="#FDE407" color="black" marginTop="0"
+        fontSize="18px" fontWeight="Bold" row="7"></Label>
+    <GridLayout>
+        <button text="Complements d'Informations"  [nsRouterLink]="['/naturevictime']" pageTransition="slide"
+            color="white" backgroundColor="#FF0000" marginTop="20%" marginBottom="0"></button>
+
+    </GridLayout>
+
+</GridLayout>
+<GridLayout class="page__content" rows="50,50,50">
+    <!-- <Label class="page__content-icon far" text="&#xf1ea;"></Label> -->
+    <Label row="0" class="page__content-placeholder" text="POSTE DE SECOURS" color="black" marginTop="0"
+        fontWeight="Bold" marginTop="0"></Label>
+    <Label class="page__content-placeholder" text="Pour activer le SOS:" color="black" marginTop="0" fontWeight="Bold"
+        marginTop="0" row="1"></Label>
+    <Label class="page__content-placeholder" text="appuyer sur le bouton SOS" color="black" marginTop="0"
+        fontWeight="Bold" marginTop="0" row="2"></Label>
+
+</GridLayout>
+<GridLayout>
+    <Button text="SOS" fontSize="100" color="white" backgroundColor="#FF0000" class="bouttonsos"></Button>
+</GridLayout>
