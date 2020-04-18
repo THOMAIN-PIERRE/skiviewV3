@@ -2,7 +2,7 @@ import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { SosRoutingModule } from './sos-routing.module';
 import { NativeScriptCommonModule } from 'nativescript-angular/common';
-import { AccueilSosComponent } from './accueil-sos/accueil-sos.component';
+import { AccueilSOSComponent } from './accueil-sos/accueil-sos.component';
 import { EtatComponent } from './etat/etat.component';
 import { GraviteComponent } from './gravite/gravite.component';
 import { AppelComponent } from './appel/appel.component';
@@ -14,7 +14,7 @@ import { GestesecoursComponent } from './gestesecours/gestesecours.component';
 
 
 @NgModule({
-  declarations: [AccueilSosComponent, EtatComponent, GraviteComponent, AppelComponent, NatureComponent, ActiviteComponent, BlessureComponent, ServicesComponent, GestesecoursComponent],
+  declarations: [AccueilSOSComponent, EtatComponent, GraviteComponent, AppelComponent, NatureComponent, ActiviteComponent, BlessureComponent, ServicesComponent, GestesecoursComponent],
   imports: [
     SosRoutingModule,
     NativeScriptCommonModule
