@@ -7,7 +7,6 @@ const routes: Routes = [
     { path: "informations", loadChildren: () => import("~/app/informations/informations.module").then((m) => m.InformationsModule) },
     { path: "carnet", loadChildren: () => import("~/app/carnet/carnet.module").then((m) => m.CarnetModule) },
     { path: "danger", loadChildren: () => import("~/app/danger/danger.module").then((m) => m.DangerModule) },
-    { path: "accueil", loadChildren: () => import("~/app/carnet/carnet.module").then((m) => m.CarnetModule) },
     { path: "sos", loadChildren: () => import("~/app/sos/sos.module").then((m) => m.SosModule) }
     
 ];
