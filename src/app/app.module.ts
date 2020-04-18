@@ -4,14 +4,16 @@ import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angul
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { FormCarnetComponent } from './form_carnet/form-carnet/form-carnet.component';
-import { SanteService } from "./services/sante.service";
+
+
 import { DataService } from "./services/data.service";
 import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
-import { AccueilCarnetSanteComponent } from './carnetSante/accueil-carnet-sante/accueil-carnet-sante.component';
-import { CguComponent } from './carnetSante/cgu/cgu.component';
-import { FormulaireComponent } from './carnetSante/formulaire/formulaire.component';
-import { CarnetRempliComponent } from './carnetSante/carnet-rempli/carnet-rempli.component';
+import { CarnetSanteService } from "./services/carnet-sante.service";
+import { IdService } from "./services/id.service";
+import { CarnetrempliComponent } from "./carnet/carnetrempli/carnetrempli.component";
+import { FormulaireComponent } from "./carnet/formulaire/formulaire.component";
+import { CguComponent } from "./carnet/cgu/cgu.component";
+
 
 @NgModule({
     bootstrap: [
@@ -25,13 +27,11 @@ import { CarnetRempliComponent } from './carnetSante/carnet-rempli/carnet-rempli
     ],
     declarations: [
         AppComponent,
-        FormCarnetComponent,
-        AccueilCarnetSanteComponent,
         CguComponent,
         FormulaireComponent,
-        CarnetRempliComponent
+        CarnetrempliComponent
     ],
-    providers:[SanteService, DataService],
+    providers:[CarnetSanteService, DataService, IdService],
     schemas: [
         NO_ERRORS_SCHEMA
     ]
