@@ -21,6 +21,309 @@
 }
 
 
+.position{
+    
+    // padding-top:40;
+    //   padding-left: 45;
+      text-align: center;
+      color: white;
+      font-size: 18px;
+}
+.picture{
+    background-image: url("~/images/jambebis.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.pictureA{
+    background-image: url("~/images/chute.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.pictureB{
+    background-image: url("~/images/collision.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.pictureC{
+    background-image: url("~/images/autre.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.pictureD{
+    background-image: url("~/images/tete.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.pictureE{
+    background-image: url("~/images/bras.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.pictureF{
+    background-image: url("~/images/epaule.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.pictureG{
+    background-image: url("~/images/genou.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.pictureA1{
+    background-image: url("~/images/skieur.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.pictureB1{
+    background-image: url("~/images/snowboard.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.pictureC1{
+    background-image: url("~/images/luge.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.pictureD1{
+    background-image: url("~/images/raquette.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.far {
+    font-family: "Font Awesome 5 Free", "fa-regular-400";
+    font-weight: 400;
+}
+
+.font-awesome {
+    font-family: "fontawesome-webfont";
+    font-size: 24;
+ }
+ .fond2{
+     background-color: #EB1414;
+ }
+ .radioBefore {
+    font-family: "fontawesome-webfont";
+    font-size: 24;
+ }
+.titrecondition{
+    color: black;
+    font-size: large;
+}
+.condition{
+    font-size: 20; 
+    color: black;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+.notifheure{
+    color:white;
+    font-weight:Bold; 
+    font-style:italic;
+    font-size: 10px; 
+    margin-top: 10%;
+}
+.imgnotif{
+    border: 5px black solid;
+}
+.encadre{
+    border-width:5px;
+    border-style:solid;
+    border-color:black;
+    text-align: center;
+    margin-bottom: 20%;
+    margin-bottom: 20%;
+}
+.bouttonsos{
+// background-image: url("https://lh3.googleusercontent.com/proxy/uCtBqMRWzx1HfV_baaQ0lRfaL5gmST2p7NuFvII7mDleQgGox_QTEakySz7tpt9cWhRhduZNQ3116d82nrFR1eJ2K_RcBVs-2mJ4S7r-IQMRAyRsSVg99u7HH-uk"); 
+width: 75%;
+height: 50%;
+background-size: contain;
+background-repeat: no-repeat;
+margin-top: 10%;
+border-radius: 25%;
+}
+.bouttonsos:active{
+transform: scale(0.75);
+}
+.fond{
+    background-color:#3E3F32 ;
+}
+.entete{background-color: white;
+        }
+.bouttonchute{
+    // background-image: url("https://svgsilh.com/svg/2705600-ffeb3b.svg");
+    margin-top: 20%;
+    margin-bottom: 20%;
+    border-radius: 100%;
+    
+}
+.ButtonOne{
+    border-radius: 25%;
+    margin-top: 20%;
+    background-color:#FDE407 ;
+}
+.ButtonTwo{
+    border-radius: 25%;
+    margin-top: 40%;
+    background-color:#FF0000 ; 
+}
+ContentView:hover{
+    background-color:#F8FD07 ;
+}
+.doc{
+    // margin-top:50%;
+    margin-bottom: 0;
+    margin-left: 10%;
+}
+.overlay{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:#C4C4C4;
+    z-index: 2;
+    opacity:0.8;
+}
+
+.bouttonchute:active{
+    background-color: #F8FD07;
+}
+.soumission{
+    border-radius: 10%;
+    width: 800px;
+    height: 100px;
+    margin-top: 0%;
+    margin-bottom: 10%;
+}
+// .coverImage {
+//     background-image: url('https://thomascapelli.fr/wp-content/uploads/2015/02/2-sapins_chartreuse_neige-1024x576.jpg%27');
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+// }
+// .SEVERE{
+//     width: 200;
+//     height: 200;
+//     background-color: red;
+//     color: black;
+//     font-size: 30;
+//     font-weight: bold;
+//     border-radius: 25;
+//     margin-top: 30;
+
+// }
+// .SERIEUSE{
+//     width: 200;
+//     height: 200;
+//     background-color: orange;
+//     color: black;
+//     font-size: 30;
+//     font-weight: bold;
+//     border-radius: 25;
+//     margin-top: 30;
+
+// }
+// .MODEREE{
+//     width: 200;
+//     height: 200;
+//     background-color: yellow;
+//     color: black;
+//     font-size: 30;
+//     font-weight: bold;
+//     border-radius: 25;
+//     margin-top: 30;
+
+// }
+// .LEGERE{
+//     width: 200;
+//     height: 200;
+//     background-color: green;
+//     color: black;
+//     font-size: 30;
+//     font-weight: bold;
+//     border-radius: 25;
+//     margin-top: 30;
+
+// }
+// Common page class
+.page__content {
+    &-icon,
+    &-placeholder {
+        color: const(grey);
+        font-size: 15;
+        vertical-align: center;
+        horizontal-align: center;
+    }
+
+    &-icon {
+        font-size: 72;
+        vertical-align: top;
+        margin-top: 20%;
+    }
+}
+
+// Drawer navigation custom styles
+.nt-drawer__header-image {
+    color: const(grey);
+}
+.label {
+    color: rgb(0, 0, 0);
+}
+
+// .bottom-nav{
+//     background-color: rgb(0, 0, 0);
+// }
+
+.fas{
+    color: #F8FD07;
+}
+.boutonferme{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRF1eEyANbRyYqmWMCNxqIDkJpvlVGTGUmZI9t8wjxVsyHXosec&usqp=CAU");
+    background-repeat: no-repeat;
+    width: 25%;
+    height: 25%;
+}
+
 // Common page class
 .page__content {
     background-color: yellow;
