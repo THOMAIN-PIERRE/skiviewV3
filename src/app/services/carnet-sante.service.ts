@@ -4,6 +4,14 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class CarnetSanteService {
+  dossierSante: any;
 
-  constructor() { }
+  constructor() {
+      this.dossierSante = {
+          prenom: "Pierre",
+          nom: "Thomain",
+          taille: 180,
+          poids: 80,
+      };
+  }
 }

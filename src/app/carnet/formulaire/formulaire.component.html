@@ -19,7 +19,7 @@
        
 <StackLayout class="form">
     <StackLayout class="input-field">
-    <TextField class="input" hint="Prénom"></TextField>
+    <TextField class="input" hint="Prénom" [(ngModel)]=santeServ.dossierSante.prenom></TextField>
     <TextField class="input" hint="Nom"></TextField>
     <TextField class="input" hint="Age" keyboardType="integer"></TextField>
     <TextField class="input" hint="Groupe sanguin"></TextField>
@@ -37,7 +37,7 @@
     </FlexboxLayout>
 </StackLayout>
 <StackLayout>
-    <BottomNavigation height="1900px">
+    <BottomNavigation height="100%">
         <TabStrip>
             <TabStripItem>
                 <Label col="0" text="&#xf05a;" class="nt-icon fas"></Label>

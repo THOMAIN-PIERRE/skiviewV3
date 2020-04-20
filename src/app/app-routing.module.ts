@@ -4,6 +4,9 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 
 const routes: Routes = [
     { path: "", redirectTo: "/home", pathMatch: "full" },
+    // pb pour pointer un composant de ces 2 modules
+    // { path: "utilisateur", loadChildren: () => import("~/app/utilisateur/utilisateur.module").then((m) => m.UtilisateurModule) },
+    // { path: "danger", loadChildren: () => import("~/app/danger/danger.module").then((m) => m.DangerModule) },
     { path: "informations", loadChildren: () => import("~/app/informations/informations.module").then((m) => m.InformationsModule) },
     { path: "carnet", loadChildren: () => import("~/app/carnet/carnet.module").then((m) => m.CarnetModule) },
     { path: "danger", loadChildren: () => import("~/app/danger/danger.module").then((m) => m.DangerModule) },

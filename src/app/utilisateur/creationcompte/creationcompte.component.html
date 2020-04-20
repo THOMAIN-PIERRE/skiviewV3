@@ -10,27 +10,29 @@
     because its function is to always navigate back in the application.
     -->
     <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
-        ios.position="left">
+        ios.position="left" >
     </ActionItem>
-    <Label class="pageLabel" text=""></Label>
+    <Label class="pageLabel" text="ACCUEIL"></Label>
 </ActionBar>
 <StackLayout>
 <GridLayout class="page__content">
 
-    <GridLayout rows="400">
+    <!-- <GridLayout rows="350">
+        <image row="0" src="~/images/thumbnail.png"></image>
+    </GridLayout> -->
+    <GridLayout rows="350">
         <image row="0" src="https://pngimage.net/wp-content/uploads/2018/06/mountain-silhouette-png-3.png"></image>
     </GridLayout>
     <GridLayout rows="850">
-        <ContentView row="0" id="cache_noir" width="1500px" height="1000px" backgroundColor="#000000"></ContentView>
-        <ContentView row="1" id="message_accueil" width="1000px" height="550px" backgroundColor="#433B3B" ></ContentView>
+        <ContentView row="0" id="cache_noir" width="100%" height="62%" backgroundColor="#000000"></ContentView>
+        <ContentView row="1" id="message_accueil" width="90%" height="30%" backgroundColor="#433B3B" ></ContentView>
         <Label row="2" class="entete2" text="Bienvenue !"></Label>
-        <!-- <ContentView row="2" id="message_accueil" width="1000px" height="550px" backgroundColor="#433B3B" ></ContentView> -->
         <Label row="3" class="entete3" text="Créez votre compte et profitez en toute liberté des fonctionnalités de votre application Skiview" textWrap="true"></Label>
         <Button row="4" text="CREER UN COMPTE" class="btn_creer_un_compte"></Button> 
     </GridLayout>
 </GridLayout>
 </StackLayout>
-<StackLayout class="hr" height="1505px"></StackLayout>
+<StackLayout class="hr" height="73%"></StackLayout>
 <StackLayout>
     <BottomNavigation height="100%">
         <TabStrip>
@@ -46,6 +48,45 @@
         </TabStrip>
     </BottomNavigation>
 </StackLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
