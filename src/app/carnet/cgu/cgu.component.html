@@ -3,41 +3,49 @@
     Use the NavigationButton as a side-drawer button in Android
     because ActionItems are shown on the right side of the ActionBar
     -->
-    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"color="black"></NavigationButton>
+    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()" color="black">
+    </NavigationButton>
     <!-- 
     Use the ActionItem for IOS with position set to left. Using the
     NavigationButton as a side-drawer button in iOS is not possible,
     because its function is to always navigate back in the application.
     -->
-    <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"color="black"
+    <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()" color="black"
         ios.position="left">
     </ActionItem>
-    <Label text="Carnet de santé: Condition d'Utilisation" class="titrecondition" fontWeight="bold" Color="black"></Label>
+    <Label text="Carnet de santé: Condition d'Utilisation" class="titrecondition" fontWeight="bold"
+        Color="black"></Label>
 </ActionBar>
- <ScrollView>
-    <GridLayout class="page__content"rows="100,100,100" class="condition">
-        
-        <Label class="page__content-placeholder" text="   L’application Skiview vous permet d’enregistrer des données cruciales concernant votre état de santé susceptibles de faciliter,d’améliorer, de sécurier votre prise en charge en cas de blessure sur le domaine skiable. " row="0" color="black" textWrap="true"></Label>
-        <Label class="page__content-placeholder" text="    Vous êtes libre de choisir d’utiliser ou non ce service. Le formulaire de renseignement des données ne contient aucun champs obligatoire. C’est vous qui décidez des informations que vous consentez à partager avec nos équipes."row="1" color="black" textWrap="true"></Label>
-        <Label class="page__content-placeholder" text="    Ces informations leur permettront de vous prendre en charge plus efficacement et de façon personnalisée. Elles leur permettront également d’assurer un meilleur passage de relais avec les ambulanciers et/ou le médecin qui vous prendrons en charge."row="2" color="black" textWrap="true"></Label>
-       
-    </GridLayout> 
-    
-    </ScrollView> 
-    <GridLayout>
-        <Button text="Accepter ces conditions" backgroundColor="#0DF24D" color="white" (tap)="submit()" fontSize="Large"
-    class="soumission" marginTop="66%" marginBottom="10%"></Button>
+<ScrollView>
+    <GridLayout class="page__content" rows="100,100,100" class="condition">
+
+        <Label class="page__content-placeholder"
+            text="   L’application Skiview vous permet d’enregistrer des données cruciales concernant votre état de santé susceptibles de faciliter,d’améliorer, de sécurier votre prise en charge en cas de blessure sur le domaine skiable. "
+            row="0" color="black" textWrap="true"></Label>
+        <Label class="page__content-placeholder"
+            text="    Vous êtes libre de choisir d’utiliser ou non ce service. Le formulaire de renseignement des données ne contient aucun champs obligatoire. C’est vous qui décidez des informations que vous consentez à partager avec nos équipes."
+            row="1" color="black" textWrap="true"></Label>
+        <Label class="page__content-placeholder"
+            text="    Ces informations leur permettront de vous prendre en charge plus efficacement et de façon personnalisée. Elles leur permettront également d’assurer un meilleur passage de relais avec les ambulanciers et/ou le médecin qui vous prendrons en charge."
+            row="2" color="black" textWrap="true"></Label>
+
     </GridLayout>
-    <BottomNavigation height="1900px">
-        <TabStrip>
-            <TabStripItem>
-                <Label col="0" text="&#xf05a;" class="nt-icon fas"></Label>
-            </TabStripItem>
-            <TabStripItem>
-                <Label col="1" text="&#xf041;" class="nt-icon fas"></Label>
-            </TabStripItem>
-            <TabStripItem>
-                <Label col="2" text="&#xf041;" class="nt-icon fas"></Label>
-            </TabStripItem>
-        </TabStrip>
-    </BottomNavigation>
+
+</ScrollView>
+<GridLayout>
+    <Button text="Accepter ces conditions" backgroundColor="#0DF24D" color="white" (tap)="submit()" fontSize="Large"
+        class="soumission" marginTop="66%" marginBottom="10%"></Button>
+</GridLayout>
+<BottomNavigation height="1900px">
+    <TabStrip>
+        <TabStripItem>
+            <Label col="0" text="&#xf05a;" class="nt-icon fas"></Label>
+        </TabStripItem>
+        <TabStripItem>
+            <Label col="1" text="&#xf041;" class="nt-icon fas"></Label>
+        </TabStripItem>
+        <TabStripItem>
+            <Label col="2" text="&#xf041;" class="nt-icon fas"></Label>
+        </TabStripItem>
+    </TabStrip>
+</BottomNavigation>
