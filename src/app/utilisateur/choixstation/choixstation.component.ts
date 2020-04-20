@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChoixstationComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
+    console.log("Choix station chargé dans le routeur");
   }
 
 }

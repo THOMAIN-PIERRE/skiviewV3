@@ -5,15 +5,15 @@ import { NativeScriptCommonModule } from 'nativescript-angular/common';
 import { GestionCompteComponent } from './gestion-compte/gestion-compte.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { ConnexionComponent } from './connexion/connexion.component';
-import { ServicesComponent } from './services/services.component';
 import { CreationcompteComponent } from './creationcompte/creationcompte.component';
 import { AccueilutilisateurComponent } from './accueilutilisateur/accueilutilisateur.component';
 import { ChoixstationComponent } from './choixstation/choixstation.component';
 import { CguappliComponent } from './cguappli/cguappli.component';
+import { StationComponent } from './station/station.component';
 
 
 @NgModule({
-  declarations: [GestionCompteComponent, InscriptionComponent, ConnexionComponent, ServicesComponent, CreationcompteComponent, AccueilutilisateurComponent, ChoixstationComponent, CguappliComponent],
+  declarations: [GestionCompteComponent, InscriptionComponent, ConnexionComponent, CreationcompteComponent, AccueilutilisateurComponent, ChoixstationComponent, CguappliComponent, StationComponent],
   imports: [
     UtilisateurRoutingModule,
     NativeScriptCommonModule

@@ -10,14 +10,15 @@ import { Photo2Component } from './photo2/photo2.component';
 import { RecapitulatifComponent } from './recapitulatif/recapitulatif.component';
 
 
-const routes: Routes = [{path:"",component:CategorieComponent},
-                        {path:"/confirmation-envoi",component:ConfirmationEnvoiComponent},
-                        {path:"/fiche-signalement",component:FicheSignalementComponent},
-                        {path:"/historique-signalement",component:HistoriqueSignalementComponent},
-                        {path:"/photo",component:PhotoComponent},
-                        {path:"/photo2",component:Photo2Component},
-                        {path:"/recapitulatif",component:RecapitulatifComponent}
-                       ];
+const routes: Routes = [
+  { path: "", component: CategorieComponent },
+  { path: "/confirmation-envoi", component: ConfirmationEnvoiComponent },
+  { path: "/fiche-signalement", component: FicheSignalementComponent },
+  { path: "/historique-signalement", component: HistoriqueSignalementComponent },
+  { path: "/photo", component: PhotoComponent },
+  { path: "/photo2", component: Photo2Component },
+  { path: "/recapitulatif", component: RecapitulatifComponent }
+];
 
 @NgModule({
   imports: [NativeScriptRouterModule.forChild(routes)],

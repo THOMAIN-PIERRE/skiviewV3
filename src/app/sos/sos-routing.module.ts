@@ -11,15 +11,18 @@ import { GraviteComponent } from './gravite/gravite.component';
 import { NatureComponent } from './nature/nature.component';
 
 
-const routes: Routes = [{path:"",component:AccueilSOSComponent},
-                        {path:"/activite",component:ActiviteComponent},
-                        {path:"/appel",component:AppelComponent},
-                        {path:"/blessure",component:BlessureComponent},
-                        {path:"/etat",component:EtatComponent},
-                        {path:"/gestesecours",component:GestesecoursComponent},
-                        {path:"/gravite",component:GraviteComponent},
-                        {path:"/nature",component:NatureComponent}
-                       ];
+const routes: Routes = [
+  {
+    path: "", component: AccueilSOSComponent, children: [
+      { path: "activite", component: ActiviteComponent },
+      { path: "appel", component: AppelComponent },
+      { path: "blessure", component: BlessureComponent },
+      { path: "etat", component: EtatComponent },
+      { path: "gestesecours", component: GestesecoursComponent },
+      { path: "gravite", component: GraviteComponent },
+      { path: "nature", component: NatureComponent }]
+  }
+];
 
 @NgModule({
   imports: [NativeScriptRouterModule.forChild(routes)],

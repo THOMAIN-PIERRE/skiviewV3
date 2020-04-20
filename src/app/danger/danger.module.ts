@@ -6,14 +6,13 @@ import { CategorieComponent } from './categorie/categorie.component';
 import { PhotoComponent } from './photo/photo.component';
 import { RecapitulatifComponent } from './recapitulatif/recapitulatif.component';
 import { ConfirmationEnvoiComponent } from './confirmation-envoi/confirmation-envoi.component';
-import { ServicesComponent } from './services/services.component';
 import { HistoriqueSignalementComponent } from './historique-signalement/historique-signalement.component';
 import { FicheSignalementComponent } from './fiche-signalement/fiche-signalement.component';
 import { Photo2Component } from './photo2/photo2.component';
 
 
 @NgModule({
-  declarations: [CategorieComponent, PhotoComponent, RecapitulatifComponent, ConfirmationEnvoiComponent, ServicesComponent, HistoriqueSignalementComponent, FicheSignalementComponent, Photo2Component],
+  declarations: [CategorieComponent, PhotoComponent, RecapitulatifComponent, ConfirmationEnvoiComponent, HistoriqueSignalementComponent, FicheSignalementComponent, Photo2Component],
   imports: [
     DangerRoutingModule,
     NativeScriptCommonModule

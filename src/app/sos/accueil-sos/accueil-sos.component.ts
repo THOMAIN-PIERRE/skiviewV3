@@ -12,4 +12,8 @@ export class AccueilSOSComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onDrawerButtonTap(){
+    
+  }
+
 }

@@ -1,7 +1,7 @@
 {
-	"time": "",
+	"time": "Mon Apr 20 2020 14:49:19 GMT+0200 (GMT+02:00)",
 	"nativePlatformStatus": "1",
 	"changesRequireBuild": true,
-	"projectFileHash": "d352ed2196092107ff52b075ab08c16bdd8734414396099b8f1c63f2fe0d715f",
-	"changesRequireBuildTime": null
+	"projectFileHash": "80a656b7cf31aff68deb96f4d8a28792d5460ddbcebba4553333788f703eda4a",
+	"changesRequireBuildTime": "Mon Apr 20 2020 14:49:19 GMT+0200 (GMT+02:00)"
 }

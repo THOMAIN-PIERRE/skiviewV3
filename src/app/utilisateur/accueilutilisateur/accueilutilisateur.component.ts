@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { RadSideDrawer } from "nativescript-ui-sidedrawer";
+import * as app from "tns-core-modules/application";
+import { RouterExtensions  } from 'nativescript-angular/router';
 
 @Component({
   selector: 'ns-accueilutilisateur',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccueilutilisateurComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:RouterExtensions ) { }
 
   ngOnInit(): void {
+    console.log("Accueil utilisateur chargé");
   }
-
+  // Ouvrir le menu burger
+  onDrawerButtonTap(){
+    const sideDrawer = <RadSideDrawer>app.getRootView();
+    sideDrawer.showDrawer();
+  }
 }
