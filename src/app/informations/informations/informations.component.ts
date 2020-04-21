@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '~/app/services/data.service';
+import { RadSideDrawer } from 'nativescript-ui-sidedrawer';
+import * as app from "tns-core-modules/application";
 
 @Component({
   selector: 'ns-informations',
@@ -13,4 +15,8 @@ export class InformationsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onDrawerButtonTap(): void {
+    const sideDrawer = <RadSideDrawer>app.getRootView();
+    sideDrawer.showDrawer();
+}
 }
