@@ -1,29 +1,23 @@
-<ActionBar class="actionBarDanger">
-    <!-- 
-    Use the NavigationButton as a side-drawer button in Android
-    because ActionItems are shown on the right side of the ActionBar
-    -->
-    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
-    <!-- 
-    Use the ActionItem for IOS with position set to left. Using the
-    NavigationButton as a side-drawer button in iOS is not possible,
-    because its function is to always navigate back in the application.
-    -->
-    <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
-        ios.position="left">
-    </ActionItem>
-    <Label class="greyPage" text="SIGNALER UN DANGER"></Label>
-</ActionBar>
-
 <ScrollView>
 <FlexboxLayout class="search__page__content" flexDirection="row" flexWrap="wrap" justifyContent="space-around">
-    <Label class="danger_button" id="Etat_piste" text="Etat de la piste" width="400px" height="400px" backgroundColor="#FFFFFF"></Label>
-    <Label class="danger_button" id="Meteorologie" text="Météo" width="400px" height="400px" backgroundColor="#F8FD07"></Label>
-    <Label class="danger_button" id="Avalanche" text="Avalanche" width="400px" height="400px" backgroundColor="#C4C4C4"></Label>
-    <Label class="danger_button" id="Crevasse" text="Crevasse" width="400px" height="400px" backgroundColor="#FF5E69"></Label>
-    <Label class="danger_button" id="Obstacle" text="Obstacle" width="400px" height="400px" backgroundColor="#EC4621"></Label>
-    <Label class="danger_button" id="Signaletique" text="Signalétique" width="400px" height="400px" backgroundColor="#E6D005"></Label>
-    <Label class="danger_button" id="Animaux" text="Animaux" width="400px" height="400px" backgroundColor="#05E65A"></Label>
-    <Label class="danger_button" id="Autres" text="Autres" width="400px" height="400px" backgroundColor="#1184FF"></Label>
+    <Label class="danger_button" id="Etat_piste" [nsRouterLink]="['/danger/photo']" pageTransition="flip" text="Etat de la piste" width="400px" height="400px" backgroundColor="#FFFFFF"></Label>
+    <Label class="danger_button" id="Meteorologie" [nsRouterLink]="['/danger/photo']" text="Météo" width="400px" height="400px" backgroundColor="#F8FD07"></Label>
+    <Label class="danger_button" id="Avalanche" [nsRouterLink]="['/danger/photo']" text="Avalanche" width="400px" height="400px" backgroundColor="#C4C4C4"></Label>
+    <Label class="danger_button" id="Crevasse" [nsRouterLink]="['/danger/photo']" text="Crevasse" width="400px" height="400px" backgroundColor="#FF5E69"></Label>
+    <Label class="danger_button" id="Obstacle" [nsRouterLink]="['/danger/photo']" text="Obstacle" width="400px" height="400px" backgroundColor="#EC4621"></Label>
+    <Label class="danger_button" id="Signaletique" [nsRouterLink]="['/danger/photo']" text="Signalétique" width="400px" height="400px" backgroundColor="#E6D005"></Label>
+    <Label class="danger_button" id="Animaux" [nsRouterLink]="['/danger/photo']" text="Animaux" width="400px" height="400px" backgroundColor="#05E65A"></Label>
+    <Label class="danger_button" id="Autres" [nsRouterLink]="['/danger/photo']" text="Autres" width="400px" height="400px" backgroundColor="#1184FF"></Label>
 </FlexboxLayout>
 </ScrollView>
+
+
+
+
+
+
+
+
+
+
+

@@ -3,15 +3,16 @@ import { RadSideDrawer } from 'nativescript-ui-sidedrawer';
 import * as app from "tns-core-modules/application";
 
 @Component({
-  selector: 'ns-categorie',
-  templateUrl: './categorie.component.html',
-  styleUrls: ['./categorie.component.css']
+  selector: 'ns-accueil-danger',
+  templateUrl: './accueil-danger.component.html',
+  styleUrls: ['./accueil-danger.component.css']
 })
-export class CategorieComponent implements OnInit {
+export class AccueilDangerComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit(): void {
+    
   }
   onDrawerButtonTap(): void {
     const sideDrawer = <RadSideDrawer>app.getRootView();

@@ -14,13 +14,13 @@ import { NatureComponent } from './nature/nature.component';
 const routes: Routes = [
   {
     path: "", component: AccueilSOSComponent, children: [
-      { path: "activite", component: ActiviteComponent },
-      { path: "appel", component: AppelComponent },
-      { path: "blessure", component: BlessureComponent },
-      { path: "etat", component: EtatComponent },
-      { path: "gestesecours", component: GestesecoursComponent },
+      { path: "", component: EtatComponent },
       { path: "gravite", component: GraviteComponent },
-      { path: "nature", component: NatureComponent }]
+      { path: "appel", component: AppelComponent },
+      { path: "nature", component: NatureComponent },
+      { path: "activite", component: ActiviteComponent },
+      { path: "blessure", component: BlessureComponent },
+      { path: "gestesecours", component: GestesecoursComponent }] 
   }
 ];
 
