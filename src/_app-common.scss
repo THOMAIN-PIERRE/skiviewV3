@@ -358,7 +358,7 @@ ContentView:hover{
 }
 .nt-icon {
     color: yellow;  
-    font-size: 50;
+    font-size: 45;
 }
 .p-r-10 {
     color: white;
@@ -640,6 +640,21 @@ Button {
 #camera2{
     color: white;
     font-size: 25;
+    font-weight: bold;
+    // margin-left: 50;
+    text-align: center;
+    
+}
+#cameraProfil{
+    color: blue;
+    font-size: 70;
+    font-weight: bold;
+    text-align: center;
+    
+}
+#cameraProfil2{
+    color: blue;
+    font-size: 15;
     font-weight: bold;
     // margin-left: 50;
     text-align: center;

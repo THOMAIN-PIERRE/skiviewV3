@@ -1,22 +1,6 @@
-<ActionBar class="entete">
-    <!-- 
-    Use the NavigationButton as a side-drawer button in Android
-    because ActionItems are shown on the right side of the ActionBar
-    -->
-    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
-    <!-- 
-    Use the ActionItem for IOS with position set to left. Using the
-    NavigationButton as a side-drawer button in iOS is not possible,
-    because its function is to always navigate back in the application.
-    -->
-    <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()" ios.position="left">
-    </ActionItem>
-    <Label text="SOS victime: Postes de Secours" color="black"></Label>
-
-</ActionBar>
 <ScrollView >
-    <StackLayout class="page__content" backgroundColor="#F2D107">
-        <Label class="page__content-placeholder" text="Gestes de Premiers Secours" fontWeight="bold" fontSize="25px" color="black" ></Label>
+    <StackLayout class="pagecontent" backgroundColor="#F2D107">
+        <Label class="pagecontent-placeholder" text="Gestes de Premiers Secours" fontWeight="bold" fontSize="25px" color="black" ></Label>
         <StackLayout class="hr"></StackLayout>
         <GridLayout rows="100, 250, 50, 10" *ngFor="let item of news">
             <Label row="0" [text]="item.titre" fontWeight="bold" marginLeft="10%" fontSize="15px" textAlign="center" class="titre"></Label>
@@ -24,10 +8,10 @@
           <StackLayout class="hr"row="3"></StackLayout>
         </GridLayout>
 
-        
+
     </StackLayout>
 </ScrollView>
-<BottomNavigation height="1900px">
+<BottomNavigation height="100%">
     <TabStrip>
         <TabStripItem>
             <Label col="0" text="&#xf05a;" class="nt-icon fas"></Label>
