@@ -464,8 +464,8 @@ Button {
 .danger_button {
     border-radius: 100%;
     background-color: #DCCBCB;
-    margin-top: 15;
-    margin-bottom: 15;
+    margin-top: 10;
+    margin-bottom: 10;
     
 }
 .nomPrenom_carnet {
@@ -613,6 +613,8 @@ Button {
     font-size: 18;
     margin-top: 336;
     margin-left: 135;
+    font-style: italic;
+    text-decoration: underline;
 }
 .entete3{
     color: white;
@@ -784,4 +786,68 @@ Button {
 }
 .logo_station{
     margin-top: 32%;
+}
+.iconEtatDeLaPiste{
+    background-image: url("~/images/Etat des pistes.png");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.iconMeteo{
+    background-image: url("~/images/storm.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;  
+    margin-bottom: 20;
+}
+.iconAvalanche{
+    background-image: url("~/images/bell.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20; 
+}
+.iconAutres{
+    background-image: url("~/images/icon (5).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%; 
+    margin-bottom: 20; 
+}
+.iconCrevasse{
+    background-image: url("~/images/crevasse.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;  
+    margin-bottom: 20;
+}
+.iconObstacle{
+    background-image: url("~/images/tree trunk.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;  
+    margin-bottom: 20;
+}
+.iconSignaletique{
+    background-image: url("~/images/stopping.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+}
+.iconAnimaux{
+    background-image: url("~/images/animal-prints.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;  
+    margin-bottom: 20;
 }

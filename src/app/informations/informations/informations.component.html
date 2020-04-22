@@ -11,22 +11,25 @@
     -->
     <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()" ios.position="left">
     </ActionItem>
-    <Label class="blackPage" text="PISTES ET REMONTEES"></Label>
+    <Label class="blackPage" text="INFORMATIONS"></Label>
 </ActionBar>
 <StackLayout>
-    <BottomNavigation height="400px">
-        <TabStrip marginLeft="5%" marginRight="5%">
+    <Tabs>
+    <!-- <BottomNavigation> -->
+        <TabStrip>
             <TabStripItem>
-                <Label class="encadre" fontWeight="Bold"color="black"text="METEO"></Label>
+                <Label text="METEO"></Label>
             </TabStripItem>
             <TabStripItem>
-                <Label class="encadre" fontWeight="Bold" color="black"text="NEIGES"></Label>
+                <Label text="NEIGE"></Label>
             </TabStripItem>
             <TabStripItem>
-                <Label class="encadre" fontWeight="Bold" color="black"text="PISTES"></Label>
+                <Label text="PISTES"></Label>
+                <!-- <Label text="&#xf7c9;" class="nt-icon fas"></Label> -->
             </TabStripItem>
             <TabStripItem>
-                <Label class="encadre" fontWeight="Bold" color="black" text="REMONTEES"></Label>
+                <Label text="REMONTEES"></Label>
+                <!-- <Label text="" class="nt-icon fas"></Label> -->
             </TabStripItem>
         </TabStrip>
         <TabContentItem>
@@ -49,7 +52,8 @@
                 <ns-remontees></ns-remontees>
             </GridLayout>
         </TabContentItem>
-    </BottomNavigation>
+    <!-- </BottomNavigation> -->
+    </Tabs>
 </StackLayout>
 
 

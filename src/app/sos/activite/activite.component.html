@@ -24,19 +24,19 @@
         <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="Le bléssé pratique" row="0"
             color="white" fontSize=25px; fontWeight="Bold" marginbottom="100%" marginLeft="10%"
             marginRight="10%"></Label>
-        <Label class="position" color="white" paddingTop="100%" paddingLeft="55%" class="bouttonchute" class="pictureA1"
+        <Label class="position" [nsRouterLink]="['/sos/blessure']" color="white" paddingTop="100%" paddingLeft="55%" class="bouttonchute" class="pictureA1"
             text="Skieur" color="white" fontWeight="Bold" width="400px" height="400px"
             backgroundColor="#FF0000"></Label>
-        <Label  class="bouttonchute" color="white" paddingTop="100%" paddingLeft="30%" text="Snowboardeur"
+        <Label  class="bouttonchute" [nsRouterLink]="['/sos/blessure']" color="white" paddingTop="100%" paddingLeft="30%" text="Snowboardeur"
             class="pictureB1" width="400px" height="400px" fontWeight="Bold" backgroundColor="#FF0000"></Label>
-        <Label  class="bouttonchute" color="white" paddingTop="100%" paddingLeft="55%" text="Luge" class="pictureC1"
+        <Label  class="bouttonchute" [nsRouterLink]="['/sos/blessure']" color="white" paddingTop="100%" paddingLeft="55%" text="Luge" class="pictureC1"
             width="400px" height="400px" fontWeight="Bold" backgroundColor="#FF0000"></Label>
 
-        <Label  class="bouttonchute" color="white" paddingTop="100%" paddingLeft="35%" text="Randonnée" class="pictureD1"
+        <Label  class="bouttonchute" [nsRouterLink]="['/sos/blessure']" color="white" paddingTop="100%" paddingLeft="35%" text="Randonnée" class="pictureD1"
             width="400px" height="400px" fontWeight="Bold" backgroundColor="#FF0000"></Label>
 
-        <Button text="Envoyer"  backgroundColor="#0DF24D" color="white" (tap)="submit()"
-            fontSize="Large" class="soumission" marginTop="100%"></Button>
+        <!-- <Button text="Envoyer"  backgroundColor="#0DF24D" color="white" (tap)="submit()"
+            fontSize="Large" class="soumission" marginTop="100%"></Button> -->
         </FlexboxLayout>
     </GridLayout>
 

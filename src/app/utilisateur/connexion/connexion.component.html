@@ -1,28 +1,12 @@
-<ActionBar class="entete">
-    <!-- 
-    Use the NavigationButton as a side-drawer button in Android
-    because ActionItems are shown on the right side of the ActionBar
-    -->
-    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
-    <!-- 
-    Use the ActionItem for IOS with position set to left. Using the
-    NavigationButton as a side-drawer button in iOS is not possible,
-    because its function is to always navigate back in the application.
-    -->
-    <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()" ios.position="left">
-    </ActionItem>
-    <Label text="connexion" class="titrecondition"></Label>
-</ActionBar>
-
-<GridLayout class="page__content"rows="50,30" columns=*>
-    <!-- <Label class="page__content-icon fas" text="&#xf002;"></Label> -->
-     <Label class="page__content-placeholder" text="Déja Client? " row="0" textALign="center" color="black"fontWeight="Bold"></Label>
-     <Label class="page__content-placeholder" text="Connectez vous à notre application" row="1" color="black"fontWeight="Bold"></Label>
+<GridLayout class="pagecontent"rows="50,30" columns=*>
+    <!-- <Label class="pagecontent-icon fas" text="&#xf002;"></Label> -->
+    <Label class="pagecontent-placeholder" text="  Vous souhaitez utiliser de nouveau notre application pour votre sortie en station. " row="0" color="black" textWrap="true"></Label>
+    <Label class="pagecontent-placeholder" text="  CONNECTEZ-VOUS!! " row="1" color="black" textWrap="true"></Label>
 
      <!--<Label text="{{ checkYes ? '&#xf192;' : '&#xf10c;'}}" 
         class="{{ checkYes ? 'fontawesome' : 'radioBefore'}}" 
         (tap)="changeAction()"row="1" column="0" >
-    </Label>  
+    </Label>
     <Switch checked="true"row="1" column="0"></Switch>
    <label class="page__content-placeholder" text="Acceptez ces conditions " fontSize="20px" color="black"marginTop="0%"
    row="1" column="1"colspan="2" fontWeight="Bold" >
@@ -31,10 +15,10 @@
 
 
  <StackLayout class="form" marginTop="33%">
-    
+
     <StackLayout class="input-field">
       <TextField class="input"hint="entrez votre mot de passe" ></TextField>
     </StackLayout>
-  
-    <Button  backgroundColor="black" color="#F8FD07"text="connexion" (tap)="submit()"></Button>
+
+    <Button [nsRouterLink]="['/utilisateur/choixstation']" backgroundColor="black" color="#F8FD07"text="connexion" (tap)="submit()"></Button>
   </StackLayout>

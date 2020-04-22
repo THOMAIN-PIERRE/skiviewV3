@@ -1,16 +1,14 @@
 <StackLayout>
     <GridLayout class="page__content">
-        <!-- <GridLayout> 
-    <image src="" stretch="aspectFit"></image> 
-    </GridLayout> -->
+    
         <GridLayout rows="350">
             <image row="0" src="https://pngimage.net/wp-content/uploads/2018/06/mountain-silhouette-png-3.png"></image>
         </GridLayout>
         <GridLayout rows="850">
-            <ContentView row="0" id="cache_noir" width="100%" height="62%" backgroundColor="#000000"></ContentView>
+            <ContentView row="0" id="cache_noir" width="100%" height="65%" backgroundColor="#000000"></ContentView>
             <Label row="1" class="entete" text="Skier en toute sécurité"></Label>
-            <!-- <Label row="2" text="&#xf002;" class="nt-icon-3"></Label> -->
-            <ContentView row="2" id="champs_choix_station" width="800px" height="150px"></ContentView>
+            <Label row="2" text="&#xf002;" class="nt-icon-3"></Label>
+            <ContentView [nsRouterLink]="['/utilisateur/station']" row="2" id="champs_choix_station" width="800px" height="150px"></ContentView>
         </GridLayout>
     </GridLayout>
 </StackLayout>

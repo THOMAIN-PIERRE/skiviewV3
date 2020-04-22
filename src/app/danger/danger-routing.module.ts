@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes } from '@angular/router';
 import { NativeScriptRouterModule } from 'nativescript-angular/router';
-import { AccueilutilisateurComponent } from '../utilisateur/accueilutilisateur/accueilutilisateur.component';
 import { CategorieComponent } from './categorie/categorie.component';
 import { PhotoComponent } from './photo/photo.component';
 import { RecapitulatifComponent } from './recapitulatif/recapitulatif.component';

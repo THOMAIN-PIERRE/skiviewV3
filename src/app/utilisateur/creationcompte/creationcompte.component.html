@@ -1,19 +1,4 @@
-<ActionBar>
-    <!-- 
-    Use the NavigationButton as a side-drawer button in Android
-    because ActionItems are shown on the right side of the ActionBar
-    -->
-    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
-    <!-- 
-    Use the ActionItem for IOS with position set to left. Using the
-    NavigationButton as a side-drawer button in iOS is not possible,
-    because its function is to always navigate back in the application.
-    -->
-    <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
-        ios.position="left" >
-    </ActionItem>
-    <Label class="pageLabel" text="ACCUEIL"></Label>
-</ActionBar>
+
 <StackLayout>
 <GridLayout class="page__content">
 
@@ -24,11 +9,12 @@
         <image row="0" src="https://pngimage.net/wp-content/uploads/2018/06/mountain-silhouette-png-3.png"></image>
     </GridLayout>
     <GridLayout rows="850">
-        <ContentView row="0" id="cache_noir" width="100%" height="62%" backgroundColor="#000000"></ContentView>
-        <ContentView row="1" id="message_accueil" width="90%" height="30%" backgroundColor="#433B3B" ></ContentView>
+        <ContentView row="0" id="cache_noir" width="100%" height="65%" backgroundColor="#000000"></ContentView>
+        <ContentView row="1" id="message_accueil" width="90%" height="35%" backgroundColor="#433B3B" ></ContentView>
         <Label row="2" class="entete2" text="Bienvenue !"></Label>
         <Label row="3" class="entete3" text="Créez votre compte et profitez en toute liberté des fonctionnalités de votre application Skiview" textWrap="true"></Label>
-        <Button row="4" text="CREER UN COMPTE" class="btn_creer_un_compte"></Button> 
+        <Button row="4" [nsRouterLink]="['/utilisateur/inscription']" text="CREER UN COMPTE" class="btn_creer_un_compte"></Button>
+        <Label [nsRouterLink]="['/utilisateur/connexion']" row="5" class="entete2" text="Dejà membre ?" textWrap="true"></Label> 
     </GridLayout>
 </GridLayout>
 </StackLayout>
