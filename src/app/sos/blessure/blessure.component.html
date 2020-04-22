@@ -1,20 +1,3 @@
-<ActionBar class="fond">
-    <!-- 
-    Use the NavigationButton as a side-drawer button in Android
-    because ActionItems are shown on the right side of the ActionBar
-    -->
-    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
-    <!-- 
-    Use the ActionItem for IOS with position set to left. Using the
-    NavigationButton as a side-drawer button in iOS is not possible,
-    because its function is to always navigate back in the application.
-    -->
-    <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()" ios.position="left">
-    </ActionItem>
-    <Label text="SOS victime: complements d'informations" color="white"></Label>
-
-</ActionBar>
-
 <ScrollView>
     <GridLayout class="page__content" backgroundColor="#3E3F32">
         
@@ -78,4 +61,6 @@
     fontWeight="Bold" fontSize="18px" marginLeft="0%"></Label>
     <Label  class="page__content-placeholder" text="restez calme, respirez profondemment " row="3" color="black"
     fontWeight="Bold" fontSize="18px" marginLeft="0%"></Label>
+    <Label class="page__content-placeholder"   width="66%" textAlign="center" paddingTop="10%" paddingLeft="47%"height="10%"text="Appel de secours" backgroundColor="#FF0000" color="black" marginTop="0"
+        fontSize="18px" fontWeight="Bold" row="7"></Label>
 </GridLayout>
