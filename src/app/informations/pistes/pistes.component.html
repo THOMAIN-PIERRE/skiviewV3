@@ -1,24 +1,22 @@
-<ScrollView orientation="vertical">
-    <StackLayout>
-    <GridLayout backgroundColor="white" columns="*,150" rows="50,1,50,50,50,50,50,50" >
+<StackLayout>
+    <GridLayout backgroundColor="white" columns="*,150" rows="40,1,50,50,50,50,50,*" >
         <Label color="black" class="page__content-placeholder" text="Ouverture des pistes" row="0" column="0" colspan="4"
         fontWeight="Bold" textAlign="center"></Label>
-        <StackLayout class="hr"row="1" colspan="2"></StackLayout>
+        <StackLayout class="hr" row="1" colspan="2"></StackLayout>
     
-        <Label backgroundColor="#247DE4"color="white" class="page__content-placeholder" text="70% du domaine ouvert" textWrap="true" row="2" column="0" rowspan="4"
-        fontWeight="Bold" width="500px" height="500px" id="domaine"></Label>
+        <Label backgroundColor="#247DE4"color="white" class="page__content-placeholder" text="Domaine ouvert 70%" textWrap="true" textAlign="center" row="2" column="0" rowspan="4"
+        fontWeight="Bold" width="47%" height="30%" id="domaine"></Label>
         <Label backgroundColor="#087A06"color="white" class="page__content-placeholder" text="3/6" row="2" column="1" 
-        fontWeight="Bold" paddingLeft="100px" paddingRight="100px" marginRight="40px"></Label>
+        fontWeight="Bold" paddingLeft="40%" paddingRight="40%" marginRight="4%"></Label>
         <Label backgroundColor="#5A57E0"color="white" class="page__content-placeholder" text="5/8" row="3" column="1" 
-        fontWeight="Bold" paddingLeft="100px" paddingRight="100px" marginRight="40px"></Label>
+        fontWeight="Bold" paddingLeft="40%" paddingRight="40%" marginRight="4%"></Label>
         <Label backgroundColor="#F10D0D"color="white" class="page__content-placeholder" text="3/5" row="4" column="1" 
-        fontWeight="Bold" paddingLeft="100px" paddingRight="100px" marginRight="40px"></Label>
+        fontWeight="Bold" paddingLeft="40%" paddingRight="40%" marginRight="4%"></Label>
         <Label backgroundColor="black" color="white" class="page__content-placeholder" text="5/5" row="5" column="1" 
-        fontWeight="Bold" paddingLeft="100px" paddingRight="100px" marginRight="40px"></Label>
-        <label [text]="dataServ.station[0]"></label>
-        <WebView width="100%" height="1200px"
+        fontWeight="Bold" paddingLeft="40%" paddingRight="40%" marginRight="4%"></Label>
+        <!-- <label [text]="dataServ.station[0]" row="7" colspan="2"></label> -->
+        <WebView row="7" colspan="2"
     src="https://www.leskidunordausud.fr/photos/HIVER/la-pierre-saint-martin/station/pistes_la-pierre-saint-martin1.jpg">
     </WebView>
     </GridLayout>
 </StackLayout>
-</ScrollView>

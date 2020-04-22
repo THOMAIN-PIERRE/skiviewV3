@@ -1,21 +1,3 @@
-<ActionBar class="entete">
-    <!-- 
-    Use the NavigationButton as a side-drawer button in Android
-    because ActionItems are shown on the right side of the ActionBar
-    -->
-    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()" color="black">
-    </NavigationButton>
-    <!-- 
-    Use the ActionItem for IOS with position set to left. Using the
-    NavigationButton as a side-drawer button in iOS is not possible,
-    because its function is to always navigate back in the application.
-    -->
-    <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()" color="black"
-        ios.position="left">
-    </ActionItem>
-    <Label text="Carnet de santé: Condition d'Utilisation" class="titrecondition" fontWeight="bold"
-        Color="black"></Label>
-</ActionBar>
 <ScrollView>
     <GridLayout class="page__content" rows="100,100,100" class="condition">
 
@@ -33,7 +15,7 @@
 
 </ScrollView>
 <GridLayout>
-    <Button text="Accepter ces conditions" backgroundColor="#0DF24D" color="white" (tap)="submit()" fontSize="Large"
+    <Button [nsRouterLink]="['/carnet/formulaire']" text="Accepter ces conditions" backgroundColor="#0DF24D" color="white" (tap)="submit()" fontSize="Large"
         class="soumission" marginTop="66%" marginBottom="10%"></Button>
 </GridLayout>
 <BottomNavigation height="1900px">

@@ -10,10 +10,12 @@ import { AccueilutilisateurComponent } from './accueilutilisateur/accueilutilisa
 import { ChoixstationComponent } from './choixstation/choixstation.component';
 import { CguappliComponent } from './cguappli/cguappli.component';
 import { StationComponent } from './station/station.component';
+import { GestionmdpComponent } from './gestionmdp/gestionmdp.component';
+import { GestionmailComponent } from './gestionmail/gestionmail.component';
 
 
 @NgModule({
-  declarations: [GestionCompteComponent, InscriptionComponent, ConnexionComponent, CreationcompteComponent, AccueilutilisateurComponent, ChoixstationComponent, CguappliComponent, StationComponent],
+  declarations: [GestionCompteComponent, InscriptionComponent, ConnexionComponent, CreationcompteComponent, AccueilutilisateurComponent, ChoixstationComponent, CguappliComponent, StationComponent, GestionmdpComponent, GestionmailComponent],
   imports: [
     UtilisateurRoutingModule,
     NativeScriptCommonModule

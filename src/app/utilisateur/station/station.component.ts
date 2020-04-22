@@ -10,6 +10,7 @@ export class StationComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }

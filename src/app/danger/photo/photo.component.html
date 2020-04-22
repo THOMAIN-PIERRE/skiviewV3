@@ -1,14 +1,14 @@
-<GridLayout rows="100, 460">
-    <ContentView row="0" width="2000px" backgroundColor="#000000" class="bandeau_photo"></ContentView>
-    <ContentView row="1" width="800px" backgroundColor="#C4C4C4" class="photo_danger"></ContentView>
+<GridLayout rows="100, 400">
+    <ContentView row="0" width="100%" backgroundColor="#000000" class="bandeau_photo"></ContentView>
+    <ContentView row="1" width="80%" backgroundColor="#C4C4C4" class="photo_danger"></ContentView>
 </GridLayout>
 <FlexboxLayout  flexDirection="column" justifyContent="center">
-    <Label text="&#xf030;" class="nt-icon fas" id="camera"></Label>
+    <Label [nsRouterLink]="['/sos/activite']" text="&#xf030;" class="nt-icon fas" id="camera"></Label>
     <Label text="PRENDRE UNE PHOTO" id="camera2"></Label>
 </FlexboxLayout> 
 <FlexboxLayout  flexDirection="row" justifyContent="space-around" align-items="center" class="numberPictures">
     <Label text="&#xf030;" class="nt-icon fas"></Label>
-    <Label text="0/3"></Label>
+    <Label [nsRouterLink]="['/danger/photo2']" text="0/3"></Label>
 </FlexboxLayout>      
 <FlexboxLayout flexDirection="row" justifyContent="space-around">
     <BottomNavigation height="100%">
@@ -20,10 +20,10 @@
                 <Label text="PRECEDENT" id="slider" (tap)="goBack()"></Label>
             </TabStripItem>
             <TabStripItem>
-                <Label text="SUIVANT" id="slider"></Label>
+                <Label [nsRouterLink]="['']" text="SUIVANT" id="slider"></Label>
             </TabStripItem>
             <TabStripItem>
-                <Label text="&#xf054;" class="nt-icon fas" id="slider"></Label>
+                <Label [nsRouterLink]="['']" text="&#xf054;" class="nt-icon fas" id="slider"></Label>
             </TabStripItem>
         </TabStrip>
     </BottomNavigation>

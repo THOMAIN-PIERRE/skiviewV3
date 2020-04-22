@@ -7,22 +7,22 @@
 </GridLayout>
 <FlexboxLayout  flexDirection="row" justifyContent="space-around" align-items="center" class="numberPictures">
     <Label text="&#xf030;" class="nt-icon fas"></Label>
-    <Label text="1/3"></Label>
+    <Label [nsRouterLink]="['/danger/recapitulatif']" text="1/3"></Label>
 </FlexboxLayout>      
 <FlexboxLayout flexDirection="row" justifyContent="space-around">
     <BottomNavigation height="100%">
         <TabStrip>
             <TabStripItem>
-                <Label text="&#xf053;" class="nt-icon fas" id="slider"></Label>
+                <Label [nsRouterLink]="['']" text="&#xf053;" class="nt-icon fas" id="slider"></Label>
             </TabStripItem>
             <TabStripItem>
-                <Label text="PRECEDENT" id="slider"></Label>
+                <Label [nsRouterLink]="['']" text="PRECEDENT" id="slider"></Label>
             </TabStripItem>
             <TabStripItem>
-                <Label text="SUIVANT" id="slider"></Label>
+                <Label [nsRouterLink]="['']" text="SUIVANT" id="slider"></Label>
             </TabStripItem>
             <TabStripItem>
-                <Label text="&#xf054;" class="nt-icon fas" id="slider"></Label>
+                <Label [nsRouterLink]="['']" text="&#xf054;" class="nt-icon fas" id="slider"></Label>
             </TabStripItem>
         </TabStrip>
     </BottomNavigation>

@@ -28,15 +28,15 @@
 
             <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="La victime est un" marginTop="50%"
                 row="3" color="white" fontSize=25px; fontWeight="Bold" marginbottom="10%" marginLeft="10%"></Label>
-            <ContentView row="4" textAlign="center" class="bouttonchute"text="ENFANT" width="400px" height="400px" marginLeft="5%"
+            <ContentView [nsRouterLink]="['/sos/activite']" row="4" textAlign="center" class="bouttonchute"text="ENFANT" width="400px" height="400px" marginLeft="5%"
                 color="white" backgroundColor="#FF0000">
-                <Label class="page__content-placeholder" text="ENFANT" [nsRouterLink]="['/bonjour']" color="white" fontSize=25px; fontWeight="Bold"
+                <Label class="page__content-placeholder" text="ENFANT" [nsRouterLink]="['/sos/activite']" color="white" fontSize=25px; fontWeight="Bold"
                     marginbottom="10%" marginLeft="0%"></Label>
             </ContentView>
-            <ContentView row="4" text="Adulte"[nsRouterLink]="['/bonjour']" class="bouttonchute"width="400px" height="400px" color="white" textAlign="center"
+            <ContentView row="4" text="Adulte" [nsRouterLink]="['/sos/activite']" class="bouttonchute"width="400px" height="400px" color="white" textAlign="center"
                 marginLeft="0%" backgroundColor="#106D0E">
 
-                <Label class="page__content-placeholder" text="ADULTE" color="white" fontSize=25px; fontWeight="Bold"
+                <Label class="page__content-placeholder" [nsRouterLink]="['/sos/activite']" text="ADULTE" color="white" fontSize=25px; fontWeight="Bold"
                     marginbottom="10%" marginLeft="0%"></Label>
             </ContentView>
         </FlexboxLayout>

@@ -5,7 +5,7 @@ https://docs.nativescript.org/angular/ui/professional-ui-components/ng-SideDrawe
 -->
 <RadSideDrawer [drawerTransition]="sideDrawerTransition">
     <GridLayout tkDrawerContent rows="auto, *" class="nt-drawer__content">
-        <StackLayout row="0" class="nt-drawer__header">
+        <StackLayout [nsRouterLink]="['/utilisateur/gestioncompte']" row="0" class="nt-drawer__header">
             <Image class="nt-drawer__header-image fas t-26" src="font://&#xf2bd;"></Image>
             <!-- <Label class="nt-drawer__header-brand" text="User Name"></Label> -->
             <Label class="nt-drawer__header-footnote" text="prenom.nom@gmail.com"></Label>
@@ -19,7 +19,7 @@ https://docs.nativescript.org/angular/ui/professional-ui-components/ng-SideDrawe
                 </GridLayout> -->
 
                 <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/utilisateur')">
-                    <Label col="0" text="&#xf05a;" class="nt-icon fas"></Label>
+                    <Label col="0" text="&#xf015;" class="nt-icon fas"></Label>
                     <Label col="1" text="Accueil" class="p-r-10"></Label>
                 </GridLayout>
 
@@ -33,51 +33,7 @@ https://docs.nativescript.org/angular/ui/professional-ui-components/ng-SideDrawe
                 <StackLayout class="hr"></StackLayout>
 
                 <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/danger')">
-                    <Label col="0" text="&#xf05a;" class="nt-icon fas"></Label>
-                    <Label col="1" text="Signaler un danger" class="p-r-10"></Label>
-                </GridLayout>
-
-                <StackLayout class="hr"></StackLayout>
-
-                <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/sos')">
-                    <Label col="0" text="&#xf05a;" class="nt-icon fas"></Label>
-                    <Label col="1" text="Appeler les secours" class="p-r-10"></Label>
-                </GridLayout>
-
-                <StackLayout class="hr"></StackLayout>
-
-                <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/')">
-                    <Label col="0" text="&#xf05a;" class="nt-icon fas"></Label>
-                    <Label col="1" text="Mes signalements (pb)" class="p-r-10"></Label>
-                </GridLayout>
-
-                <StackLayout class="hr"></StackLayout>
-
-                <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/carnet')">
-                    <Label col="0" text="&#xf05a;" class="nt-icon fas"></Label>
-                    <Label col="1" text="Carnet de santé" class="p-r-10"></Label>
-                </GridLayout>
-
-                <StackLayout class="hr"></StackLayout>
-
-
-
-
-
-
-
-
-
-                <!-- <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/informations')">
-                    <Label col="0" text="&#xf05a;" class="nt-icon fas"></Label>
-                    <Label col="1" text="Informations" class="p-r-10"></Label>
-                </GridLayout>
-
-
-                <StackLayout class="hr"></StackLayout>
-
-                <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/danger')">
-                    <Label col="0" text="&#xf041;" class="nt-icon fas"></Label>
+                    <Label col="0" text="&#xf071;" class="nt-icon fas"></Label>
                     <Label col="1" text="Signaler un danger" class="p-r-10"></Label>
                 </GridLayout>
 
@@ -85,12 +41,12 @@ https://docs.nativescript.org/angular/ui/professional-ui-components/ng-SideDrawe
 
                 <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/sos')">
                     <Label col="0" text="&#xf3c5;" class="nt-icon fas"></Label>
-                    <Label col="1" text="Appeller les secours" class="p-r-10"></Label>
+                    <Label col="1" text="Contacter les secours" class="p-r-10"></Label>
                 </GridLayout>
 
                 <StackLayout class="hr"></StackLayout>
 
-                <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/carnet')">
+                <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/danger/historiqueSignalement')">
                     <Label col="0" text="&#xf573;" class="nt-icon fas"></Label>
                     <Label col="1" text="Mes signalements" class="p-r-10"></Label>
                 </GridLayout>
@@ -98,13 +54,13 @@ https://docs.nativescript.org/angular/ui/professional-ui-components/ng-SideDrawe
                 <StackLayout class="hr"></StackLayout>
 
                 <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/carnet')">
-                    <Label col="0" text="&#xf573;" class="nt-icon fas"></Label>
-                    <Label col="1" text="Mes signalements" class="p-r-10"></Label>
+                    <Label col="0" text="&#xf21e;" class="nt-icon fas"></Label>
+                    <Label col="1" text="Carnet de santé" class="p-r-10"></Label>
                 </GridLayout>
 
-                <StackLayout class="hr"></StackLayout> -->
+                <StackLayout class="hr"></StackLayout>
 
-                <Button text="DECONNEXION" class="btn btn-warning"></Button> 
+                <Button [nsRouterLink]="['/utilisateur/choixstation']" text="DECONNEXION" class="btn btn-warning"></Button> 
 
             </StackLayout>
         </ScrollView>
