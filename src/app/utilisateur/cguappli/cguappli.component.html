@@ -1,20 +1,3 @@
-<ActionBar class="entete">
-    <!-- 
-    Use the NavigationButton as a side-drawer button in Android
-    because ActionItems are shown on the right side of the ActionBar
-    -->
-    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()" color="black">
-    </NavigationButton>
-    <!-- 
-    Use the ActionItem for IOS with position set to left. Using the
-    NavigationButton as a side-drawer button in iOS is not possible,
-    because its function is to always navigate back in the application.
-    -->
-    <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()" color="black"
-        ios.position="left">
-    </ActionItem>
-    <Label text="Conditions Générales d'Utilisation" class="titrecondition" FontWeight="bold" Color="black"></Label>
-</ActionBar>
 <ScrollView>
     <GridLayout class="page__content" class="condition" rows="100,150,150,250">
         <Label class="page__content-placeholder" text="  Primi igitur omnium statuuntur Epigonus et Eusebius ob nominum gentilitatem oppressi. praediximus enim Montium sub ipso vivendi c fabricarum culpasse tribunos ut adminicula futurae molitioni pollicitos. " row="0" color="black" textWrap="true"></Label>

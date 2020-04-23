@@ -1,73 +1,38 @@
-<ActionBar class="fond">
-    <!-- 
-    Use the NavigationButton as a side-drawer button in Android
-    because ActionItems are shown on the right side of the ActionBar
-    -->
-    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
-    <!-- 
-    Use the ActionItem for IOS with position set to left. Using the
-    NavigationButton as a side-drawer button in iOS is not possible,
-    because its function is to always navigate back in the application.
-    -->
-    <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()" ios.position="left">
-    </ActionItem>
-    <Label text="SOS victime: gravité des blessures" color="white"></Label>
 
-</ActionBar>
 <ScrollView orientation="vertical">
- <GridLayout class="page__content" backgroundColor="#3E3F32" rows="60,60,60,60,60,60,60,60"columns="*,*,*">
-    <!-- <Label text="{{ checkYes ? '&#xf192;' : '&#xf10c;'}}" 
-        class="{{ checkYes ? 'fontawesome' : 'radioBefore'}}" 
-        (tap)="changeAction()" >
-    </Label>  -->
-    <Switch checked="true"row="0" column="0"></Switch>
-    <Label class="page__content-placeholder" text="SEVERES" row="0" column="1" colspan="2" color="white"fontWeight="Bold"></Label>
-    <StackLayout class="hr" row="1"colspan="3"></StackLayout>
-    <!-- <Label text="{{ checkYes ? '&#xf192;' : '&#xf10c;'}}" 
-        class="{{ checkYes ? 'fontawesome' : 'radioBefore'}}" 
-        (tap)="changeAction()"row="2" column="1" >
-    </Label>  -->
-    <Switch checked="true"row="2" column="0"></Switch>
-    <Label class="page__content-placeholder" text="SERIEUSES" row="2" column="1" colspan="2"color="white"fontWeight="Bold"></Label>
-    <StackLayout class="hr" row="3"colspan="3"></StackLayout>
-    <!-- <Label text="{{ checkYes ? '&#xf192;' : '&#xf10c;'}}" 
-        class="{{ checkYes ? 'fontawesome' : 'radioBefore'}}" 
-        (tap)="changeAction()"row="4" column="1" >
-    </Label>  -->
-    <Switch checked="true"row="4" column="0"></Switch>
-    <Label class="page__content-placeholder" text="MODEREES" row="4" column="1" colspan="2"color="white"fontWeight="Bold"></Label>
-    <StackLayout class="hr" row="5"colspan="3"></StackLayout>
-    <!-- <Label text="{{ checkYes ? '&#xf192;' : '&#xf10c;'}}" 
-        class="{{ checkYes ? 'fontawesome' : 'radioBefore'}}" 
-        (tap)="changeAction()"row="6" column="1" >
-    </Label>  -->
-    <Switch checked="true"row="6" column="0"></Switch>
-    <Label class="page__content-placeholder" text="LEGERES" row="6" column="1" colspan="2"color="white"fontWeight="Bold"></Label>
-    <StackLayout class="hr" row="7"colspan="3"></StackLayout>
-</GridLayout> 
-
- 
-</ScrollView> <GridLayout>
-  <Button text="Envoyer" [nsRouterLink]="['/sos/appel']" backgroundColor="#0DF24D" color="white" (tap)="submit()" fontSize="Large"
-class="soumission" marginTop="100%"></Button>
-</GridLayout>
- <!-- <ScrollView orientation="vertical" class="coverImage">
-    <GridLayout rows="300 300 300 300">
-        <Label class="SEVERE" row="0" text="BLESSURE SEVERE" textWrap="true"></Label>
-        <Label class="SERIEUSE" row="1" text="BLESSURE SERIEUSE" textWrap="true"></Label>
-        <ContentView class="cadre_choix" row="1"  text="" width="300px" height="300px" color="black" backgroundColor=""></ContentView>
-        <Label class="MODEREE" row="2" text="BLESSURE MODEREE" textWrap="true"></Label>
-        <Label class="LEGERE" row="3" text="BLESSURE LEGERE" textWrap="true"></Label>
-
-    </GridLayout>
-</ScrollView>  -->
-<!-- <GridLayout class="page__content" class="overlay" rows="50,50,50,50,50,50" >
-    <Label  class="page__content-placeholder" text="Nous avons bien reçut " row="0" color="black"
-    fontWeight="Bold" fontSize="18px" marginLeft="0%" ></Label>
-    <Label  class="page__content-placeholder" text="ces complements d'informations " row="1" color="black"
-    fontWeight="Bold" fontSize="18px" marginLeft="0%"></Label>
-    <Label  class="page__content-placeholder" text="Nous serons bientot à vos cotés " row="2" color="black"
-    fontWeight="Bold" fontSize="18px" marginLeft="0%"></Label>
-    <Label  class="page__content-placeholder" text="restez calme, respirez profondemment " row="3" color="black"
-    fontWeight="Bold" fontSize="18px" marginLeft="0%"></Label>
-</GridLayout> -->
+    <GridLayout class="page__content" backgroundColor="#3E3F32" rows="60,60,60,60,60,60,60,60"columns="*,*,*">
+       <!-- <Label text="{{ checkYes ? '&#xf192;' : '&#xf10c;'}}" 
+           class="{{ checkYes ? 'fontawesome' : 'radioBefore'}}" 
+           (tap)="changeAction()" >
+       </Label>  -->
+       <Switch checked="true"row="0" column="0"></Switch>
+       <Label class="page__content-placeholder" text="SEVERES" row="0" column="1" colspan="2" color="white"fontWeight="Bold"></Label>
+       <StackLayout class="hr" row="1"colspan="3"></StackLayout>
+       <!-- <Label text="{{ checkYes ? '&#xf192;' : '&#xf10c;'}}" 
+           class="{{ checkYes ? 'fontawesome' : 'radioBefore'}}" 
+           (tap)="changeAction()"row="2" column="1" >
+       </Label>  -->
+       <Switch checked="true"row="2" column="0"></Switch>
+       <Label class="page__content-placeholder" text="SERIEUSES" row="2" column="1" colspan="2"color="white"fontWeight="Bold"></Label>
+       <StackLayout class="hr" row="3"colspan="3"></StackLayout>
+       <!-- <Label text="{{ checkYes ? '&#xf192;' : '&#xf10c;'}}" 
+           class="{{ checkYes ? 'fontawesome' : 'radioBefore'}}" 
+           (tap)="changeAction()"row="4" column="1" >
+       </Label>  -->
+       <Switch checked="true"row="4" column="0"></Switch>
+       <Label class="page__content-placeholder" text="MODEREES" row="4" column="1" colspan="2"color="white"fontWeight="Bold"></Label>
+       <StackLayout class="hr" row="5"colspan="3"></StackLayout>
+       <!-- <Label text="{{ checkYes ? '&#xf192;' : '&#xf10c;'}}" 
+           class="{{ checkYes ? 'fontawesome' : 'radioBefore'}}" 
+           (tap)="changeAction()"row="6" column="1" >
+       </Label>  -->
+       <Switch checked="true"row="6" column="0"></Switch>
+       <Label class="page__content-placeholder" text="LEGERES" row="6" column="1" colspan="2"color="white"fontWeight="Bold"></Label>
+       <StackLayout class="hr" row="7"colspan="3"></StackLayout>
+   </GridLayout> 
+   
+    
+   </ScrollView> <GridLayout>
+     <Button text="Envoyer" [nsRouterLink]="['/sos/appel']" backgroundColor="#0DF24D" color="white" (tap)="submit()" fontSize="Large"
+   class="soumission" marginTop="100%"></Button>
+   </GridLayout>

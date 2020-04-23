@@ -15,15 +15,22 @@
     
 </GridLayout> -->
 
-<GridLayout rows="220">
+<!-- <GridLayout rows="220">
     <ContentView row="0" width="50%" backgroundColor="#C4C4C4" class="photo_danger"></ContentView>
 </GridLayout>
 <FlexboxLayout  rows="50, 120" flexDirection="column" justifyContent="center">
     <Label text="&#xf030;" row="0" class="nt-icon fas" id="cameraProfil"></Label>
     <Label text="PRENDRE UNE PHOTO" row="0" id="cameraProfil2"></Label>
     <ContentView row="1" width="45%" backgroundColor="#C4C4C4" class="photo_danger"></ContentView>
-</FlexboxLayout> 
+</FlexboxLayout>  -->
 
+<GridLayout rows="220">
+    <ContentView row="0" width="45%" backgroundColor="#C4C4C4" class="photo_danger"></ContentView>
+</GridLayout>
+<FlexboxLayout flexDirection="column" justifyContent="center">
+    <Label text="&#xf030;" class="nt-icon fas" id="cameraProfil"></Label>
+    <Label text="PRENDRE UNE PHOTO" id="cameraProfil2"></Label>
+</FlexboxLayout> 
 
 <GridLayout rows="80">
     <Button row="0" text="GESTION MOT DE PASSE" [nsRouterLink]="['/utilisateur/gestionmdp']" pageTransition="flip" class="btn btn-warning"></Button> 
