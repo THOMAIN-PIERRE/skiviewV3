@@ -9,6 +9,7 @@ import { DataService } from "./services/data.service";
 import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
 import { CarnetSanteService } from "./services/carnet-sante.service";
 import { IdService } from "./services/id.service";
+import { DropDownModule } from "nativescript-drop-down/angular";
 
 @NgModule({
     bootstrap: [
@@ -18,7 +19,8 @@ import { IdService } from "./services/id.service";
         AppRoutingModule,
         NativeScriptModule,
         NativeScriptUISideDrawerModule,
-        NativeScriptHttpClientModule
+        NativeScriptHttpClientModule,
+        DropDownModule,
     ],
     declarations: [
         AppComponent

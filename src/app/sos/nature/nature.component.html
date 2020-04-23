@@ -1,20 +1,3 @@
-<ActionBar class="fond">
-    <!-- 
-    Use the NavigationButton as a side-drawer button in Android
-    because ActionItems are shown on the right side of the ActionBar
-    -->
-    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
-    <!-- 
-    Use the ActionItem for IOS with position set to left. Using the
-    NavigationButton as a side-drawer button in iOS is not possible,
-    because its function is to always navigate back in the application.
-    -->
-    <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()" ios.position="left">
-    </ActionItem>
-    <Label text="SOS victime: Poste de secour" color="white"></Label>
-
-</ActionBar>
-
 <ScrollView>
     <GridLayout class="page__content" backgroundColor="#3E3F32" >
         <FlexboxLayout backgroundColor="#3E3F32" flexDirection="row" flexWrap="wrap" justifyContent="space-around"
@@ -41,15 +24,4 @@
             </ContentView>
         </FlexboxLayout>
     </GridLayout>
-    <!-- class="bouttonchute" -->
-    <!-- <GridLayout class="page__content" backgroundColor="#3E3F32" rows="200,50,50" column="*,*">
-                <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="" marginTop="10%"row="0"column="0"colspan="2"
-                        color="white" fontSize=25px; fontWeight="Bold" marginbottom="10%" marginLeft="15%"></Label>
-                <Label backgroundColor="#3E3F32" class="page__content-placeholder" column="0"text="La victime est un" marginTop="10%"row="1"colspan="2"
-                        color="white" fontSize=25px; fontWeight="Bold" marginbottom="10%" marginLeft="15%"></Label>
-                <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="ENFANT" marginTop="10%"row="2"column="0"
-                        color="white" fontSize=25px; fontWeight="Bold" marginbottom="10%"  marginLeft="15%"></Label>
-                <Label backgroundColor="red"  height="100%" bordeRadius="100%" class="page__content-placeholder"class="bouttonchute" text="Adulte" marginTop="10%"row="2" column="1"
-                        color="white" fontSize=25px; fontWeight="Bold" marginbottom="10%" marginLeft="15%"></Label>
-            </GridLayout> -->
 </ScrollView>

@@ -166,8 +166,8 @@
     border-style:solid;
     border-color:black;
     text-align: center;
-    margin-bottom: 20%;
-    margin-bottom: 20%;
+    margin-bottom: 2%;
+    margin-top: 2%;
 }
 .bouttonsos{
 // background-image: url("https://lh3.googleusercontent.com/proxy/uCtBqMRWzx1HfV_baaQ0lRfaL5gmST2p7NuFvII7mDleQgGox_QTEakySz7tpt9cWhRhduZNQ3116d82nrFR1eJ2K_RcBVs-2mJ4S7r-IQMRAyRsSVg99u7HH-uk"); 
@@ -598,9 +598,17 @@ Button {
     background-color: white;
     color: black;
     border-radius: 25;
-    margin-left: 50;
-    margin-right: 50; 
-    margin-top: 100;
+    margin-left: 30;
+    margin-right: 30; 
+    margin-top: -35;
+}
+.btn_creer_un_compte2{
+    background-color: white;
+    color: black;
+    border-radius: 25;
+    margin-left: 30;
+    margin-right: 30; 
+    margin-top: -130;
 }
 // .introduction{
 //     color: white;
@@ -611,16 +619,32 @@ Button {
 .entete2{
     color: white;
     font-size: 18;
-    margin-top: 336;
+    margin-top: 270;
     margin-left: 135;
-    font-style: italic;
-    text-decoration: underline;
 }
 .entete3{
     color: white;
     font-size: 18;
-    margin-top: 362;
-    margin-left: 23;
+    margin-top: 300;
+    font-weight: bold;
+    text-align: center;
+}
+.entete4{
+    color: white;
+    font-size: 18;
+    margin-top: 440;
+    margin-left: 150;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+}
+.entete5{
+    color: white;
+    font-size: 18;
+    margin-top: 290;
+    font-weight: bold;
+    text-align: center;
 }
 #photo{
     border: 3 solid #C4C4C4;
@@ -648,8 +672,8 @@ Button {
 #cameraProfil{
     color: blue;
     font-size: 70;
-    font-weight: bold;
     text-align: center;
+    margin-top: -100vh;
     
 }
 #cameraProfil2{

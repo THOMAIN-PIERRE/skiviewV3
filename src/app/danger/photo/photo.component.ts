@@ -1,20 +1,26 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterExtensions } from 'nativescript-angular/router';
+import * as camera from "nativescript-camera";
 
 @Component({
   selector: 'ns-photo',
   templateUrl: './photo.component.html',
   styleUrls: ['./photo.component.css']
 })
-export class PhotoComponent {
+export class PhotoComponent implements OnInit {
 
-  routerExtensions: any;
-
-  constructor(routerExtensions: RouterExtensions) {}
 
   ngOnInit(): void {
+    
   }
-  goBack(): void {
-    this.routerExtensions.back();
-  }
+  takePicture() {
+    camera.requestPermissions().then(
+        function success() {
+            camera.takePicture();
+        }, 
+        function failure() {
+            alert('Camera permissions not granted.');
+        }
+    );
+}
+  
 }
