@@ -10,7 +10,7 @@
     <Label text="&#xf030;" (tap)="takePicture()" class="nt-icon fas"></Label>
     <Label [nsRouterLink]="['/danger/photo2']" text="0/3"></Label>
 </FlexboxLayout>      
-<FlexboxLayout flexDirection="row" justifyContent="space-around">
+<!-- <FlexboxLayout flexDirection="row" justifyContent="space-around">
     <BottomNavigation>
         <TabStrip>
             <TabStripItem>
@@ -27,9 +27,15 @@
             </TabStripItem>
         </TabStrip>
     </BottomNavigation>
+</FlexboxLayout> -->
+
+<FlexboxLayout flexDirection="row" justifyContent="space-around" alignItems="flex-end" class="slider">
+                  
+    <Label [nsRouterLink]="['/danger']" text="< PRECEDENT" id="slider" color="#000000"  marginBottom="20"></Label>
+
+    <Label [nsRouterLink]="['/danger/photo2']" text="SUIVANT >" id="slider" color="#000000"  marginBottom="20"></Label>       
+
 </FlexboxLayout>
-
-
 
 
 

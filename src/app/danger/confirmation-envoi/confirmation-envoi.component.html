@@ -1,17 +1,24 @@
-<ActionBar>
+<!-- <ActionBar>
     <Label class="blackPage" text="SIGNALEMENT ENVOYE !"></Label>
-</ActionBar>
-<GridLayout rows="260, 360">
+</ActionBar> -->
 
-    <ContentView [nsRouterLink]="['/danger/historiqueSignalement']" row="0" class="danger_button" text="" width="600px" height="600px" backgroundColor="#FF7F00"></ContentView> 
+<StackLayout rows="15, 260, 360">
+
+    <Label text="SIGNALEMENT ENVOYE !" class="un"></Label>
+
+    <ContentView [nsRouterLink]="['/danger/historiqueSignalement']" row="0" class="danger_button2" text="" width="600px" height="600px" backgroundColor="#FF7F00"></ContentView> 
 
     <Label [nsRouterLink]="['/utilisateur/station']" row="1" text="MERCI pour votre contribution active au programme de signalement partricipatif mis en place par la station. 
 
 Vous pouvez suivre l’évolution de votre signalement dans la rubrique “Mes signalements”" textWrap="true" class="message_confirmation"></Label>
-    
+<GridLayout rows="*" columns="*,*">
+    <Label [nsRouterLink]="['/utilisateur/station']" col="0" row="0" text="&#xf015;" class="nt-icon fas" id="basDePage" height="100%"></Label>
+    <Label [nsRouterLink]="['/danger/historiqueSignalement']" col="1" row="0" text="&#xf573;" class="nt-icon fas" id="basDePage" height="100%"></Label>
 </GridLayout>
+</StackLayout>
 
-<StackLayout>
+
+<!-- <StackLayout>
     <BottomNavigation height="100%">
         <TabStrip>
             <TabStripItem>
@@ -22,4 +29,24 @@ Vous pouvez suivre l’évolution de votre signalement dans la rubrique “Mes s
             </TabStripItem>
         </TabStrip>
     </BottomNavigation>
-</StackLayout>
+</StackLayout> -->
+
+<!-- <StackLayout>
+    <BottomNavigation>
+        <TabStrip>
+            <TabStripItem>
+                <Label text="Accueil"></Label>
+                <Label [nsRouterLink]="['/utilisateur']" text="&#xf05a;"></Label>
+            </TabStripItem>
+            <TabStripItem>
+                <Label text="Mes signalements"></Label>
+                <Label [nsRouterLink]="['/danger/historiqueSignalement']" text="&#xf573;"></Label>
+            </TabStripItem>
+        </TabStrip>
+</StackLayout> -->
+
+
+<!-- <GridLayout rows="*" columns="*,*">
+    <Label [nsRouterLink]="['/utilisateur/station']" col="0" row="0" text="&#xf015;" class="nt-icon fas" id="basDePage"></Label>
+    <Label [nsRouterLink]="['/danger/historiqueSignalement']" col="1" row="0" text="&#xf573;" class="nt-icon fas" id="basDePage"></Label>
+</GridLayout> -->

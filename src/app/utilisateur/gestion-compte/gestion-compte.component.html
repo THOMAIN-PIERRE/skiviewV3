@@ -25,12 +25,13 @@
 </FlexboxLayout>  -->
 
 <GridLayout rows="220">
-    <ContentView row="0" width="45%" backgroundColor="#C4C4C4" class="photo_danger"></ContentView>
+    <Label row="0" width="45%" backgroundColor="#C4C4C4" class="nt-icon fas" class="photo_danger"></Label>
+    <Label text="CHANGER LA PHOTO" id="cameraProfil2" marginTop="15%"></Label>
 </GridLayout>
-<FlexboxLayout flexDirection="column" justifyContent="center">
+<!-- <FlexboxLayout flexDirection="column" justifyContent="center">
     <Label text="&#xf030;" class="nt-icon fas" id="cameraProfil"></Label>
     <Label text="PRENDRE UNE PHOTO" id="cameraProfil2"></Label>
-</FlexboxLayout> 
+</FlexboxLayout>  -->
 
 <GridLayout rows="80">
     <Button row="0" text="GESTION MOT DE PASSE" [nsRouterLink]="['/utilisateur/gestionmdp']" pageTransition="flip" class="btn btn-warning"></Button> 
@@ -38,7 +39,7 @@
 <GridLayout rows="120">
     <Button row="0" text="GESTION E-MAIL" [nsRouterLink]="['/utilisateur/gestionmail']" pageTransition="flip" class="btn btn-warning"></Button> 
 </GridLayout>
-<BottomNavigation>
+<!-- <BottomNavigation>
     <TabStrip>
         <TabStripItem>
             <Label col="0" text="&#xf05a;" class="nt-icon fas"></Label>
@@ -50,5 +51,10 @@
             <Label col="2" text="&#xf3c5;" class="nt-icon fas"></Label>
         </TabStripItem>
     </TabStrip>
-</BottomNavigation>
+</BottomNavigation> -->
+<!-- <GridLayout rows="*" columns="*,*,*">
+    <Label [nsRouterLink]="['/informations']" col="0" row="0" text="&#xf05a;" class="nt-icon fas" id="basDePage"></Label>
+    <Label [nsRouterLink]="['/danger']" col="1" row="0" text="&#xf071;" class="nt-icon fas" id="basDePage"></Label>
+    <Label [nsRouterLink]="['/sos']" col="2" row="0" text="&#xf479;" class="nt-icon fas" id="basDePage"></Label>
+</GridLayout> -->
 </StackLayout>

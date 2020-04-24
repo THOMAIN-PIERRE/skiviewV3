@@ -1,6 +1,6 @@
 <ScrollView orientation="vertical">
     <StackLayout>
-        <GridLayout backgroundColor="white" class="encadre" borderRadius="10%" marginTop="20%" marginBottom="25%" marginLeft="5%"
+        <GridLayout backgroundColor="white" class="encadre" borderRadius="10%" marginTop="2vh" marginBottom="25%" marginLeft="5%"
             marginRight="5%" rows="50,30" columns="*,*">
             <Label color="black" class="page__content-placeholder" text="CHUTE DE NEIGE" row="0" column="0"
                 fontSize="15px" fontWeight="Bold"></Label>
@@ -9,7 +9,7 @@
                 fontWeight="Bold"></Label>
             <Label color="black" class="page__content-placeholder" text="5cm" row="1" column="1"></Label>
         </GridLayout>
-        <GridLayout backgroundColor="white" class="encadre" borderRadius="10%" marginTop="25%"marginBottom="25%" marginLeft="5%"
+        <GridLayout backgroundColor="white" class="encadre" borderRadius="10%" marginTop="2vh"marginBottom="25%" marginLeft="5%"
             marginRight="5%" rows="50,30,30,30" columns="*,*,*">
             <Label color="black" class="page__content-placeholder" text="HAUTEUR DE NEIGE" row="0" column="0"
                 colspan="2" fontSize="15px" fontWeight="Bold"></Label>
@@ -22,7 +22,7 @@
             <Label color="black" class="page__content-placeholder" text="90cm|1600m" fontSize="15px" row="3" column="3"
                 fontWeight="Bold"></Label>
         </GridLayout>
-        <GridLayout backgroundColor="white" class="encadre" borderRadius="10%" marginTop="25%" marginBottom="25%" marginLeft="5%"
+        <GridLayout backgroundColor="white" class="encadre" borderRadius="10%" marginTop="2vh" marginBottom="25%" marginLeft="5%"
             marginRight="5%" rows="50,30,30,30" columns="*,*,*">
             <Label color="black" class="page__content-placeholder" text="RISQUE AVALANCHE" fontSize="15px" row="0"
                 column="0" colspan="2" fontWeight="Bold"></Label>
@@ -35,3 +35,8 @@
         </GridLayout>
     </StackLayout>
 </ScrollView>
+<GridLayout backgroundColor="black" rows="200" height="15%" marginTop="90%" marginBottom="5" columns="*,*,*">
+    <Label col="0" text="&#xf05a;" [nsRouterLink]="['/informations']" marginLeft="10%" class="nt-icon fas"></Label>
+    <Label col="1" text="&#xf071;" [nsRouterLink]="['/danger']" marginLeft="10%" class="nt-icon fas"></Label>
+    <Label col="2" text="&#xf479;" [nsRouterLink]="['/sos']" marginLeft="10%" class="nt-icon fas"></Label>
+</GridLayout>

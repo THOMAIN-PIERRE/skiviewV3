@@ -1,4 +1,29 @@
-<StackLayout class="form">
+<StackLayout class="form" marginTop="2%" rows="20, 20, 20, 20">
+    <StackLayout class="input-field">
+    <Label text="GESTION E-MAIL" class="motDePasse"></Label>
+    <TextField class="" hint="E-mail actuel" marginTop="5%"></TextField>
+    </StackLayout>
+
+    <StackLayout marginTop="5%">
+      <TextField class="input" hint="Nouvel E-mail" ></TextField>
+    </StackLayout>
+
+    <StackLayout marginTop="5%">
+      <TextField class="input"hint="Confirmation E-mail" ></TextField>
+    </StackLayout>
+
+    <FlexboxLayout flexDirection="row" flexWrap="wrap" justifyContent="center">  
+        <Button [nsRouterLink]="['/utilisateur/gestioncompte']" text="VALIDER" class="valider_mdp"></Button> 
+    </FlexboxLayout>
+
+</StackLayout>
+
+
+
+
+
+
+<!-- <StackLayout class="form">
     <StackLayout class="input-field">
     <Label text="GESTION E-MAIL" class="email"></Label>
     <TextField class="input" hint="E-mail actuel"></TextField>
@@ -21,4 +46,4 @@
         </TabStripItem>
     </TabStrip>
 </BottomNavigation>
-</StackLayout>
+</StackLayout> -->

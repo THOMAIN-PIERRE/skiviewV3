@@ -9,7 +9,7 @@
     <Label text="&#xf030;" class="nt-icon fas"></Label>
     <Label [nsRouterLink]="['/danger/recapitulatif']" text="1/3"></Label>
 </FlexboxLayout>      
-<FlexboxLayout flexDirection="row" justifyContent="space-around">
+<!-- <FlexboxLayout flexDirection="row" justifyContent="space-around">
     <BottomNavigation height="100%">
         <TabStrip>
             <TabStripItem>
@@ -26,4 +26,12 @@
             </TabStripItem>
         </TabStrip>
     </BottomNavigation>
+</FlexboxLayout> -->
+
+<FlexboxLayout flexDirection="row" justifyContent="space-around" alignItems="flex-end" class="slider">
+                  
+    <Label [nsRouterLink]="['/danger/photo']" text="< PRECEDENT" id="slider" color="#000000"  marginBottom="20"></Label>
+
+    <Label [nsRouterLink]="['/danger/recapitulatif']" text="SUIVANT >" id="slider" color="#000000"  marginBottom="20"></Label>       
+
 </FlexboxLayout>
