@@ -64,7 +64,12 @@ marginRight="5%">
 </GridLayout>
 </StackLayout>
 </ScrollView>
-<StackLayout>
+<GridLayout backgroundColor="black" rows="200" height="10%" marginTop="92%" marginBottom="5" columns="*,*,*">
+    <Label col="0" text="&#xf05a;" [nsRouterLink]="['/informations']" marginLeft="10%" class="nt-icon fas"></Label>
+    <Label col="1" text="&#xf071;" [nsRouterLink]="['/danger']" marginLeft="10%" class="nt-icon fas"></Label>
+    <Label col="2" text="&#xf479;" [nsRouterLink]="['/sos']" marginLeft="10%" class="nt-icon fas"></Label>
+</GridLayout>
+<!-- <StackLayout>
     <BottomNavigation>
         <TabStrip>
             <TabStripItem>
@@ -78,4 +83,4 @@ marginRight="5%">
             </TabStripItem>
         </TabStrip>
     </BottomNavigation>
-</StackLayout>
+</StackLayout> -->

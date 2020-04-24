@@ -1,26 +1,26 @@
-<ScrollView >
+<ScrollView>
     <StackLayout class="pagecontent" backgroundColor="#F2D107">
-        <Label class="pagecontent-placeholder" text="Gestes de Premiers Secours" fontWeight="bold" fontSize="25px" color="black" ></Label>
+        <Label class="pagecontent-placeholder" text="Gestes de Premiers Secours" fontWeight="bold" fontSize="25px"
+            color="black"></Label>
         <StackLayout class="hr"></StackLayout>
-        <GridLayout rows="100, 250, 50, 10" *ngFor="let item of news">
-            <Label row="0" [text]="item.titre" fontWeight="bold" marginLeft="10%" fontSize="15px" textAlign="center" class="titre"></Label>
-            <Image row="1" [src]=""height="150%"></Image> 
-          <StackLayout class="hr"row="3"></StackLayout>
+        <GridLayout rows="100, 250, 50, 10" ngFor="let item of news">
+            <Label row="0" [text]="item.titre" fontWeight="bold" marginLeft="10%" fontSize="15px" textAlign="center"
+                class="titre"></Label>
+            <Image row="1" [src]="" height="150%"></Image>
+            <StackLayout class="hr" row="3"></StackLayout>
         </GridLayout>
 
 
     </StackLayout>
-</ScrollView>
-<BottomNavigation height="100%">
-    <TabStrip>
-        <TabStripItem>
-            <Label col="0" text="&#xf05a;" class="nt-icon fas"></Label>
-        </TabStripItem>
-        <TabStripItem>
-            <Label col="1" text="&#xf041;" class="nt-icon fas"></Label>
-        </TabStripItem>
-        <TabStripItem>
-            <Label col="2" text="&#xf041;" class="nt-icon fas"></Label>
-        </TabStripItem>
-    </TabStrip>
-</BottomNavigation>
+
+</ScrollView> 
+<GridLayout backgroundColor="black" rows="200" height="15%" marginTop="85%" marginBottom="5" columns=",,">
+        <Label col="0" text="&#xf05a;" [nsRouterLink]="['/informations']" marginLeft="10%" class="nt-icon fas"></Label>
+        <Label col="1" text="&#xf071;" [nsRouterLink]="['/danger']" marginLeft="10%" class="nt-icon fas"></Label>
+        <Label col="2" text="&#xf479;" [nsRouterLink]="['/sos']" marginLeft="10%" class="nt-icon fas"></Label>
+</GridLayout>
+<GridLayout  rows="200" height="12%" marginTop="100%" marginBottom="0" columns=",,*">
+    <Label col="0" text="" marginLeft="10%" class="nt-icon fas"></Label>
+    <Label col="0" text="" marginLeft="10%" class="nt-icon fas"></Label>
+    <Label col="0" text="" marginLeft="10%" class="nt-icon fas"></Label>
+</GridLayout>

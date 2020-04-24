@@ -230,10 +230,10 @@ ContentView:hover{
 }
 .soumission{
     border-radius: 10%;
-    width: 800px;
-    height: 100px;
-    margin-top: 0%;
-    margin-bottom: 10%;
+    width: 80%;
+    height: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 // .coverImage {
 //     background-image: url('https://thomascapelli.fr/wp-content/uploads/2015/02/2-sapins_chartreuse_neige-1024x576.jpg%27');
@@ -384,7 +384,7 @@ Button {
     font-weight: bold;
     font-size: 18;
     border-radius: 15;
-    margin-bottom: 100;
+    margin-bottom: 40;
 }
 .pageLabel {
     font-size: 23;
@@ -468,7 +468,13 @@ Button {
     margin-bottom: 10;
     
 }
-.nomPrenom_carnet {
+.danger_button2 {
+    border-radius: 100%;
+    background-color: #DCCBCB;
+    margin-top: 5;
+    margin-bottom: 10;
+    
+}renom_carnet {
     color: yellow;
     font-size: 18;
     margin-top: 40;
@@ -652,8 +658,15 @@ Button {
 }
 #slider{
     color: white;
-    font-size: 14;
+    font-size: 20;
+    font-weight: bold;  
 }
+// .slider{
+//     background-color: black;
+//     color: white;
+//     font-size: 20;
+//     padding: 10 10 10 10;
+// }
 #camera{
     color: white;
     font-size: 130;
@@ -677,7 +690,7 @@ Button {
     
 }
 #cameraProfil2{
-    color: blue;
+    color:white;
     font-size: 15;
     font-weight: bold;
     // margin-left: 50;
@@ -745,7 +758,7 @@ Button {
     // margin-bottom: 50;
 }
 .message_confirmation{
-    font-size: 26;
+    font-size: 21;
     color: black;
     text-align: justify;
     border: 2 solid grey;
@@ -809,7 +822,7 @@ Button {
 }
 #domaine{
     border-radius: 100%;
-    padding-top: 70;
+    padding-top: 35;
     padding-left: 10;
 }
 #status_open{
@@ -889,4 +902,37 @@ Button {
     background-size: 200 200;
     border-radius: 100%;  
     margin-bottom: 20;
+}
+// .menuRapide{
+// //   background: #FFFFFF;
+// // //   position: relative;
+// // //   bottom: 0;
+// // //   width: 100%;
+// //   height: 11%;
+
+// // }
+// // .ecran{
+// //     height: 100%;
+// // }  
+#basDePage{
+    background: #000000;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 11%;
+    text-align: center;
+    margin-top: 92%
+    
+}
+.un{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25;
+    margin-top: 5;
+    margin-bottom: 5;
+}
+.motDePasse{
+    text-align: center;
+    font-size: 20;
+    font-weight: bold;
 }

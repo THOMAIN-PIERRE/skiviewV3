@@ -1,29 +1,24 @@
 <GridLayout class="pagecontent"rows="50" columns='*'>
 
-  <Label [nsRouterLink]="['/utilisateur/cguappli']" class="pagecontent-placeholder" text="Conditions générales d'utilisations" row="0" color="black" fontWeight="Bold"></Label>
+  <Label [nsRouterLink]="['/utilisateur/cguappli']" marginLeft="5%"class="pagecontent-placeholder" text="Prenez connaissance des Conditions Générales d'Utilisations" row="0" color="black" fontWeight="Bold"></Label>
 
 </GridLayout>
 
 
- <StackLayout class="form" marginTop="25%">
-    <StackLayout class="input-field">
+ <StackLayout class="form" marginTop="10%">
+    <StackLayout class="input-field" >
       <TextField class="input" hint="entrez votre email" ></TextField>
     </StackLayout>
-  
-    <StackLayout class="input-field">
+
+    <StackLayout class="input-field"marginTop="5%">
       <TextField class="input"hint="entrez votre mot de passe" ></TextField>
     </StackLayout>
-  
-    
-    <StackLayout class="input-field">
+
+
+    <StackLayout class="input-field" marginTop="5%">
       <TextField class="input"hint="entrez N° de téléphone" ></TextField>
     </StackLayout>
 
-    <Button [nsRouterLink]="['/utilisateur/choixstation']" backgroundColor="black" color="#F8FD07" text="INSCRIPTION" (tap)="submit()"></Button>
-  </StackLayout> 
- <!-- < <StackLayout >
-  RadioGroup  [(value)] = "dataBoundVariable" >
-      <RadioButton text = "j'accepte les conditions générales d'utilisations " > </RadioButton >  
-  </RadioGroup> 
-</StackLayout>-->
+    <Button [nsRouterLink]="['/utilisateur/choixstation']" marginTop="0%"backgroundColor="black" color="#F8FD07" text="INSCRIPTION" (tap)="submit()"></Button>
+  </StackLayout>
   

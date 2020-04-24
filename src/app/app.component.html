@@ -5,7 +5,7 @@ https://docs.nativescript.org/angular/ui/professional-ui-components/ng-SideDrawe
 -->
 <RadSideDrawer [drawerTransition]="sideDrawerTransition">
     <GridLayout tkDrawerContent rows="auto, *" class="nt-drawer__content">
-        <StackLayout [nsRouterLink]="['/utilisateur/gestioncompte']" row="0" class="nt-drawer__header">
+        <StackLayout [nsRouterLink]="['/utilisateur/gestioncompte']" (tap)="onNavItemTap('/utilisateur/gestioncompte')" row="0" class="nt-drawer__header">
             <Image class="nt-drawer__header-image fas t-26" src="font://&#xf2bd;"></Image>
             <!-- <Label class="nt-drawer__header-brand" text="User Name"></Label> -->
             <Label class="nt-drawer__header-footnote" text="prenom.nom@gmail.com"></Label>
@@ -13,10 +13,6 @@ https://docs.nativescript.org/angular/ui/professional-ui-components/ng-SideDrawe
     
         <ScrollView row="1" class="nt-drawer__body">
             <StackLayout>
-                <!-- <GridLayout columns="auto, *" class="nt-drawer__list-item"  (tap)="onNavItemTap('/home')">
-                    <Label col="0" text="&#xf015;" class="nt-icon fas"></Label>
-                    <Label col="1" text="Accueil" class="p-r-10"></Label>
-                </GridLayout> -->
 
                 <GridLayout columns="auto, *" class="nt-drawer__list-item" (tap)="onNavItemTap('/utilisateur')">
                     <Label col="0" text="&#xf015;" class="nt-icon fas"></Label>
@@ -60,7 +56,7 @@ https://docs.nativescript.org/angular/ui/professional-ui-components/ng-SideDrawe
 
                 <StackLayout class="hr"></StackLayout>
 
-                <Button [nsRouterLink]="['/utilisateur/choixstation']" text="DECONNEXION" class="btn btn-warning"></Button> 
+                <Button [nsRouterLink]="['/utilisateur/connexion']" (tap)="onNavItemTap('/utilisateur/connexion')" text="DECONNEXION" class="btn btn-warning"></Button> 
 
             </StackLayout>
         </ScrollView>

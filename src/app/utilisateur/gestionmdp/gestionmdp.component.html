@@ -1,4 +1,4 @@
-<StackLayout class="form">
+<!-- <StackLayout class="form">
     <StackLayout class="input-field">
     <Label text="GESTION MOT DE PASSE" class="motDePasse"></Label>
     <TextField class="input" hint="Mot de passe actuel"></TextField>
@@ -7,8 +7,28 @@
     <FlexboxLayout flexDirection="row" flexWrap="wrap" justifyContent="flex-start">  
     <Button [nsRouterLink]="['/utilisateur/gestioncompte']" text="VALIDER" class="valider_mdp"></Button> 
     </FlexboxLayout>
+</StackLayout> -->
+
+<StackLayout class="form" marginTop="2%" rows="20, 20, 20, 20">
+    <StackLayout class="input-field">
+    <Label text="GESTION MOT DE PASSE" class="motDePasse"></Label>
+    <TextField class="" hint="Mot de passe actuel" marginTop="5%"></TextField>
+    </StackLayout>
+
+    <StackLayout marginTop="5%">
+      <TextField class="input" hint="Nouveau mot de passe" ></TextField>
+    </StackLayout>
+
+    <StackLayout marginTop="5%">
+      <TextField class="input"hint="Confirmation mot de passe" ></TextField>
+    </StackLayout>
+
+    <FlexboxLayout flexDirection="row" flexWrap="wrap" justifyContent="center">  
+        <Button [nsRouterLink]="['/utilisateur/gestioncompte']" text="VALIDER" class="valider_mdp"></Button> 
+    </FlexboxLayout>
+
 </StackLayout>
-<BottomNavigation height="100%">
+<!-- <BottomNavigation height="100%">
     <TabStrip>
         <TabStripItem>
             <Label col="0" text="&#xf05a;" class="nt-icon fas"></Label>
@@ -20,5 +40,4 @@
             <Label col="2" text="&#xf3c5;" class="nt-icon fas"></Label>
         </TabStripItem>
     </TabStrip>
-</BottomNavigation>
-</StackLayout>
+</BottomNavigation> -->
