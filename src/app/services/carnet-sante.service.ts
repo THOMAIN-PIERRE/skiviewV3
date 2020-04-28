@@ -8,10 +8,20 @@ export class CarnetSanteService {
 
   constructor() {
       this.dossierSante = {
-          prenom: "Pierre",
-          nom: "Thomain",
+          nom:"Lassale",
+          prenom:"Julien",
+          age: 35,
+          groupe:"AB",
           taille: 180,
-          poids: 80,
+          poids: 70,
+          donneur:"AB",
+          allergie:["Néant"],
+          pathologie:["Diabète"],
+          traitement:["Insuline", "Doliprane"],
+          nom_contact: "Aloin",
+          prenom_contact:"Baptiste",
+          tel_contact:"0606060606",
+
       };
   }
 }

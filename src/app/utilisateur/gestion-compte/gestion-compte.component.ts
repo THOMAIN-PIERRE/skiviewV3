@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as camera from "nativescript-camera";
 
 @Component({
   selector: 'ns-gestion-compte',
@@ -12,4 +13,17 @@ export class GestionCompteComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  takePicture() {
+    camera.requestPermissions().then(
+        function success() {
+            camera.takePicture({
+              width: 100,
+              height: 100,
+              keepAspectRatio: true})
+        }, 
+        function failure() {
+            alert('Camera permissions not granted.');
+        }
+    );
+}
 }

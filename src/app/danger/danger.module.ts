@@ -10,6 +10,7 @@ import { HistoriqueSignalementComponent } from './historique-signalement/histori
 import { FicheSignalementComponent } from './fiche-signalement/fiche-signalement.component';
 import { Photo2Component } from './photo2/photo2.component';
 import { AccueilDangerComponent } from './accueil-danger/accueil-danger.component';
+import { DangerService } from './serviceDanger/danger.service';
 
 
 @NgModule({
@@ -17,6 +18,9 @@ import { AccueilDangerComponent } from './accueil-danger/accueil-danger.componen
   imports: [
     DangerRoutingModule,
     NativeScriptCommonModule
+  ],
+  providers:[
+    DangerService
   ],
   schemas: [NO_ERRORS_SCHEMA]
 })

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CarnetSanteService } from '~/app/services/carnet-sante.service';
 
 @Component({
   selector: 'ns-carnetrempli',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarnetrempliComponent implements OnInit {
 
-  constructor() { }
+  constructor(public carnetServ:CarnetSanteService) { }
 
   ngOnInit(): void {
   }

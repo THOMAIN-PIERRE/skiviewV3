@@ -20,7 +20,6 @@
     font-weight: 400;
 }
 
-
 .position{
     
     // padding-top:40;
@@ -438,7 +437,8 @@ Button {
     margin-top: 290;
 }
 #myView {
-    border-radius: 100%;
+    width: 35%;
+    height: 100%;
     background-color: #DCCBCB;
     margin-top: 15;
     margin-left: 20;
@@ -474,22 +474,39 @@ Button {
     margin-top: 5;
     margin-bottom: 10;
     
-}renom_carnet {
+}
+.nomPrenom_carnet {
     color: yellow;
-    font-size: 18;
-    margin-top: 40;
+    font-size: 22;
+    font-weight: bold;
+    margin-top: 9;
 }
 .age_carnet {
     color: yellow;
+    font-size: 20;
+    margin-top: 15;
+}
+.infosCarnet{
+    color: yellow;
     font-size: 18;
-    margin-top: 70;
+    margin-left: 23;
+    margin-top: 23;
+    margin-right: 20;
+    text-decoration: underline;
 }
 .groupe_sanguin{
     color: yellow;
     font-size: 18;
-    margin-left: 20;
-    margin-top: 20;
+    margin-left: 23;
+    margin-top: 23;
     margin-right: 20;
+}
+#groupe{
+    margin-left: 22;
+    margin-top: 39;
+    margin-right: 20;
+    color: white;
+    font-size: 24;
 }
 #champs_choix_station{
     background-color: #FFFFFF;
@@ -595,7 +612,7 @@ Button {
     background-size: cover;
 }
 #message_accueil{
-    background-color: grey;
+
     color:white;
     border-radius: 25;
     margin-bottom: 20%;
@@ -657,7 +674,7 @@ Button {
 
 }
 #slider{
-    color: white;
+    color: black;
     font-size: 20;
     font-weight: bold;  
 }
@@ -691,10 +708,11 @@ Button {
 }
 #cameraProfil2{
     color:white;
-    font-size: 15;
+    font-size: 70;
     font-weight: bold;
     // margin-left: 50;
     text-align: center;
+    vertical-align: auto;
     
 }
 .numberPictures{
@@ -717,7 +735,7 @@ Button {
 }
 #goutte_de_sang{
     color: red;
-    font-size: 75;
+    font-size: 84;
 }
 #Avalanche{
     background-image: url("https://image.flaticon.com/icons/svg/100/100244.svg");
@@ -921,7 +939,7 @@ Button {
     width: 100%;
     height: 11%;
     text-align: center;
-    margin-top: 92%
+    margin-top: 92%;
     
 }
 .un{

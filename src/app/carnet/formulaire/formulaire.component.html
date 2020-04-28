@@ -1,40 +1,40 @@
-
-
-
-<StackLayout class="form">
-    <StackLayout class="input-field">
-    <TextField class="input" hint="Prénom" [(ngModel)]=santeServ.dossierSante.prenom></TextField>
-    <TextField class="input" hint="Nom"></TextField>
-    <TextField class="input" hint="Age" keyboardType="integer"></TextField>
-    <TextField class="input" hint="Groupe sanguin"></TextField>
-    <TextField class="input" hint="Taille (en cm)" keyboardType="integer"></TextField>
-    <TextField class="input" hint="Poids (en kg)" keyboardType="integer"></TextField>
-    <TextField class="input" hint="Donneur d'organe"></TextField>
-    <TextField class="input" hint="Allergie(s)"></TextField>
-    <TextField class="input" hint="Pathologie(s)"></TextField>
-    <TextField class="input" hint="Traitement(s)"></TextField>
-    <TextField class="input" hint="Personne à contacter"></TextField>
-    <TextField class="input" hint="Numéro de la personne à contacter" keyboardType="phone" autocorrect="false" autocapitalizationType="none"></TextField>
-    <FlexboxLayout flexDirection="row" flexWrap="wrap" justifyContent="space-around">   
-        <Button [nsRouterLink]="['/carnet']" text="VALIDER" class="valider_carnet"></Button> 
-        <Button [nsRouterLink]="['/carnet']" text="SUPPRIMER" class="supprimer_carnet"></Button>
-    </FlexboxLayout>
-</StackLayout>
 <StackLayout>
-    <BottomNavigation height="100%">
+    <Tabs>
         <TabStrip>
             <TabStripItem>
-                <Label col="0" text="&#xf05a;" class="nt-icon fas"></Label>
+                <Label text="IDENTITE"></Label>
             </TabStripItem>
             <TabStripItem>
-                <Label col="1" text="&#xf041;" class="nt-icon fas"></Label>
+                <Label text="CONSTANTES"></Label>
             </TabStripItem>
             <TabStripItem>
-                <Label col="2" text="&#xf3c5;" class="nt-icon fas"></Label>
+                <Label text="DOSSIER MEDICAL"></Label>
+                 <!-- <Label text="" class="nt-icon fas"></Label> -->
+            </TabStripItem>
+            <TabStripItem>
+                <Label text="CONTACT"></Label>
+                <!-- <Label text="" class="nt-icon fas"></Label> -->
             </TabStripItem>
         </TabStrip>
-    </BottomNavigation>
+        <TabContentItem>
+            <GridLayout>
+                <ns-formulaire-identite></ns-formulaire-identite>
+            </GridLayout>
+        </TabContentItem>
+        <TabContentItem>
+            <GridLayout>
+                <ns-formulaire-constantes></ns-formulaire-constantes>
+            </GridLayout>
+        </TabContentItem>
+        <TabContentItem>
+            <GridLayout>
+                <ns-formulaire-dossier-medical></ns-formulaire-dossier-medical>
+            </GridLayout>
+        </TabContentItem>
+        <TabContentItem>
+            <GridLayout>
+                <ns-formulaire-contact></ns-formulaire-contact>
+            </GridLayout>
+        </TabContentItem>
+    </Tabs>
 </StackLayout>
-        
-     
-      
