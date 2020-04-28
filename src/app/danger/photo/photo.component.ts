@@ -15,7 +15,10 @@ export class PhotoComponent implements OnInit {
   takePicture() {
     camera.requestPermissions().then(
         function success() {
-            camera.takePicture();
+            camera.takePicture({
+              width: 700,
+              height: 1000,
+              keepAspectRatio: true})
         }, 
         function failure() {
             alert('Camera permissions not granted.');

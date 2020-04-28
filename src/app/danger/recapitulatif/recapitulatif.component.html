@@ -1,38 +1,26 @@
-<ActionBar class="actionBarCarnet">
-    <!-- 
-    Use the NavigationButton as a side-drawer button in Android
-    because ActionItems are shown on the right side of the ActionBar
-    -->
-    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
-    <!-- 
-    Use the ActionItem for IOS with position set to left. Using the
-    NavigationButton as a side-drawer button in iOS is not possible,
-    because its function is to always navigate back in the application.
-    -->
-    <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
-        ios.position="left" >
-    </ActionItem>
-    <Label class="blackPage" text="MEDIA"></Label>
-</ActionBar>
-
 <ScrollView> 
-<GridLayout rows="240, 20, 40, 50, 50, 50, 50, *,*,*">
+<GridLayout rows="240, 20, 40, 50, 50, 50, 100, 50, *,*,*">
     <ContentView row="0" class="danger_button" text="" width="600px" height="600px" backgroundColor="#000000"></ContentView> 
     <Label row="1" text="ENVOYER" id="envoyer"></Label>
     <Label row="2" [nsRouterLink]="['/danger/confirmationEnvoi']" text="&#xf064;" class="nt-icon fas" id="fleche_envoi"></Label> 
     <Label row="3" text="Localisation" backgroundColor="#000000" color="#F8FD07" fontSize="30px"></Label>
-    <Label row="4" text="Latitude: 47.12317663" color="#000000" fontSize="30px"></Label>
-    <Label row="5" text="Longitude: 2.44583129" color="#000000" fontSize="30px"></Label>
-    <Label row="6" text="Photo (obligatoire)" backgroundColor="#000000" color="#F8FD07" fontSize="30px"></Label>
-    <Image row="7" class="galerie" src="https://www.telegraph.co.uk/content/dam/Travel/ski/Crans-Montana-avalanche-skiers-KEYSTONE-ANTHONY%20ANEX.jpg?imwidth=450"  width="800px" stretch="aspectFit"></Image>
+
+    <Label row="4" text="Latitude: {{ latitude }}" fontSize="30px"></Label>
+    <Label row="5" text="Longitude: {{ longitude }}" fontSize="30px"></Label>
+    <Button row="6" class="btn btn-primary btn-active" text="Afficher les coordonnées GPS" (tap)="updateLocation()"></Button>
+
+    <!-- <Label row="4" text="Latitude: 47.12317663" color="#000000" fontSize="30px"></Label>
+    <Label row="5" text="Longitude: 2.44583129" color="#000000" fontSize="30px"></Label> -->
+    <Label row="7" text="Photo (obligatoire)" backgroundColor="#000000" color="#F8FD07" fontSize="30px"></Label>
     <Image row="8" class="galerie" src="https://www.telegraph.co.uk/content/dam/Travel/ski/Crans-Montana-avalanche-skiers-KEYSTONE-ANTHONY%20ANEX.jpg?imwidth=450"  width="800px" stretch="aspectFit"></Image>
-    <Image row="9" class="galerie_end" src="https://www.telegraph.co.uk/content/dam/Travel/ski/Crans-Montana-avalanche-skiers-KEYSTONE-ANTHONY%20ANEX.jpg?imwidth=450"  width="800px" stretch="aspectFit"></Image>
+    <Image row="9" class="galerie" src="https://www.telegraph.co.uk/content/dam/Travel/ski/Crans-Montana-avalanche-skiers-KEYSTONE-ANTHONY%20ANEX.jpg?imwidth=450"  width="800px" stretch="aspectFit"></Image>
+    <Image row="10" class="galerie_end" src="https://www.telegraph.co.uk/content/dam/Travel/ski/Crans-Montana-avalanche-skiers-KEYSTONE-ANTHONY%20ANEX.jpg?imwidth=450"  width="800px" stretch="aspectFit"></Image>
 </GridLayout>
 </ScrollView> 
 <FlexboxLayout flexDirection="row" justifyContent="space-around" alignItems="flex-end" class="slider">
                   
-    <Label [nsRouterLink]="['/danger/photo2']" text="< PRECEDENT >" id="slider" color="#000000"  marginBottom="20"></Label>
+    <Label [nsRouterLink]="['/danger/photo2']" text="< PRECEDENT " id="slider" marginBottom="20"></Label>
 
     <!-- <Label [nsRouterLink]="['/danger/confirmationEnvoi']" text="SUIVANT >" id="slider" color="#000000"  marginBottom="20"></Label>        -->
 
-</FlexboxLayout>
+</FlexboxLayout> 
