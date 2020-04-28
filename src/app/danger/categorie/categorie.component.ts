@@ -15,7 +15,7 @@ export class CategorieComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  categorieDanger(etat:string){
+  categorieDanger(categorie:string){
     this.DangerServ.danger.categorie = categorie;
   }
 

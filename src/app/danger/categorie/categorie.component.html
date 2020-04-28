@@ -1,6 +1,6 @@
 <ScrollView>
 <FlexboxLayout class="search__page__content" flexDirection="row" flexWrap="wrap" justifyContent="space-around">
-    <Label class="danger_button" id="Etat_piste" [nsRouterLink]="['/danger/photo']" pageTransition="flip" text="Etat de la piste" width="400px" height="400px" backgroundColor="#FFFFFF"></Label>
+    <Label class="danger_button" id="Etat_piste" (tap)="categorieDanger('etat')" [nsRouterLink]="['/danger/photo']" pageTransition="flip" text="Etat de la piste" width="400px" height="400px" backgroundColor="#FFFFFF"></Label>
     <Label class="danger_button" id="Meteorologie" [nsRouterLink]="['/danger/photo']" text="Météo" width="400px" height="400px" backgroundColor="#F8FD07"></Label>
     <Label class="danger_button" id="Avalanche" [nsRouterLink]="['/danger/photo']" text="Avalanche" width="400px" height="400px" backgroundColor="#C4C4C4"></Label>
     <Label class="danger_button" id="Crevasse" [nsRouterLink]="['/danger/photo']" text="Crevasse" width="400px" height="400px" backgroundColor="#FF5E69"></Label>

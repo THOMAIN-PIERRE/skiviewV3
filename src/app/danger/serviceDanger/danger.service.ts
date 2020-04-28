@@ -10,7 +10,6 @@ danger:any;
   constructor() {
     this.danger = {
       categorie:"",
-      icone:"",
     }
    }
 }
