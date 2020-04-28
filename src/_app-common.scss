@@ -802,7 +802,7 @@ Button {
     font-size: 13;
     font-weight: bold;
 }
-#Avalanche{
+#A{
     padding-top: 100;
     padding-left: 37;
     font-size: 13;
@@ -858,7 +858,7 @@ Button {
     margin-top: 32%;
 }
 .iconEtatDeLaPiste{
-    background-image: url("~/images/Etat des pistes.png");
+    background-image: url("~/app/images/Etat des pistes.png");
     background-repeat:no-repeat;
     background-position: center;
     background-size: 200 200;
@@ -866,23 +866,23 @@ Button {
     margin-bottom: 20;
 }
 .iconMeteo{
-    background-image: url("~/images/storm.png");
+    background-image: url("~/app/images/storm.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 200 200;
     border-radius: 100%;  
     margin-bottom: 20;
 }
-.iconAvalanche{
-    background-image: url("~/images/bell.png");
+.iconA{
+    background-image: url("~/app/images/avalanche.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 200 200;
-    border-radius: 100%;
-    margin-bottom: 20; 
+    border-radius: 100%;  
+    margin-bottom: 20;
 }
 .iconAutres{
-    background-image: url("~/images/icon (5).png");
+    background-image: url("~/app/images/icon (5).png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 200 200;
@@ -890,7 +890,7 @@ Button {
     margin-bottom: 20; 
 }
 .iconCrevasse{
-    background-image: url("~/images/crevasse.png");
+    background-image: url("~/app/images/crevasse.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 200 200;
@@ -898,7 +898,7 @@ Button {
     margin-bottom: 20;
 }
 .iconObstacle{
-    background-image: url("~/images/tree trunk.png");
+    background-image: url("~/app/images/tree trunk.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 200 200;
@@ -906,7 +906,7 @@ Button {
     margin-bottom: 20;
 }
 .iconSignaletique{
-    background-image: url("~/images/stopping.png");
+    background-image: url("~/app/images/stopping.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 200 200;
@@ -914,7 +914,7 @@ Button {
     margin-bottom: 20;
 }
 .iconAnimaux{
-    background-image: url("~/images/animal-prints.png");
+    background-image: url("~/app/images/animal-prints.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 200 200;
@@ -953,4 +953,52 @@ Button {
     text-align: center;
     font-size: 20;
     font-weight: bold;
+}
+
+#iconTapis{
+    background-image: url("~/app/images/tapis.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200; 
+    margin-bottom: 10;
+    margin-top: 2%;
+    width: 20%;
+    height: 16%;
+    padding-bottom: 12%;
+}
+#Tapis{
+    padding-top: 80;
+    padding-left: 45;
+    font-size: 13;
+    font-weight: bold;
+}
+#iconTeleski{
+    background-image: url("~/app/images/noun_Ski Lift_8803.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    margin-bottom: 10;
+    margin-top: 2%;
+    width: 40%;
+    height: 32%;
+}
+#iconTelesiege{
+    background-image: url("~/app/images/remontée_mécanique.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    margin-bottom: 10;
+    margin-top: 2%;
+    width: 20%;
+    height: 16%;
+}
+#iconTelecabine{
+    background-image: url("~/app/images/cable-car.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    margin-bottom: 10;
+    margin-top: 2%;
+    width: 20%;
+    height: 16%;
 }
