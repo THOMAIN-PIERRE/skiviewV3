@@ -5,64 +5,32 @@
             marginTop="50%">
             <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="CAUSE DE BLESSURE" row="0"
                 color="white" fontSize=25px; fontWeight="Bold" marginbottom="10%" marginLeft="10%"></Label>
-            <Label class="position" color="white" paddingTop="70%" paddingLeft="35%" class="bouttonchute"
-                class="pictureA" text="Chute" color="white" fontWeight="Bold" width="300px" height="300px"
-                backgroundColor="#FF0000"></Label>
-            <Label class="bouttonchute" color="white" paddingTop="70%" paddingLeft="30%" text="Collision"
-                class="pictureB" width="300px" height="300px" fontWeight="Bold" backgroundColor="#FF0000"></Label>
-
-         
-            <Label class="bouttonchute" color="white" paddingTop="70%" paddingLeft="35%" text="Autres" class="pictureC"
-                width="300px" height="300px" fontWeight="Bold" backgroundColor="#FF0000"></Label>
+            <Label class="position" color="white" paddingTop="25%" paddingLeft="7%" class="bouttonchute"
+                class="iconetotal" text="E" color="white" fontWeight="Bold" width="300px" height="300px"
+                backgroundColor="#FF0000"(tap)="causeblessuresos('causeblessure')"></Label>
+            <Label class="bouttonchute" color="white" paddingTop="30%" paddingLeft="3%" text="M"
+                class="iconecol" width="300px" height="300px" fontWeight="Bold" backgroundColor="#FF0000"(tap)="causeblessuresos('causeblessure')"></Label>
+            <Label class="bouttonchute" color="white" paddingTop="20%" paddingLeft="0%" text="F" class="iconetotal"
+                width="300px" height="300px" fontWeight="Bold" backgroundColor="#FF0000"(tap)="causeblessuresos('causeblessure')"></Label>
             <Label backgroundColor="#3E3F32" color="white" class="page__content-placeholder" text="TYPE DE BLESSURES"
-                row="0" color="white" fontWeight="Bold" fontSize="25px" marginLeft="14%"></Label>
-            <Label class="bouttonchute" color="white" paddingTop="70%" paddingLeft="35%" text="Tête" class="pictureD"
-                width="300px" height="300px" fontWeight="Bold" backgroundColor="#FF0000"></Label>
-            <Label class="bouttonchute" color="white" paddingTop="70%" paddingLeft="35%" text="Bras" class="pictureE"
-                width="300px" height="300px" fontWeight="Bold" backgroundColor="#FF0000"></Label>
-            <Label class="bouttonchute" color="white" paddingTop="70%" paddingLeft="30%" text="Epaules" class="pictureF"
-                width="300px" height="300px" fontWeight="Bold" backgroundColor="#FF0000"></Label>
-            <Label class="bouttonchute" color="white" paddingTop="70%" paddingLeft="35%" text="genou" class="pictureG"
-                width="300px" height="300px" fontWeight="Bold" backgroundColor="#FF0000"></Label>
-            <Label class="bouttonchute" color="white" paddingTop="70%" paddingLeft="30%" class="picture" text="Jambes"
-                width="300px" height="300px" fontWeight="Bold" backgroundColor="#FF0000"></Label>
-            <Label class="bouttonchute" color="white" paddingTop="70%" paddingLeft="35%" text="Autres" class="pictureC"
-                width="300px" height="300px" fontWeight="Bold" backgroundColor="#FF0000"></Label>
+                row="0" color="white" fontWeight="Bold" fontSize="25px" marginLeft="10%"(tap)="typeblessuresos('typeblessure')"></Label>
+            <Label class="bouttonchute" color="white" paddingTop="25%" paddingLeft="7%" text="B" class="iconetete"
+                width="300px" height="300px" fontWeight="Bold" backgroundColor="#FF0000"(tap)="typeblessuresos('typeblessure')"></Label>
+            <Label class="bouttonchute" color="white" paddingTop="25%" paddingLeft="7%" text="C" class="iconebras"
+                width="300px" height="300px" fontWeight="Bold" backgroundColor="#FF0000"(tap)="typeblessuresos('typeblessure')"></Label>
+            <Label class="bouttonchute" color="white" paddingTop="25%" paddingLeft="15%" text="K" class="iconetotal"
+                width="300px" height="300px" fontWeight="Bold" backgroundColor="#FF0000"(tap)="typeblessuresos('typeblessure')"></Label>
+            <Label class="bouttonchute" color="white" paddingTop="25%" paddingLeft="17%" text="J" class="iconetotal"
+                width="300px" height="300px" fontWeight="Bold" backgroundColor="#FF0000"(tap)="typeblessuresos('typeblessure')"></Label>
+            <Label class="bouttonchute" color="white" paddingTop="25%" paddingLeft="10%" class="picto" text="A"
+                width="300px" height="300px" fontWeight="Bold" backgroundColor="#FF0000"(tap)="typeblessuresos('typeblessure')"></Label>
+            <Label class="bouttonchute" color="white" paddingTop="20%" paddingLeft="0%" text="F" class="iconetotal"
+                width="300px" height="300px" fontWeight="Bold" backgroundColor="#FF0000"(tap)="typeblessuresos('typeblessure')"></Label>
             <!-- <Label class="bouttonchute" color="white" paddingTop="70%" paddingLeft="35%" text="" width="250px" height="250px" fontWeight="Bold" backgroundColor="#3E3F32"marginBottom="20%"></Label> -->
 
             <Button text="Envoyer" backgroundColor="#0DF24D" color="white" (tap)="submit()" fontSize="Large"
                 class="soumission" marginTop="100%"></Button>
         </FlexboxLayout>
-
-
         <!-- </FlexboxLayout> -->
     </GridLayout>
-
-
 </ScrollView>
-
-<!-- <BottomNavigation height="100%">
-        <TabStrip>
-            <TabStripItem>
-                <Label col="0" text="&#xf05a;" class="nt-icon fas"></Label>
-            </TabStripItem>
-            <TabStripItem>
-                <Label col="1" text="&#xf041;" class="nt-icon fas"></Label>
-            </TabStripItem>
-            <TabStripItem>
-                <Label col="2" text="&#xf041;" class="nt-icon fas"></Label>
-            </TabStripItem>
-        </TabStrip>
-    </BottomNavigation> -->
-<GridLayout class="page__content" class="overlay" rows="50,50,50,50,50,50" >
-    <Label  class="page__content-placeholder" text="Nous avons bien reçut " row="0" color="black"
-    fontWeight="Bold" fontSize="18px" marginLeft="0%" ></Label>
-    <Label  class="page__content-placeholder" text="ces complements d'informations " row="1" color="black"
-    fontWeight="Bold" fontSize="18px" marginLeft="0%"></Label>
-    <Label  class="page__content-placeholder" text="Nous serons bientot à vos cotés " row="2" color="black"
-    fontWeight="Bold" fontSize="18px" marginLeft="0%"></Label>
-    <Label  class="page__content-placeholder" text="restez calme, respirez profondemment " row="3" color="black"
-    fontWeight="Bold" fontSize="18px" marginLeft="0%"></Label>
-    <Label class="page__content-placeholder"   width="66%" textAlign="center" paddingTop="10%" paddingLeft="47%"height="10%"text="Appel de secours" backgroundColor="#FF0000" color="black" marginTop="0"
-        fontSize="18px" fontWeight="Bold" row="7"></Label>
-</GridLayout>

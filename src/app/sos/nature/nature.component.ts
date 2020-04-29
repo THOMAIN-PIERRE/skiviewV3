@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { SosService } from '../service/sos.service';
 @Component({
   selector: 'ns-nature',
   templateUrl: './nature.component.html',
@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NatureComponent implements OnInit {
 
-  constructor() { }
+  constructor(public SosServ:SosService) { }
 
   ngOnInit(): void {
   }
-
+  naturesos(nature:string){
+    this.SosServ.sos.nature=nature;
+  }
 }

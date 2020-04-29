@@ -8,9 +8,9 @@ export class CarnetSanteService {
 
   constructor() {
       this.dossierSante = {
-          nom:"Lassale",
-          prenom:"Julien",
-          age: 35,
+          nom:"Lassalle",
+          prenom:"Benoît",
+          age:"35",
           groupe:"AB",
           taille: 180,
           poids: 70,

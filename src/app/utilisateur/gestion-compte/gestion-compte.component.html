@@ -24,9 +24,9 @@
     <ContentView row="1" width="45%" backgroundColor="#C4C4C4" class="photo_danger"></ContentView>
 </FlexboxLayout>  -->
 
-<GridLayout rows="220" (tap)="takePicture()">
-    <Label row="0" width="45%" backgroundColor="#C4C4C4" class="photo_danger"></Label>
-    <Label text="&#xf030;" id="cameraProfil2" marginTop="15%" class="nt-icon fas"></Label>
+<GridLayout rows="250" (tap)="takePicture()">
+    <Label row="0" width="160vw" backgroundColor="#C4C4C4" class="photo_danger" marginTop="30vh"></Label>
+    <Label text="&#xf030;" id="cameraProfil2" class="nt-icon fas"></Label>
 </GridLayout>
 <!-- <FlexboxLayout flexDirection="column" justifyContent="center">
     <Label text="&#xf030;" class="nt-icon fas" id="cameraProfil"></Label>
@@ -39,7 +39,7 @@
 <GridLayout rows="80">
     <Button row="0" text="GESTION MOT DE PASSE" [nsRouterLink]="['/utilisateur/gestionmdp']" pageTransition="flip" class="btn btn-warning"></Button> 
 </GridLayout>
-<GridLayout rows="120">
+<GridLayout rows="80">
     <Button row="0" text="GESTION E-MAIL" [nsRouterLink]="['/utilisateur/gestionmail']" pageTransition="flip" class="btn btn-warning"></Button> 
 </GridLayout>
 <!-- <BottomNavigation>

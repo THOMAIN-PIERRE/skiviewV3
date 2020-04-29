@@ -15,9 +15,31 @@ export class CategorieComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  categorieDanger(categorie:string){
-    this.DangerServ.danger.categorie = categorie;
+  categorieDangerEtatPistes(etatPistes: string){
+    this.DangerServ.danger.etatPistes = etatPistes;
   }
+  categorieDangerMeteo(meteo: string){
+    this.DangerServ.danger.meteo = meteo;
+  }
+  categorieDangerAvalanche(avalanche: string){
+    this.DangerServ.danger.avalanche = avalanche;
+  }
+  categorieDangerSignaletique(signaletique: string){
+    this.DangerServ.danger.signaletique = signaletique;
+  }
+  categorieDangerObstacle(obstacle: string){
+    this.DangerServ.danger.obstacle = obstacle;
+  }
+  categorieDangerCrevasse (crevasse: string){
+    this.DangerServ.danger.crevasse = crevasse;
+  }
+  categorieDangerAnimaux(animaux: string){
+    this.DangerServ.danger.animaux = animaux;
+  }
+  categorieDangerAutres(autres: string){
+    this.DangerServ.danger.autres = autres;
+  }
+
 
   onDrawerButtonTap(): void {
     const sideDrawer = <RadSideDrawer>app.getRootView();

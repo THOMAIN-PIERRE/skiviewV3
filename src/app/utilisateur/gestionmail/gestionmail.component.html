@@ -1,4 +1,26 @@
-<StackLayout class="form" marginTop="2%" rows="20, 20, 20, 20">
+<StackLayout class="form">
+    <StackLayout class="input-field">
+        <Label text="GESTION E-MAIL" class="motDePasse"></Label>   
+    <TextField class="formSanteCss" hint="E-mail associé au compte" color="black" background="lightgrey" width="90%" height="9%" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
+    <TextField class="formSanteCss" hint="Nouvel E-mail" color="black" background="lightgrey" width="90%" height="9%" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
+    <TextField class="formSanteCss" hint="Confirmation E-mail" color="black" background="lightgrey" width="90%" height="9%" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
+    <Button [nsRouterLink]="['/utilisateur/gestioncompte']" text="MODIFIER" width="90%" height="9%" backgroundColor="yellow"; color="black"></Button> 
+</StackLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <StackLayout class="form" marginTop="2%" rows="20, 20, 20, 20">
     <StackLayout class="input-field">
     <Label text="GESTION E-MAIL" class="motDePasse"></Label>
     <TextField class="" hint="E-mail associé au compte" marginTop="5%"></TextField>
@@ -16,8 +38,7 @@
         <Button [nsRouterLink]="['/utilisateur/gestioncompte']" text="VALIDER" class="valider_mdp"></Button> 
     </FlexboxLayout>
 
-</StackLayout>
-
+</StackLayout> -->
 
 
 

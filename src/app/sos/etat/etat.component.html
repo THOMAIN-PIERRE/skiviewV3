@@ -1,3 +1,34 @@
+<ScrollView>
+    <GridLayout class="page__content" backgroundColor="#3E3F32" >
+        <FlexboxLayout backgroundColor="#3E3F32" flexDirection="row" flexWrap="wrap" justifyContent="space-around"
+            margin-top="50%" rows="200,50,50,50,50">
+            <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="" marginTop="50%"
+                row="0" color="white" fontSize=25px; fontWeight="Bold" marginbottom="10%" marginLeft="100%"></Label>
+            <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="" marginTop="50%"
+                row="1" color="white" fontSize=25px; fontWeight="Bold" marginbottom="10%" marginLeft="100%"></Label>
+            <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="" marginTop="50%"
+                row="2" color="white" fontSize=25px; fontWeight="Bold" marginbottom="10%" marginLeft="100%"></Label>
+
+            <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="La victime est un" marginTop="50%"
+                row="3" color="white" fontSize=25px; fontWeight="Bold" marginbottom="10%" marginLeft="10%"></Label>
+            <ContentView [nsRouterLink]="['/sos/gravite']" row="4" textAlign="center" class="bouttonchute"text="" width="400px" height="400px" marginLeft="5%"
+                color="white" backgroundColor="#FF0000">
+                <Label class="page__content-placeholder" text="VICTIME" [nsRouterLink]="['/sos/gravite']" (tap)="etatsos('etat')"color="white" fontSize=25px; fontWeight="Bold"
+                    marginbottom="10%" marginLeft="0%"></Label>
+            </ContentView>
+            <ContentView row="4" text="" [nsRouterLink]="['/sos/gravite']" class="bouttonchute"width="400px" height="400px" color="white" textAlign="center"
+                marginLeft="0%" backgroundColor="#106D0E">
+
+                <Label class="page__content-placeholder" [nsRouterLink]="['/sos/gravite']" (tap)="etatsos('etat')"text="TEMOIN" color="white" fontSize=25px; fontWeight="Bold"
+                    marginbottom="10%" marginLeft="0%"></Label>
+            </ContentView>
+        </FlexboxLayout>
+    </GridLayout>
+    
+</ScrollView>
+
+
+
 <!-- <GridLayout class="search__page__content">
     <Label class="greyPage" id="vousEtes" text="Vous êtes"></Label>
     <Label class="greyPage" [nsRouterLink]="['/sos/gravite']"id="redVictime" width="150" height="150" backgroundColor="#FF0000"></Label>
@@ -7,9 +38,9 @@
 </GridLayout> -->
 
 
-<ScrollView>
+<!-- <ScrollView>
     <GridLayout class="page__content" backgroundColor="#3E3F32" >
-        <!-- <FlexboxLayout backgroundColor="#3E3F32" flexDirection="row" flexWrap="wrap" justifyContent="space-around"
+        <FlexboxLayout backgroundColor="#3E3F32" flexDirection="row" flexWrap="wrap" justifyContent="space-around"
             margin-top="50%" rows="200,50,50,50,50">
             <Label backgroundColor="#3E3F32" class="page__content-placeholder" text="" marginTop="50%"
                 row="0" color="white" fontSize=25px; fontWeight="Bold" marginbottom="10%" marginLeft="100%"></Label>
@@ -34,17 +65,17 @@
                     <!-- <Image src="~/app/images/snow.png" stretch="aspectFit"></Image> -->
                     <!-- <Image src="~/images/snow.png" stretch="aspectFit"></Image> -->
                                                                                                     <!-- <Image src="res://tete" stretch="aspectFill"></Image> -->
-                    <Image src="~/app/images/snow.png"></Image>
-                    <Image src="~/app/images/slope.png"></Image>
-                        <!-- <Image src="~/images/snow.png"></Image> -->
-                        <!-- <Image src="~/images/slope.png"></Image>  -->
+                    <!-- <Image src="~/app/images/snow.png"></Image>
+                    <Image src="~/app/images/slope.png"></Image> -->
+                    <!-- <Image src="~/images/snow.png"></Image> -->
+                    <!-- <Image src="~/images/slope.png"></Image>  -->
                     <!-- <Image src="res://tete" stretch="none"></Image> -->
                     <!-- <Image src="~/images/logo.png" loadMode="async" stretch="aspectFit"></Image> -->
                     <!-- <Image src="~/images/snow.png"></Image> -->
 
             <!-- </ContentView>
-        </FlexboxLayout> -->
+        </FlexboxLayout>
     </GridLayout>
     
-</ScrollView>
+</ScrollView> -->
 
