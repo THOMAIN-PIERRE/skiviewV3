@@ -16,7 +16,10 @@
 
 <StackLayout>
     <GridLayout class="page__content">
-    
+        
+        <GridLayout rows="120">
+            <image row="0" src="~/app/images/Logo Skiview.png" width="40%" height="20%"></image>
+        </GridLayout>
         <GridLayout rows="350">
             <image row="0" src="https://pngimage.net/wp-content/uploads/2018/06/mountain-silhouette-png-3.png"></image>
         </GridLayout>
@@ -27,9 +30,15 @@
             <ContentView [nsRouterLink]="['/utilisateur/station']" row="2" id="champs_choix_station" width="800px" height="150px"></ContentView> -->
             <GridLayout rows="850">
                 <ContentView row="0" id="cache_noir" width="100%" height="67%" backgroundColor="#000000"></ContentView>
-                <Label row="1" class="entete5" text="SKIER EN TOUTE SECURITE"></Label>
-                <Button row="2" [nsRouterLink]="['/utilisateur/station']" text="Selectionnez votre station !" class="btn_creer_un_compte2"></Button>
+                <!-- <Label row="1" class="entete5" text="SKIEZ EN TOUTE SECURITE"></Label> -->
+                <Label row="1" class="entete5" text="SELECTIONNEZ VOTRE STATION"></Label>
             </GridLayout>
+            <FlexboxLayout flexDirection="column" >
+                <!-- >> creating-listpicker-html -->
+                <ListPicker [items]="stations" selectedIndex="0" (selectedIndexChange)="onSelectedIndexChanged($event)" [nsRouterLink]="['/utilisateur/station']" color="white" backgroundColor="black" marginTop="60%"></ListPicker>
+                <!-- << creating-listpicker-html -->
+        </FlexboxLayout>
+            
         <!-- </GridLayout> -->
     </GridLayout>   
 </StackLayout>

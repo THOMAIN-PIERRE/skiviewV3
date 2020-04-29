@@ -22,14 +22,14 @@
 
     <ScrollView>
         <FlexboxLayout class="search__page__content" flexDirection="row" flexWrap="wrap" justifyContent="space-around">
-            <Label class="danger_button" class="iconEtatDeLaPiste" id="Etat_piste" text="Etat de la piste" width="400px" height="400px" backgroundColor="#FFFFFF" (tap)="categorieDanger('categorie')" [nsRouterLink]="['/danger/photo']"></Label>
-            <Label class="danger_button" class="iconMeteo" id="Meteorologie" text="Météo" width="400px" height="400px" backgroundColor="#F8FD07" (tap)="categorieDanger('categorie')" [nsRouterLink]="['/danger/photo']"></Label>
-            <Label class="danger_button" class="iconA" id="A" text="Avalanche" width="400px" height="400px" backgroundColor="#C4C4C4" (tap)="categorieDanger('categorie')" [nsRouterLink]="['/danger/photo']"></Label>
-            <Label class="danger_button" class="iconCrevasse" id="Crevasse" text="Crevasse" width="400px" height="400px" backgroundColor="#FF5E69" (tap)="categorieDanger('categorie')" [nsRouterLink]="['/danger/photo']"></Label>
-            <Label class="danger_button" class="iconObstacle" id="Obstacle" text="Obstacle" width="400px" height="400px" backgroundColor="#EC4621" (tap)="categorieDanger('categorie')" [nsRouterLink]="['/danger/photo']"></Label>
-            <Label class="danger_button" class="iconSignaletique" id="Signaletique" text="Signalétique" width="400px" height="400px" backgroundColor="#E6D005" (tap)="categorieDanger('categorie')" [nsRouterLink]="['/danger/photo']"></Label>
-            <Label class="danger_button" class="iconAnimaux" id="Animaux" text="Animaux" width="400px" height="400px" backgroundColor="#05E65A" (tap)="categorieDanger('categorie')" [nsRouterLink]="['/danger/photo']"></Label>
-            <Label class="danger_button" class="iconAutres" id="Autres" text="Autres" width="400px" height="400px" backgroundColor="#1184FF" (tap)="categorieDanger('categorie')" [nsRouterLink]="['/danger/photo']"></Label>
+            <Label class="danger_button" class="iconEtatDeLaPiste" id="Etat_piste" text="Etat piste" width="34%" height="43%" backgroundColor="#FFFFFF" (tap)="categorieDangerEtatPistes('etatPistes')" [nsRouterLink]="['/danger/photo']"></Label>
+            <Label class="danger_button" class="iconMeteo" id="Meteorologie" text="Météo" width="34%" height="43%" backgroundColor="#F8FD07" (tap)="categorieDangerMeteo('meteo')" [nsRouterLink]="['/danger/photo']"></Label>
+            <Label class="danger_button" class="iconA" id="A" text="Avalanche" width="34%" height="43%" backgroundColor="#C4C4C4" (tap)="categorieDangerAvalanche('avalanche')" [nsRouterLink]="['/danger/photo']"></Label>
+            <Label class="danger_button" class="iconCrevasse" id="Crevasse" text="Crevasse" width="34%" height="43%" backgroundColor="#FF5E69" (tap)="categorieDangerSignaletique('signaletique')" [nsRouterLink]="['/danger/photo']"></Label>
+            <Label class="danger_button" class="iconObstacle" id="Obstacle" text="Obstacle" width="34%" height="43%" backgroundColor="#EC4621" (tap)="categorieDangerObstacle('obstacle')" [nsRouterLink]="['/danger/photo']"></Label>
+            <Label class="danger_button" class="iconSignaletique" id="Signaletique" text="Signalétique" width="34%" height="43%" backgroundColor="#E6D005" (tap)="categorieDangerCrevasse('crevasse')" [nsRouterLink]="['/danger/photo']"></Label>
+            <Label class="danger_button" class="iconAnimaux" id="Animaux" text="Animaux" width="34%" height="43%" backgroundColor="#05E65A" (tap)="categorieDangerAnimaux('animaux')" [nsRouterLink]="['/danger/photo']"></Label>
+            <Label class="danger_button" class="iconAutres" id="Autres" text="Autres" width="34%" height="43%" backgroundColor="#1184FF" (tap)="categorieDangerAutres('autres')" [nsRouterLink]="['/danger/photo']"></Label>
         </FlexboxLayout>
     </ScrollView>
 

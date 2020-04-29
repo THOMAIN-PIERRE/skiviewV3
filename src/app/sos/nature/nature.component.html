@@ -14,14 +14,15 @@
             <ContentView [nsRouterLink]="['/sos/activite']" row="4" textAlign="center" class="bouttonchute"text="ENFANT" width="400px" height="400px" marginLeft="5%"
                 color="white" backgroundColor="#FF0000">
                 <Label class="page__content-placeholder" text="ENFANT" [nsRouterLink]="['/sos/activite']" color="white" fontSize=25px; fontWeight="Bold"
-                    marginbottom="10%" marginLeft="0%"></Label>
+                    marginbottom="10%" marginLeft="0%" (tap)="naturesos('nature')"></Label>
             </ContentView>
             <ContentView row="4" text="Adulte" [nsRouterLink]="['/sos/activite']" class="bouttonchute"width="400px" height="400px" color="white" textAlign="center"
                 marginLeft="0%" backgroundColor="#106D0E">
 
                 <Label class="page__content-placeholder" [nsRouterLink]="['/sos/activite']" text="ADULTE" color="white" fontSize=25px; fontWeight="Bold"
-                    marginbottom="10%" marginLeft="0%"></Label>
+                    marginbottom="10%" marginLeft="0%"(tap)="naturesos('nature')"></Label>
             </ContentView>
         </FlexboxLayout>
     </GridLayout>
 </ScrollView>
+

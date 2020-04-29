@@ -9,7 +9,14 @@ danger:any;
 
   constructor() {
     this.danger = {
-      categorie:"",
+      etatPistes:"",
+      meteo:"",
+      avalanche:"",
+      signaletique:"",
+      obstacle:"",
+      crevasse:"",
+      animaux:"",
+      autres:"",
     }
    }
 }

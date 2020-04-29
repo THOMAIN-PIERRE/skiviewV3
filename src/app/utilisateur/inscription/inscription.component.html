@@ -1,4 +1,32 @@
-<GridLayout class="pagecontent"rows="50" columns='*'>
+<StackLayout class="form">
+  <StackLayout class="input-field">
+      <Label text="INSCRIPTION" class="motDePasse"></Label>   
+  <TextField class="formSanteCss" hint="Entrez votre E-mail" color="black" background="lightgrey" width="90%" height="9%" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
+  <TextField class="formSanteCss" hint="Entrez votre mot de passe" color="black" background="lightgrey" width="90%" height="9%" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
+  <TextField class="formSanteCss" hint="Entrez votre N° de téléphone" color="black" background="lightgrey" width="90%" height="9%" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
+  <Button [nsRouterLink]="['/utilisateur/cguappli']" text="M'INSCRIRE" width="90%" height="9%" backgroundColor="black"; color="yellow"></Button> 
+</StackLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <GridLayout class="pagecontent"rows="50" columns='*'>
 
   <Label [nsRouterLink]="['/utilisateur/cguappli']" marginLeft="5%"class="pagecontent-placeholder" text="Prenez connaissance des Conditions Générales d'Utilisations" row="0" color="black" fontWeight="Bold"></Label>
 
@@ -21,4 +49,4 @@
 
     <Button [nsRouterLink]="['/utilisateur/choixstation']" marginTop="0%"backgroundColor="black" color="#F8FD07" text="INSCRIPTION" (tap)="submit()"></Button>
   </StackLayout>
-  
+   -->

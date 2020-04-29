@@ -410,6 +410,7 @@ Button {
 }
 .danger_button {
     border-radius: 100;
+
 }
 .photo_carnet{
     border-radius: 200;
@@ -452,6 +453,10 @@ Button {
     margin-left: 20;
     margin-right: 20;
     margin-bottom: 15;
+    background-image: url("~/app/images/tree trunk.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150 150;
 }
 #myDanger2 {
     border-radius: 100%;
@@ -460,18 +465,28 @@ Button {
     margin-left: 20;
     margin-right: 20;
     margin-bottom: 15;
+    background-image: url("~/app/images/stopping.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150 150;
 }
 .danger_button {
-    border-radius: 100%;
+    border-radius: 50%;
     background-color: #DCCBCB;
     margin-top: 10;
     margin-bottom: 10;
     
 }
 .danger_button2 {
+    // border-radius: 100%;
+    // background-color: #DCCBCB;
+    // margin-top: 5;
+    // margin-bottom: 10;
+    background-image: url("~/app/images/stopping.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 275 275;
     border-radius: 100%;
-    background-color: #DCCBCB;
-    margin-top: 5;
     margin-bottom: 10;
     
 }
@@ -534,19 +549,19 @@ Button {
 }
 .declaration{
     color: black;
-    font-size: 15;
+    font-size: 14rem;
     font-weight: bold;
     margin-top: 30;
 }
 .categorie{
     color: black;
-    font-size: 15;
+    font-size: 14rem;
     font-weight: bold;
     margin-top: 50;
 }
 .statut{
     color: black;
-    font-size: 15;
+    font-size: 14rem;
     font-weight: bold;
     margin-top: 70;
 }
@@ -724,8 +739,6 @@ Button {
 .valider_carnet{
     padding-left: 20;
     padding-right: 20;
-    background-color: green;
-    color: white;
     margin-bottom: 15;
 }
 .supprimer_carnet{
@@ -790,51 +803,50 @@ Button {
     margin-bottom: 90;
 }
 #Etat_piste{
-    padding-top: 98;
-    padding-left: 25;
+    padding-top: 100%;
+    padding-left: 33;
     font-size: 13;
     font-weight: bold;
-
 }
 #Meteorologie{
-    padding-top: 100;
-    padding-left: 45;
+    padding-top: 100%;
+    padding-left: 43;
     font-size: 13;
     font-weight: bold;
 }
 #A{
-    padding-top: 100;
-    padding-left: 37;
-    font-size: 13;
-    font-weight: bold;
-}
-#Crevasse{
-    padding-top: 100;
-    padding-left: 38;
-    font-size: 13;
-    font-weight: bold;
-}
-#Obstacle{
-    padding-top: 100;
-    padding-left: 40;
-    font-size: 13;
-    font-weight: bold;
-}
-#Signaletique{
-    padding-top: 100;
+    padding-top: 100%;
     padding-left: 31;
     font-size: 13;
     font-weight: bold;
 }
+#Crevasse{
+    padding-top: 100%;
+    padding-left: 35;
+    font-size: 13;
+    font-weight: bold;
+}
+#Obstacle{
+    padding-top: 100%;
+    padding-left: 36;
+    font-size: 13;
+    font-weight: bold;
+}
+#Signaletique{
+    padding-top: 95%;
+    padding-left: 25;
+    font-size: 13;
+    font-weight: bold;
+}
 #Animaux{
-    padding-top: 100;
-    padding-left: 40;
+    padding-top: 100%;
+    padding-left: 36;
     font-size: 13;
     font-weight: bold;
 }
 #Autres{
     padding-top: 100;
-    padding-left: 45;
+    padding-left: 42;
     font-size: 13;
     font-weight: bold;
 }
@@ -882,7 +894,7 @@ Button {
     margin-bottom: 20;
 }
 .iconAutres{
-    background-image: url("~/app/images/icon (5).png");
+    background-image: url("~/app/images/interrogation.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 200 200;
@@ -939,7 +951,7 @@ Button {
     width: 100%;
     height: 11%;
     text-align: center;
-    margin-top: 92%;
+    margin-top: 81%;
     
 }
 .un{
@@ -959,46 +971,107 @@ Button {
     background-image: url("~/app/images/tapis.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 200 200; 
-    margin-bottom: 10;
-    margin-top: 2%;
-    width: 20%;
-    height: 16%;
-    padding-bottom: 12%;
-}
-#Tapis{
-    padding-top: 80;
-    padding-left: 45;
-    font-size: 13;
-    font-weight: bold;
+    background-size: 200 200;
+    width: 60vw;
+    height: 60vh;
 }
 #iconTeleski{
-    background-image: url("~/app/images/noun_Ski Lift_8803.png");
+    background-image: url("~/app/images/schlepplift.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 200 200;
-    margin-bottom: 10;
-    margin-top: 2%;
-    width: 40%;
-    height: 32%;
+    width: 60vw;
+    height: 80vh;
 }
 #iconTelesiege{
     background-image: url("~/app/images/remontée_mécanique.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 200 200;
-    margin-bottom: 10;
-    margin-top: 2%;
-    width: 20%;
-    height: 16%;
+    width: 70vw;
+    height: 7
+    0vh;
 }
 #iconTelecabine{
     background-image: url("~/app/images/cable-car.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 200 200;
-    margin-bottom: 10;
-    margin-top: 2%;
-    width: 20%;
-    height: 16%;
+    width: 70vw;
+    height: 70vh;
+}
+
+/*CSS Mathieu ajouté le 29/04---------------------*/
+
+.picto{
+    font-family: 'Icon-font', 'icon-font-regular';
+    font-size: 60;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+    text-align: center;
+    margin-top:0;
+}
+.pictureelement{
+    font-family: 'Icon', 'icon-regular';
+    font-size: 60;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+    text-align: center;
+}
+.iconetete{
+    font-family: 'icon-t', 'icon-t-regular';
+    font-size: 60;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+    text-align: center;
+}
+.iconebras{
+    font-family: 'icon-bras', 'icon-bras-regular';
+    font-size: 60;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+    text-align: center;
+}
+.iconetotal{
+    font-family: 'icon-tot', 'icon-tot-regular';
+    font-size: 60;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+    text-align: center;
+}
+.iconeluge{
+    font-family: 'icon-luge', 'icon-luge-regular';
+    font-size: 70;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+    text-align: center;
+    padding-top: 0;
+}
+.iconecol{
+    font-family: 'icon-col', 'icon-col-regular';
+    font-size: 60;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200 200;
+    border-radius: 100%;
+    margin-bottom: 20;
+    text-align: center;
 }

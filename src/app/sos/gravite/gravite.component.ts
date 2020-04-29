@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SosService } from '../service/sos.service';
 
 @Component({
   selector: 'ns-gravite',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GraviteComponent implements OnInit {
 
-  constructor() { }
+  constructor(public SosServ:SosService) { }
 
   ngOnInit(): void {
   }
-
+gravitesos(gravite:string){
+  this.SosServ.sos.gravite=gravite;
+}
 }
