@@ -20,8 +20,30 @@
     </WebView>
     </GridLayout>
 </StackLayout>
-<GridLayout backgroundColor="black" rows="200" height="10%" marginTop="92%" marginBottom="5" columns="*,*,*">
+
+
+<!-- <GridLayout backgroundColor="black" rows="200" height="10%" marginTop="92%" marginBottom="5" columns="*,*,*">
     <Label col="0" text="&#xf05a;" [nsRouterLink]="['/informations']" marginLeft="10%" class="nt-icon fas"></Label>
     <Label col="1" text="&#xf071;" [nsRouterLink]="['/danger']" marginLeft="10%" class="nt-icon fas"></Label>
     <Label col="2" text="&#xf479;" [nsRouterLink]="['/sos']" marginLeft="10%" class="nt-icon fas"></Label>
+</GridLayout> -->
+
+
+<GridLayout verticalAlignment="bottom">
+    <GridLayout columns="*, *, *" height="70"  backgroundColor="#FFFF00">
+        <GridLayout  col="0" #tabHighlight>
+        </GridLayout>
+        <GridLayout col="0" backgroundColor="#000000">
+            <Image #image1 src="~/app/images/infos.png" [nsRouterLink]="['/informations']" height="60"
+                width="60"></Image>
+        </GridLayout>
+        <GridLayout col="1" backgroundColor="#000000">
+            <Image #image2 src="~/app/images/locaDanger.png" [nsRouterLink]="['/danger']" height="60"
+                width="60"></Image>
+        </GridLayout>
+        <GridLayout col="2" backgroundColor="#000000">
+            <Image #image3 src="~/app/images/locaSecours.png" [nsRouterLink]="['/sos']" height="60"
+                width="60"></Image>
+        </GridLayout>
+    </GridLayout>
 </GridLayout>

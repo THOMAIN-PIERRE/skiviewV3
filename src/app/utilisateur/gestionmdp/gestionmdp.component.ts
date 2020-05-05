@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import * as app from "tns-core-modules/application";
+import { RadSideDrawer } from 'nativescript-ui-sidedrawer';
 
 @Component({
   selector: 'ns-gestionmdp',
@@ -11,5 +13,11 @@ export class GestionmdpComponent implements OnInit {
 
   ngOnInit(): void {
   }
+ 
+     // Ouvrir le menu burger
+     onDrawerButtonTap(){
+      const sideDrawer = <RadSideDrawer>app.getRootView();
+      sideDrawer.showDrawer();
+    }
 
 }

@@ -11,6 +11,17 @@ import { IdService } from "./services/id.service";
 import { DropDownModule } from "nativescript-drop-down/angular";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 
+// import { registerElement } from "nativescript-angular";
+// registerElement("PreviousNextView", () => require("nativescript-iqkeyboardmanager").PreviousNextView);
+
+// import { InscriptionComponent } from "../app/inscription/inscription.component";
+
+// //TODO: should be imported from kinvey-nativescript-sdk/angular but declaration file is currently missing
+// import { KinveyModule, UtilisateurService as KinveyUserService } from "kinvey-nativescript-sdk/lib/angular";
+
+// import { UtilisateurService } from "../app/services/utilisateur.service";
+
+
 @NgModule({
     bootstrap: [
         AppComponent
@@ -21,12 +32,18 @@ import { NativeScriptFormsModule } from "nativescript-angular/forms";
         NativeScriptUISideDrawerModule,
         NativeScriptHttpClientModule,
         DropDownModule,
-        NativeScriptFormsModule,   
+        NativeScriptFormsModule, 
+
+        // KinveyModule.init({
+        //     appKey: "kid_rkG3IIwt8",
+        //     appSecret: "7810f8a0f91a4bd0b24df66e32d8a746"
+        // })
     ],
     declarations: [
-        AppComponent
+        AppComponent,
+        // InscriptionComponent
     ],
-    providers:[CarnetSanteService, DataService, IdService],
+    providers:[CarnetSanteService, DataService, IdService, ],
     schemas: [
         NO_ERRORS_SCHEMA
     ]

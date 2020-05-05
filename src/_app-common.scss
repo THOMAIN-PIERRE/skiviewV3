@@ -945,13 +945,13 @@ Button {
 // //     height: 100%;
 // // }  
 #basDePage{
-    background: #000000;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 11%;
+    // background: #000000;
+    // position: absolute;
+    // bottom: 0;
+    // width: 100%;
+    // height: 11%;
     text-align: center;
-    margin-top: 81%;
+    // margin-top: 81%;
     
 }
 .un{
@@ -989,8 +989,7 @@ Button {
     background-position: center;
     background-size: 200 200;
     width: 70vw;
-    height: 7
-    0vh;
+    height: 70vh;
 }
 #iconTelecabine{
     background-image: url("~/app/images/cable-car.png");
@@ -1075,3 +1074,27 @@ Button {
     margin-bottom: 20;
     text-align: center;
 }
+
+
+/* CSS implémentation du formulaire de connexion et d'inscription------------------------------*/
+
+.page {
+    align-items: center;
+    flex-direction: column;
+  }
+.form {
+    margin-left: 30;
+    margin-right: 30;
+    flex-grow: 2;
+    // vertical-align: middle;
+    margin-top: 5%;
+  }
+
+
+
+
+/* CSS implémentation du formulaire carnet de sante ------------------------------*/
+
+//   .formSanteCss {
+//     margin-bottom: 3%;
+//   }
