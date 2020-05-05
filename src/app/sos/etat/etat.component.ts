@@ -16,3 +16,10 @@ etatsos(etat:string){
   this.SosServ.sos.etat=etat;
 }
 }
+
+
+
+
+
+
+

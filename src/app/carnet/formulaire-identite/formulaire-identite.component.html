@@ -1,10 +1,35 @@
+<!-- <ScrollView>
 <StackLayout class="form">
-    <StackLayout class="input-field">
-    <TextField class="formSanteCss" hint="Nom" [(ngModel)]="carnetServ.dossierSante.nom" color="black" background="lightgrey" width="90%" height="50rem" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
-    <TextField class="formSanteCss" hint="Prénom" [(ngModel)]="carnetServ.dossierSante.prenom" color="black" background="lightgrey" width="90%" height="50rem" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
-    <TextField class="formSanteCss" hint="Age" [(ngModel)]="carnetServ.dossierSante.age" color="black" background="lightgrey" width="90%" height="50rem" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
-    <Button [nsRouterLink]="['/']" text="SUIVANT" class="valider_carnet" backgroundColor="green"; color="white"></Button> 
+    <TextField class="formSanteCss" hint="Nom" [(ngModel)]="carnetServ.dossierSante.nom" color="black" background="lightgrey" width="90%" height="45rem" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
+    <TextField class="formSanteCss" hint="Prénom" [(ngModel)]="carnetServ.dossierSante.prenom" color="black" background="lightgrey" width="90%" height="45rem" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
+    <TextField class="formSanteCss" hint="Age" [(ngModel)]="carnetServ.dossierSante.age" color="black" background="lightgrey" width="90%" height="45rem" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
+    <TextField class="formSanteCss" hint="Entrez votre N° de téléphone" color="black" background="lightgrey" width="90%" height="45rem" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
+    <Label text="&#xf138;" class="nt-icon fas" horizontalAlignment="center" paddingTop="20%" color="#000000"></Label>
+    <!-- <Button [nsRouterLink]="['/formulaire/constantes']" text="SUIVANT" class="valider_carnet" backgroundColor="green"; color="white"></Button>
 </StackLayout>
+</ScrollView> -->
+
+<ScrollView>
+    <StackLayout class="form">
+        <TextField class="formSanteCss" hint="Nom" [(ngModel)]="carnetServ.dossierSante.nom" color="black" background="lightgrey" width="90%" height="45rem" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
+        <TextField class="formSanteCss" hint="Prénom" [(ngModel)]="carnetServ.dossierSante.prenom" color="black" background="lightgrey" width="90%" height="45rem" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
+        <TextField class="formSanteCss" hint="Age" [(ngModel)]="carnetServ.dossierSante.age" color="black" background="lightgrey" width="90%" height="45rem" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
+        <TextField class="formSanteCss" hint="Entrez votre N° de téléphone" [(ngModel)]="carnetServ.dossierSante.tel" color="black" background="lightgrey" width="90%" height="45rem" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
+        <Label text="&#xf138;" class="nt-icon fas" horizontalAlignment="center" paddingTop="20%" color="#000000"></Label>
+        <!-- <Button [nsRouterLink]="['/']" text="VALIDER" class="valider_carnet" backgroundColor="green"; color="white"></Button>  -->
+    </StackLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- <StackLayout class="form">

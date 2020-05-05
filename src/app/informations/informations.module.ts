@@ -7,10 +7,11 @@ import { MeteoComponent } from './meteo/meteo.component';
 import { NeigeComponent } from './neige/neige.component';
 import { PistesComponent } from './pistes/pistes.component';
 import { RemonteesComponent } from './remontees/remontees.component';
+import { PlanComponent } from './plan/plan.component';
 
 
 @NgModule({
-  declarations: [InformationsComponent, MeteoComponent, NeigeComponent, PistesComponent, RemonteesComponent],
+  declarations: [InformationsComponent, MeteoComponent, NeigeComponent, PistesComponent, RemonteesComponent, PlanComponent],
   imports: [
     InformationsRoutingModule,
     NativeScriptCommonModule

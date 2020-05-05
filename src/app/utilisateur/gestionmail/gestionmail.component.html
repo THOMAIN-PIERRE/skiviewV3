@@ -1,11 +1,27 @@
+<ActionBar>
+    <!-- 
+    Use the NavigationButton as a side-drawer button in Android
+    because ActionItems are shown on the right side of the ActionBar
+    -->
+    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
+    <!-- 
+    Use the ActionItem for IOS with position set to left. Using the
+    NavigationButton as a side-drawer button in iOS is not possible,
+    because its function is to always navigate back in the application.
+    -->
+    <ActionItem icon="res://menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()" ios.position="left">
+    </ActionItem>
+    <Label class="pageLabel" text="GESTION DU COMPTE"></Label>
+</ActionBar>
+<ScrollView>
 <StackLayout class="form">
-    <StackLayout class="input-field">
-        <Label text="GESTION E-MAIL" class="motDePasse"></Label>   
-    <TextField class="formSanteCss" hint="E-mail associé au compte" color="black" background="lightgrey" width="90%" height="9%" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
-    <TextField class="formSanteCss" hint="Nouvel E-mail" color="black" background="lightgrey" width="90%" height="9%" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
-    <TextField class="formSanteCss" hint="Confirmation E-mail" color="black" background="lightgrey" width="90%" height="9%" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
-    <Button [nsRouterLink]="['/utilisateur/gestioncompte']" text="MODIFIER" width="90%" height="9%" backgroundColor="yellow"; color="black"></Button> 
+    <Label text="GESTION E-MAIL" class="motDePasse"></Label>   
+    <TextField class="formSanteCss" hint="E-mail associé au compte" color="black" background="lightgrey" width="90%" height="50rem" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
+    <TextField class="formSanteCss" hint="Nouvel E-mail" color="black" background="lightgrey" width="90%" height="50rem" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
+    <TextField class="formSanteCss" hint="Confirmation E-mail" color="black" background="lightgrey" width="90%" height="50rem" borderRadius="10%" paddingLeft="8%" fontSize="20rem"></TextField>
+    <Button [nsRouterLink]="['/utilisateur/gestioncompte']" text="MODIFIER" width="90%" height="50rem" backgroundColor="yellow"; color="black"></Button> 
 </StackLayout>
+</ScrollView>
 
 
 

@@ -11,11 +11,29 @@
     <Label [nsRouterLink]="['/utilisateur/station']" row="1" text="MERCI pour votre contribution active au programme de signalement partricipatif mis en place par la station. 
 
 Vous pouvez suivre l’évolution de votre signalement dans la rubrique “Mes signalements”" textWrap="true" class="message_confirmation"></Label>
-<GridLayout rows="*" columns="*,*">
+<!-- <GridLayout rows="*" columns="*,*">
     <Label [nsRouterLink]="['/utilisateur/station']" col="0" row="0" text="&#xf015;" class="nt-icon fas" id="basDePage" height="100%"></Label>
     <Label [nsRouterLink]="['/danger/historiqueSignalement']" col="1" row="0" text="&#xf573;" class="nt-icon fas" id="basDePage" height="100%"></Label>
-</GridLayout>
+</GridLayout>-->
 </StackLayout>
+
+<GridLayout verticalAlignment="bottom">
+    <GridLayout columns="*, *" height="70"  backgroundColor="#000000">
+        <GridLayout  col="0" #tabHighlight>
+        </GridLayout>
+        <GridLayout col="0" backgroundColor="#000000" horizontalAlignment="center" verticalAlignment="center">
+            <Label  [nsRouterLink]="['/utilisateur/station']" col="0" text="&#xf015;" class="nt-icon fas"></Label>
+            <!-- <Image #image1 src="~/app/images/infos.png" [nsRouterLink]="['/informations']" height="60"
+                width="60"></Image> -->
+        </GridLayout>
+        <GridLayout col="1" backgroundColor="#000000">
+            <Label [nsRouterLink]="['/danger/historiqueSignalement']" col="0" text="&#xf573;" class="nt-icon fas" horizontalAlignment="center" verticalAlignment="center"></Label>
+            <!-- <Image #image2 src="~/app/images/locaDanger.png" [nsRouterLink]="['/danger']" height="60"
+                width="60"></Image> -->
+        </GridLayout>
+        
+    </GridLayout>
+</GridLayout>
 
 
 
