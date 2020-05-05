@@ -4,48 +4,22 @@
             marginTop="50%">
 
         <Label backgroundColor="#3E3F32" class="pagecontent-placeholder" text="Le blessé pratique" row="0"
-            color="white" fontSize=25px; fontWeight="Bold" marginbottom="100%" marginLeft="10%"
+            color="white" fontSize="30em" fontWeight="Bold" marginbottom="100%" marginLeft="10%"
             marginRight="10%"></Label>
         <Label class="position" [nsRouterLink]="['/sos/blessure']" color="white" paddingTop="50%" paddingLeft="0%" class="bouttonchute" class="iconetotal"
-            text="M" color="white" fontWeight="Bold" width="400px" height="400px"
-            backgroundColor="#FF0000" (tap)="activitesos('activite')"></Label>
+            text="M" color="white" fontWeight="Bold" width="150em" height="150em"
+            backgroundColor="#FF0000" (tap)="activiteSosSki('Ski')"></Label>
         <Label  class="bouttonchute" [nsRouterLink]="['/sos/blessure']" color="white" paddingTop="40%" paddingLeft="10%" text="H"
-            class="iconetotal" width="400px" height="400px" fontWeight="Bold" backgroundColor="#FF0000" (tap)="activitesos('activite')"></Label>
+            class="iconetotal" width="150em" height="150em" fontWeight="Bold" backgroundColor="#FF0000" (tap)="activiteSosSnow('Snowboard')"></Label>
         <Label  class="bouttonchute" [nsRouterLink]="['/sos/blessure']" color="white" paddingTop="30%" paddingLeft="10%" text="K" class="iconeluge"
-            width="400px" height="400px" fontWeight="Bold" backgroundColor="#FF0000" (tap)="activitesos('activite')"></Label>
+            width="150em" height="150em" fontWeight="Bold" backgroundColor="#FF0000" (tap)="activiteSosLuge('Luge')"></Label>
 
         <Label  class="bouttonchute" [nsRouterLink]="['/sos/blessure']" color="white" paddingTop="30%" paddingLeft="12%" text="I" class="iconetotal"
-            width="400px" height="400px" fontWeight="Bold" backgroundColor="#FF0000" (tap)="activitesos('activite')"></Label>
+            width="150em" height="150em" fontWeight="Bold" backgroundColor="#FF0000" (tap)="activiteSosRandonee('Randonee')"></Label>
 
         <!-- <Button text="Envoyer"  backgroundColor="#0DF24D" color="white" (tap)="submit()"
             fontSize="Large" class="soumission" marginTop="100%"></Button> -->
         </FlexboxLayout>
     </GridLayout>
 
-
-
-
-
-
-
-<!-- <ScrollView>
-    <GridLayout class="pagecontent" backgroundColor="#3E3F32">
-        <FlexboxLayout backgroundColor="#3E3F32" flexDirection="row" flexWrap="wrap" justifyContent="space-around"
-            marginTop="50%">
-
-        <Label backgroundColor="#3E3F32" class="pagecontent-placeholder" text="Le blessé pratique" row="0"
-            color="white" fontSize=25px; fontWeight="Bold" marginbottom="100%" marginLeft="10%"
-            marginRight="10%"></Label>
-        <Label class="position" [nsRouterLink]="['/sos/blessure']" color="white" paddingTop="100%" paddingLeft="55%" class="bouttonchute" class="pictureA1"
-            text="Ski" color="white" fontWeight="Bold" width="400px" height="400px"
-            backgroundColor="#FF0000"></Label>
-        <Label  class="bouttonchute" [nsRouterLink]="['/sos/blessure']" color="white" paddingTop="100%" paddingLeft="30%" text="Snowboard"
-            class="pictureB1" width="400px" height="400px" fontWeight="Bold" backgroundColor="#FF0000"></Label>
-        <Label  class="bouttonchute" [nsRouterLink]="['/sos/blessure']" color="white" paddingTop="100%" paddingLeft="55%" text="Luge" class="pictureC1"
-            width="400px" height="400px" fontWeight="Bold" backgroundColor="#FF0000"></Label>
-
-        <Label  class="bouttonchute" [nsRouterLink]="['/sos/blessure']" color="white" paddingTop="100%" paddingLeft="35%" text="Randonnée" class="pictureD1"
-            width="400px" height="400px" fontWeight="Bold" backgroundColor="#FF0000"></Label>
-        </FlexboxLayout>
-    </GridLayout>
-</ScrollView> -->
+</ScrollView> 

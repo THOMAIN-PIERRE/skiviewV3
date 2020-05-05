@@ -11,7 +11,10 @@ export class NatureComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  naturesos(nature:string){
-    this.SosServ.sos.nature=nature;
+  natureSosAdulte(Adulte:string){
+    this.SosServ.sos.Adulte=Adulte;
+  }
+  natureSosEnfant(Enfant:string){
+    this.SosServ.sos.Enfant=Enfant;
   }
 }
