@@ -11,8 +11,17 @@ export class ActiviteComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  activitesos(activite:string){
-    this.SosServ.sos.activite=activite;
+  activiteSosSki(Ski:string){
+    this.SosServ.sos.Ski=Ski;
+  }
+  activiteSosRandonee(Randonee:string){
+    this.SosServ.sos.Randonnee=Randonee;
+  }
+  activiteSosLuge(Luge:string){
+    this.SosServ.sos.Luge=Luge;
+  }
+  activiteSosSnow(Snow:string){
+    this.SosServ.sos.Snow=Snow;
   }
 }
 

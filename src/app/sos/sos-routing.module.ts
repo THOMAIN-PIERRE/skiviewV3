@@ -9,6 +9,7 @@ import { EtatComponent } from './etat/etat.component';
 import { GestesecoursComponent } from './gestesecours/gestesecours.component';
 import { GraviteComponent } from './gravite/gravite.component';
 import { NatureComponent } from './nature/nature.component';
+import { ComplementComponent } from './complement/complement.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
       { path: "", component: EtatComponent },
       { path: "gravite", component: GraviteComponent },
       { path: "appel", component: AppelComponent },
+      { path: "complement", component: ComplementComponent},
       { path: "nature", component: NatureComponent },
       { path: "activite", component: ActiviteComponent },
       { path: "blessure", component: BlessureComponent },

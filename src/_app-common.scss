@@ -1001,9 +1001,22 @@ Button {
 }
 
 /*CSS Mathieu ajouté le 29/04---------------------*/
+.temps{
+    font-family: 'icon-temps', 'icon-temps-regular';
+    font-size: 70;  
+}
+.iconemont{
+    font-family: 'icon-mont', 'icon-mont-regular';
+    font-size: 100;
+    transform: rotate(180);  
+}
+.neige{
+    font-family: 'icon-neige', 'icon-neige-regular';
+    font-size: 30; 
+}
 
 .picto{
-    font-family: 'Icon-font', 'icon-font-regular';
+    font-family: 'icon-jambe', 'icon-jambe-regular';
     font-size: 60;
     background-repeat: no-repeat;
     background-position: center;
@@ -1012,6 +1025,12 @@ Button {
     margin-bottom: 20;
     text-align: center;
     margin-top:0;
+}
+
+.main{
+    font-family: 'icon-main', 'icon-main-regular';
+    font-size: 133;
+    transform: rotate(180);  
 }
 .pictureelement{
     font-family: 'Icon', 'icon-regular';

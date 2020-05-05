@@ -12,8 +12,11 @@ export class EtatComponent implements OnInit {
 
   ngOnInit(): void {
   }
-etatsos(etat:string){
-  this.SosServ.sos.etat=etat;
+etatsosVictime(Victime:string){
+  this.SosServ.sos.Victime=Victime;
+}
+etatSosTemoin(Temoin:string){
+  this.SosServ.sos.Temoin=Temoin;
 }
 }
 

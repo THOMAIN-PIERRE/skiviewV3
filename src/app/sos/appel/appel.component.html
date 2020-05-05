@@ -1,36 +1,21 @@
 
-<GridLayout class="overlay" rows="50,50,50,50,50,50,120,50">
-    <Label class="page__content-placeholder" text="Les secours sont prevenus" color="black" marginTop="0"
-        fontWeight="Bold" fontSize="20px" row="1"></Label>
-    <Label class="page__content-placeholder" text="Ils seront bientot à vos cotés" color="black" marginTop="0"
-        fontWeight="Bold" fontSize="20px" row="2"></Label>
-    <Label class="page__content-placeholder" text="Restez calme" color="black" marginTop="0" fontSize="18px"
-        fontWeight="Bold" row="3"></Label>
-    <Label class="page__content-placeholder" text="Respirez profondement" color="black" marginTop="0" fontSize="18px"
-        fontWeight="Bold" row="4"></Label>
-    <Label class="page__content-placeholder" text="Respirez Calmement" color="black" marginTop="0" fontSize="18px"
-        fontWeight="Bold" row="5"></Label>
-    <Label class="page__content-placeholder" text="" color="black" marginTop="0"
-        fontSize="18px" fontWeight="Bold" row="6"></Label>
-    <Label class="page__content-placeholder"  [nsRouterLink]="['/sos/gestesecours']" width="90%" textAlign="center" paddingTop="10%" paddingLeft="47%"height="10%"text=" Gestes de Premiers secours" backgroundColor="#FDE407" color="black" marginTop="0"
-        fontSize="18px" fontWeight="Bold" row="7"></Label>
-    <GridLayout>
-        <button text="Complements d'Informations"  [nsRouterLink]="['/sos/nature']" pageTransition="slide"
-            color="white" backgroundColor="#FF0000" marginTop="20%" marginBottom="0"></button>
-
-    </GridLayout>
-
-</GridLayout>
-<GridLayout class="page__content" rows="50,50,50">
-    <!-- <Label class="page__content-icon far" text="&#xf1ea;"></Label> -->
+<GridLayout class="page__content" rows="50"backgroundColor="white">
+  
     <Label row="0" class="page__content-placeholder" text="POSTE DE SECOURS" color="black" marginTop="0"
-        fontWeight="Bold" marginTop="0"></Label>
-    <Label class="page__content-placeholder" text="Pour activer le SOS:" color="black" marginTop="0" fontWeight="Bold"
-        marginTop="0" row="1"></Label>
-    <Label class="page__content-placeholder" text="appuyer sur le bouton SOS" color="black" marginTop="0"
-        fontWeight="Bold" marginTop="0" row="2"></Label>
+        fontWeight="Bold" fontSize="20em"marginTop="0"></Label>
 
 </GridLayout>
-<GridLayout>
-    <Button text="SOS" fontSize="100" color="white" backgroundColor="#FF0000" class="bouttonsos"></Button>
+<GridLayout (tap)="validersos()">
+    <label text="SOS" fontSize="80em" marginBottom="15%" color="white" backgroundColor="#FF0000" class="bouttonsos" paddingLeft="50%" paddingTop="50%"  (tap)="updateLocation()"></label>
+    <Label  paddingTop="100%" paddingLeft="33%" text="A" class="main" ></Label>
+
+
 </GridLayout>
+
+<FlexboxLayout flexDirection="row" justifyContent="space-around" alignItems="flex-end" class="slider">
+                  
+    <Label [nsRouterLink]="['/utilisateur/choixstation']" text="Quitter" id="slider" color="#000000"  marginBottom="20"></Label>
+
+    <Label [nsRouterLink]="['/sos/complement']" text="SUIVANT >" id="slider" color="#000000"  marginBottom="20"></Label>       
+
+</FlexboxLayout> 
