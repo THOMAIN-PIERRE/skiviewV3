@@ -4,7 +4,7 @@ import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angul
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
-
+import { HttpClientModule } from "@angular/common/http";
 import { DataService } from "./services/data.service";
 import { CarnetSanteService } from "./services/carnet-sante.service";
 import { IdService } from "./services/id.service";
@@ -32,7 +32,8 @@ import { NativeScriptFormsModule } from "nativescript-angular/forms";
         NativeScriptUISideDrawerModule,
         NativeScriptHttpClientModule,
         DropDownModule,
-        NativeScriptFormsModule, 
+        NativeScriptFormsModule,
+        HttpClientModule 
 
         // KinveyModule.init({
         //     appKey: "kid_rkG3IIwt8",

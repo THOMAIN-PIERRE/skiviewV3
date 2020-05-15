@@ -6,7 +6,8 @@
 
 </GridLayout>
 <GridLayout (tap)="validersos()">
-    <label text="SOS" fontSize="80em" marginBottom="15%" color="white" backgroundColor="#FF0000" class="bouttonsos" paddingLeft="50%" paddingTop="50%"  (tap)="updateLocation()"></label>
+    <label text="SOS" fontSize="80em" marginBottom="15%" color="white" backgroundColor="#FF0000" class="bouttonsos" 
+    paddingLeft="50%" paddingTop="50%"  (tap)="updateLocation()"></label>
     <Label  paddingTop="100%" paddingLeft="33%" text="A" class="main" ></Label>
 
 
@@ -14,8 +15,16 @@
 
 <FlexboxLayout flexDirection="row" justifyContent="space-around" alignItems="flex-end" class="slider">
                   
-    <Label [nsRouterLink]="['/utilisateur/choixstation']" text="Quitter" id="slider" color="#000000"  marginBottom="20"></Label>
+    <Label [nsRouterLink]="['/utilisateur/station']" text="Quitter" id="slider" color="#000000"  marginBottom="20"></Label>
 
     <Label [nsRouterLink]="['/sos/complement']" text="SUIVANT >" id="slider" color="#000000"  marginBottom="20"></Label>       
 
 </FlexboxLayout> 
+
+
+
+
+
+
+
+
