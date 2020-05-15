@@ -1,12 +1,12 @@
 
-<GridLayout>
+<GridLayout marginBottom="15%">
     <ScrollView>
         <StackLayout>
             <StackLayout class="hr"></StackLayout>
             <GridLayout columns="*" class="mes_signalements">
                 <Label col="0" text="20/04/2019 11:35" class="date_heure"></Label>
             </GridLayout>
-            <GridLayout [nsRouterLink]="['/utilisateur']" columns="auto, 200">
+            <GridLayout [nsRouterLink]="['/utilisateur/station']" columns="auto, 200">
                 <ContentView col="0" id="myDanger1" width="110rem" height="110rem" backgroundColor="#C4C4C4"></ContentView>
                 <Label col="1" text="SIGNALER DANGER" class="declaration"></Label>
                 <Label col="1" text="Avalanche" class="categorie"></Label>
@@ -18,8 +18,6 @@
             </StackLayout>
             <StackLayout>
                 <Image class="galerie" src="https://www.telegraph.co.uk/content/dam/Travel/ski/Crans-Montana-avalanche-skiers-KEYSTONE-ANTHONY%20ANEX.jpg?imwidth=450"  width="800px" stretch="aspectFit"></Image>
-                <Image class="galerie" src="https://www.telegraph.co.uk/content/dam/Travel/ski/Crans-Montana-avalanche-skiers-KEYSTONE-ANTHONY%20ANEX.jpg?imwidth=450"  width="800px" stretch="aspectFit"></Image>
-                <Image class="galerie_end" src="https://www.telegraph.co.uk/content/dam/Travel/ski/Crans-Montana-avalanche-skiers-KEYSTONE-ANTHONY%20ANEX.jpg?imwidth=450"  width="800px" stretch="aspectFit"></Image>
             </StackLayout>
         </StackLayout>
     </ScrollView>

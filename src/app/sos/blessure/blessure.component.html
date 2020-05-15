@@ -35,23 +35,18 @@
                 width="100em" height="100em" fontWeight="Bold" backgroundColor="#FF0000"
                 (tap)="typeBlessureSosAutre('Autre')"></Label>
             <!-- <Label class="bouttonchute" color="white" paddingTop="70%" paddingLeft="35%" text="" width="250px" height="250px" fontWeight="Bold" backgroundColor="#3E3F32"marginBottom="20%"></Label> -->
-
             <Button text="Envoyer" backgroundColor="#0DF24D" color="white" (tap)="submit()" fontSize="Large"
-                class="soumission" marginTop="100%" marginBottom="10%"></Button>
-
-              
+                class="soumission" marginTop="100%" marginBottom="10%"></Button> 
         </FlexboxLayout>
-        
-
     </GridLayout>
 </ScrollView>
+
 <GridLayout verticalAlignment="bottom">
     <GridLayout columns="*" height="70"  backgroundColor="#FFFF00">
         <GridLayout  col="0" #tabHighlight>
         </GridLayout>
         <GridLayout col="0" backgroundColor="#000000">
             <Label [nsRouterLink]="['/utilisateur/choixstation']" col="0" row="0" text="&#xf015;" class="nt-icon fas"  textAlign="center" verticalAlignment="center" horizontalAlignment="center"></Label>
-           
         </GridLayout>
     </GridLayout>
 </GridLayout>
