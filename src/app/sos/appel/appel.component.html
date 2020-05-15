@@ -1,25 +1,17 @@
+<GridLayout class="pagecontent" rows="50"backgroundColor="white">
 
-<GridLayout class="page__content" rows="50"backgroundColor="white">
-  
-    <Label row="0" class="page__content-placeholder" text="POSTE DE SECOURS" color="black" marginTop="0"
+    <Label row="0" class="pagecontent-placeholder" text="" color="black" marginTop="0"
         fontWeight="Bold" fontSize="20em"marginTop="0"></Label>
 
 </GridLayout>
-<GridLayout (tap)="validersos()">
+<GridLayout >
     <label text="SOS" fontSize="80em" marginBottom="15%" color="white" backgroundColor="#FF0000" class="bouttonsos" 
-    paddingLeft="50%" paddingTop="50%"  (tap)="updateLocation()"></label>
+    paddingLeft="50%" paddingTop="50%"  (tap)="updateLocation()" [nsRouterLink]="['/sos/complement']"></label>
     <Label  paddingTop="100%" paddingLeft="33%" text="A" class="main" ></Label>
 
 
 </GridLayout>
 
-<FlexboxLayout flexDirection="row" justifyContent="space-around" alignItems="flex-end" class="slider">
-                  
-    <Label [nsRouterLink]="['/utilisateur/station']" text="Quitter" id="slider" color="#000000"  marginBottom="20"></Label>
-
-    <Label [nsRouterLink]="['/sos/complement']" text="SUIVANT >" id="slider" color="#000000"  marginBottom="20"></Label>       
-
-</FlexboxLayout> 
 
 
 

@@ -26,28 +26,28 @@
                     <Label col="1" [text]="carnetServ.dossierSante.donneur" class="groupe_sanguin"></Label>
                 </GridLayout>
                 <GridLayout columns="auto, *">
-                    <Label col="0" class="infosCarnet" text="Allergie(s) :" textWrap="true"></Label>
-                    <Label col="1" [text]="carnetServ.dossierSante.allergie" class="groupe_sanguin"></Label>
+                    <Label col="0" class="infosCarnet" text="Allergie(s) :"></Label>
+                    <Label col="1" [text]="carnetServ.dossierSante.allergie" class="groupe_sanguin" textWrap="true"></Label>
                 </GridLayout>
                 <GridLayout columns="auto, *">
-                    <Label col="0" class="infosCarnet" text="Pathologie(s):"textWrap="true"></Label>
-                    <Label col="1" [text]="carnetServ.dossierSante.pathologie" class="groupe_sanguin"></Label>
+                    <Label col="0" class="infosCarnet" text="Pathologie(s):"></Label>
+                    <Label col="1" [text]="carnetServ.dossierSante.pathologie" class="groupe_sanguin" textWrap="true"></Label>
                 </GridLayout>
                 <GridLayout columns="auto, *">
-                    <Label col="0" class="infosCarnet" text="Traitement(s) :"textWrap="true"></Label>
-                    <Label col="1" [text]="carnetServ.dossierSante.traitement" class="groupe_sanguin"></Label>
+                    <Label col="0" class="infosCarnet" text="Traitement(s) :"></Label>
+                    <Label col="1" [text]="carnetServ.dossierSante.traitement" class="groupe_sanguin" textWrap="true"></Label>
                 </GridLayout>
                 <GridLayout columns="auto, *">
                     <Label col="0" class="infosCarnet" text="Nom contact :"></Label>
-                    <Label col="1" [text]="carnetServ.dossierSante.nom_contact" textWrap="true" class="groupe_sanguin"></Label>
+                    <Label col="1" [text]="carnetServ.dossierSante.nom_contact" class="groupe_sanguin"></Label>
                 </GridLayout>
                 <GridLayout columns="auto, *">
                     <Label col="0" class="infosCarnet" text="Prénom contact :"></Label>
-                    <Label col="1" [text]="carnetServ.dossierSante.prenom_contact" textWrap="true" class="groupe_sanguin"></Label>    
+                    <Label col="1" [text]="carnetServ.dossierSante.prenom_contact" class="groupe_sanguin"></Label>    
                 </GridLayout>
                 <GridLayout columns="auto, *">
                     <Label col="0" class="infosCarnet" text="Téléphone contact :"></Label>
-                    <Label col="1" [text]="carnetServ.dossierSante.tel_contact" textWrap="true" class="groupe_sanguin"></Label>    
+                    <Label col="1" [text]="carnetServ.dossierSante.tel_contact" class="groupe_sanguin"></Label>    
                 </GridLayout>
                 <GridLayout>
                     <Button [nsRouterLink]="['/carnet/cgu']" row="0" text="RENSEIGNER MON CARNET" class="btn btn-warning" id="button_health_book"></Button> 
